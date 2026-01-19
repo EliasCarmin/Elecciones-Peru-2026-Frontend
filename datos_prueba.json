@@ -1,0 +1,146 @@
+[{
+  "id": 1,
+  "nombre": "César Acuña Peralta",
+  "image_url":"https://upload.wikimedia.org/wikipedia/commons/b/bf/C%C3%A9sar_Acu%C3%B1a_Peralta.jpg",
+  "partido": "Alianza para el Progreso",
+  "intentos_presidenciales": 3,
+  "cargos_principales": [
+    "Congresista de la República (2000-2006)",
+    "Alcalde Provincial de Trujillo (2007-2014)",
+    "Gobernador Regional de La Libertad (2015, 2023-2025)"
+  ],
+  "procesos": {
+    "denuncias_procesadas": 3,
+    "acusaciones": [
+      "Plagio académico en tesis de maestría y doctorado",
+      "Entrega de dinero en campaña electoral (exclusión 2016)",
+      "Caso 'Plata como Cancha'"
+    ],
+    "denuncias_en_proceso": 1,
+    "sentencias": [
+      {
+        "tipo": "Pensión de alimentos",
+        "año": 2024,
+        "monto_mensual_soles": 30000
+      }
+    ]
+  },
+  "controversias_relevantes": [
+    "Exclusión electoral en 2016 por infringir la ley electoral",
+    "Retiro de visa estadounidense en 2022",
+    "Cuestionamientos por ausentismo durante crisis de seguridad en La Libertad"
+  ],
+  "perfil_economico": {
+    "ingresos_anuales_soles": 9800000,
+    "patrimonio_bienes_soles": 73000000,
+    "inmuebles": 25,
+    "vehiculos": 158
+  },
+  "fuentes": [
+    {
+      "titulo": "Perfil biográfico y trayectoria política de César Acuña",
+      "referencia": "PDF César Acuña",
+      "cita": "turn0file0"
+    }
+  ]
+}
+
+, 
+{
+  "id": 2,
+  "nombre": "Keiko Fujimori Higuchi",
+  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Keiko_Fujimori_2.jpg/960px-Keiko_Fujimori_2.jpg",
+  "partido": "Fuerza Popular",
+  "intentos_presidenciales": 3,
+  "cargos_principales": [
+    "Primera Dama del Perú (1994-2000)",
+    "Congresista de la República por Lima (2006-2011)",
+    "Líder del partido Fuerza Popular"
+  ],
+  "procesos": {
+    "denuncias_procesadas": 2,
+    "acusaciones": [
+      "Lavado de activos",
+      "Crimen organizado",
+      "Obstrucción a la justicia"
+    ],
+    "denuncias_en_proceso": 1,
+    "prision_preventiva": {
+      "ocasiones": 3,
+      "periodo": "2018-2020"
+    }
+  },
+  "candidaturas_presidenciales": [
+    {
+      "anio": 2011,
+      "resultado": "Segunda vuelta - perdió frente a Ollanta Humala"
+    },
+    {
+      "anio": 2016,
+      "resultado": "Segunda vuelta - perdió frente a Pedro Pablo Kuczynski"
+    },
+    {
+      "anio": 2021,
+      "resultado": "Segunda vuelta - perdió frente a Pedro Castillo"
+    }
+  ],
+  "controversias_relevantes": [
+    "Caso Cócteles (financiamiento ilícito de campañas)",
+    "Denuncias de fraude electoral en 2021",
+    "Investigación por financiamiento de estudios en EE.UU."
+  ],
+  "influencia_politica": {
+    "rol": "Figura polarizante",
+    "impacto": "Alta capacidad de movilización política y alto antivoto"
+  },
+  "fuentes": [
+    {
+      "titulo": "Perfil político y judicial de Keiko Fujimori",
+      "url": "https://www.fuente-politica-ficticia.pe/perfiles/keiko-fujimori"
+    }
+  ]
+}
+,
+
+{
+  "id": 1,
+  "nombre": "Alfonso López-Chau Nava",
+  "image_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alfonso_L%C3%B3pez-Chau.jpg/250px-Alfonso_L%C3%B3pez-Chau.jpg",
+  "partido": "Independiente / izquierda democrática",
+  "intentos_presidenciales": 1,
+  "origen": {
+    "lugar_nacimiento": "Callao",
+    "fecha_nacimiento": "1950-07-17",
+    "barrio": "Barrio Obrero Frigorífico"
+  },
+  "familia": {
+    "padre": "Luis López-Chau Curmendi",
+    "madre": "Yolanda Nava",
+    "hermanos": ["Cristina López-Chau"]
+  },
+  "educacion_escolar": {
+    "colegio": "Colegio 2 de Mayo del Callao"
+  },
+  "trayectoria_politica": {
+    "militancia_temprana": {
+      "partido": "Partido Aprista Peruano",
+      "edad_inicio": 15,
+      "edad_fin": 19,
+      "motivo_retiro": "Discrepancias ideológicas"
+    },
+    "linea_ideologica": "Izquierda democrática"
+  },
+  "procesos": {
+    "denuncias_procesadas": 0,
+    "acusaciones": [],
+    "denuncias_en_proceso": 0
+  },
+  "fuentes": [
+    {
+      "titulo": "Perfil biográfico de Alfonso López-Chau",
+      "url": "https://www.perfil-politico-ficticio.pe/candidatos/alfonso-lopez-chau"
+    }
+  ]
+}
+
+]

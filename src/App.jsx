@@ -33,7 +33,7 @@ function App() {
         <div className="min-h-screen bg-white">
           <Header />
           <main>
-            <Hero />
+            <Hero candidatesCount={candidatesData.length} />
             <CandidatesSection candidates={candidatesData} />
             <VersusSection candidates={candidatesData} />
           </main>

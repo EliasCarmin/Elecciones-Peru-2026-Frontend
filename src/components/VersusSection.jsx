@@ -12,16 +12,26 @@ const VersusSection = ({ candidates }) => {
         candidates.filter(c => selectedIds.includes(c.id)),
         [selectedIds, candidates]);
 
-    // Toggle selection
-    const toggleCandidate = (id) => {
-        setSelectedIds(prev => {
-            if (prev.includes(id)) {
-                if (prev.length <= 1) return prev; // Keep at least 1
-                return prev.filter(item => item !== id);
-            }
-            if (prev.length >= 3) return prev; // Max 3 for visual clarity
-            return [...prev, id];
-        });
+    const [searchQuery, setSearchQuery] = useState('');
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const filteredCandidates = useMemo(() => {
+        return candidates.filter(c =>
+            c.nombre.toLowerCase().includes(searchQuery.toLowerCase()) &&
+            !selectedIds.includes(c.id)
+        );
+    }, [candidates, searchQuery, selectedIds]);
+
+    const addCandidate = (id) => {
+        if (selectedIds.length >= 3) return;
+        setSelectedIds(prev => [...prev, id]);
+        setSearchQuery('');
+        setIsDropdownOpen(false);
+    };
+
+    const removeCandidate = (id) => {
+        if (selectedIds.length <= 1) return;
+        setSelectedIds(prev => prev.filter(item => item !== id));
     };
 
     // Prepare comparison data for controversial metrics
@@ -72,21 +82,98 @@ const VersusSection = ({ candidates }) => {
                     </p>
                 </motion.div>
 
-                {/* Candidate Selector */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
-                    {candidates.map((candidate) => (
-                        <button
-                            key={candidate.id}
-                            onClick={() => toggleCandidate(candidate.id)}
-                            className={`flex items-center gap-3 px-6 py-3 rounded-full border-2 transition-all ${selectedIds.includes(candidate.id)
-                                ? 'bg-peru-red border-peru-red text-white'
-                                : 'bg-white/10 border-white/20 text-gray-300 hover:bg-white/20'
-                                }`}
-                        >
-                            <div className={`w-3 h-3 rounded-full ${selectedIds.includes(candidate.id) ? 'bg-white' : 'bg-gray-500'}`}></div>
-                            <span className="font-bold">{candidate.nombre.split(' ')[0]}</span>
-                        </button>
-                    ))}
+                {/* Scalable Candidate Selector */}
+                <div className="max-w-2xl mx-auto mb-16 px-4 relative">
+                    {/* Selected Chips */}
+                    <div className="flex flex-wrap gap-2 mb-4 justify-center">
+                        <AnimatePresence>
+                            {selectedCandidates.map((candidate, index) => (
+                                <motion.div
+                                    key={candidate.id}
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.8 }}
+                                    className="flex items-center gap-2 px-4 py-2 bg-peru-red rounded-full text-sm font-bold shadow-lg"
+                                >
+                                    <div
+                                        className="w-2 h-2 rounded-full bg-white"
+                                    ></div>
+                                    {candidate.nombre.split(' ')[0]}
+                                    <button
+                                        onClick={() => removeCandidate(candidate.id)}
+                                        className="hover:text-red-200 transition-colors ml-1"
+                                    >
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </motion.div>
+                            ))}
+                        </AnimatePresence>
+                    </div>
+
+                    {/* Search Bar */}
+                    <div className="relative">
+                        <div className="relative group">
+                            <input
+                                type="text"
+                                placeholder={selectedIds.length >= 3 ? "Límite alcanzado (máx 3)" : "Buscar candidato..."}
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                onFocus={() => setIsDropdownOpen(true)}
+                                disabled={selectedIds.length >= 3}
+                                className={`w-full bg-white/10 border-2 border-white/20 rounded-2xl px-6 py-4 outline-none focus:border-peru-red/50 transition-all text-lg ${selectedIds.length >= 3 ? 'opacity-50 cursor-not-allowed' : 'group-hover:bg-white/15'
+                                    }`}
+                            />
+                            <div className="absolute right-6 top-1/2 -translate-y-1/2 text-gray-400">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        {/* Dropdown */}
+                        <AnimatePresence>
+                            {isDropdownOpen && searchQuery && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: 10 }}
+                                    className="absolute z-50 w-full mt-2 bg-gray-800 border-2 border-white/10 rounded-2xl shadow-2xl overflow-hidden max-h-60 overflow-y-auto"
+                                >
+                                    {filteredCandidates.length > 0 ? (
+                                        filteredCandidates.map(candidate => (
+                                            <button
+                                                key={candidate.id}
+                                                onClick={() => addCandidate(candidate.id)}
+                                                className="w-full text-left px-6 py-4 hover:bg-white/10 transition-colors flex items-center justify-between group"
+                                            >
+                                                <div>
+                                                    <p className="font-bold text-white group-hover:text-peru-red transition-colors">{candidate.nombre}</p>
+                                                    <p className="text-sm text-gray-400">{candidate.partido}</p>
+                                                </div>
+                                                <svg className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity text-peru-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                                                </svg>
+                                            </button>
+                                        ))
+                                    ) : (
+                                        <div className="px-6 py-8 text-center text-gray-500 italic">
+                                            No se encontraron candidatos
+                                        </div>
+                                    )}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+
+                    {/* Click away to close dropdown */}
+                    {isDropdownOpen && (
+                        <div
+                            className="fixed inset-0 z-40"
+                            onClick={() => setIsDropdownOpen(false)}
+                        ></div>
+                    )}
                 </div>
 
                 {/* Comparison UI */}

@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import CandidatesSection from './components/CandidatesSection';
 import VersusSection from './components/VersusSection';
-import VotingSection from './components/VotingSection';
+
 import Footer from './components/Footer';
 import candidatesData from './data/candidates.json';
 import './index.css';
@@ -45,7 +45,7 @@ function App() {
             <Hero candidatesCount={candidatesData.length} />
             <CandidatesSection candidates={candidatesData} />
             <VersusSection candidates={candidatesData} />
-            <VotingSection candidates={candidatesData} />
+
           </main>
           <Footer />
         </div>

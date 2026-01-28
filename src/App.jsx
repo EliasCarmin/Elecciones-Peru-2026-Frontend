@@ -13,6 +13,14 @@ import './index.css';
 function App() {
   const [loading, setLoading] = useState(true);
 
+
+
+
+
+
+
+
+
   useEffect(() => {
     // Simulate initial loading time
     const timer = setTimeout(() => {

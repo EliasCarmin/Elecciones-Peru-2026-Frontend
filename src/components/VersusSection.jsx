@@ -3,307 +3,287 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const VersusSection = ({ candidates }) => {
-    // State for selected candidates (default to first 3)
+    // Only 3 slots allowed
     const [selectedIds, setSelectedIds] = useState(candidates.slice(0, 3).map(c => c.id));
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
-    if (!candidates || candidates.length === 0) return null;
-
-    const selectedCandidates = useMemo(() =>
-        candidates.filter(c => selectedIds.includes(c.id)),
-        [selectedIds, candidates]);
-
-    const [searchQuery, setSearchQuery] = useState('');
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const selectedCandidates = useMemo(() => {
+        // Map ids to full objects, ensuring order is maintained or just pushing found ones
+        return selectedIds.map(id => candidates.find(c => c.id === id)).filter(Boolean);
+    }, [selectedIds, candidates]);
 
     const filteredCandidates = useMemo(() => {
         return candidates.filter(c =>
-            c.nombre.toLowerCase().includes(searchQuery.toLowerCase()) &&
+            (!searchTerm || c.nombre.toLowerCase().includes(searchTerm.toLowerCase())) &&
             !selectedIds.includes(c.id)
         );
-    }, [candidates, searchQuery, selectedIds]);
+    }, [candidates, searchTerm, selectedIds]);
 
-    const addCandidate = (id) => {
-        if (selectedIds.length >= 3) return;
-        setSelectedIds(prev => [...prev, id]);
-        setSearchQuery('');
-        setIsDropdownOpen(false);
+    const handleAddSlot = () => {
+        setSearchTerm('');
+        setIsSearchOpen(true);
     };
 
-    const removeCandidate = (id) => {
-        if (selectedIds.length <= 1) return;
-        setSelectedIds(prev => prev.filter(item => item !== id));
-    };
-
-    // Prepare comparison data for controversial metrics
-    const comparisonData = [
-        {
-            metric: 'Denuncias Procesadas',
-            ...selectedCandidates.reduce((acc, candidate) => {
-                const name = candidate.nombre ? candidate.nombre.split(' ')[0] : `Candidato ${candidate.id}`;
-                acc[name] = candidate.procesos?.denuncias_procesadas || 0;
-                return acc;
-            }, {})
-        },
-        {
-            metric: 'Denuncias en Proceso',
-            ...selectedCandidates.reduce((acc, candidate) => {
-                const name = candidate.nombre ? candidate.nombre.split(' ')[0] : `Candidato ${candidate.id}`;
-                acc[name] = candidate.procesos?.denuncias_en_proceso || 0;
-                return acc;
-            }, {})
-        },
-        {
-            metric: 'Total Acusaciones',
-            ...selectedCandidates.reduce((acc, candidate) => {
-                const name = candidate.nombre ? candidate.nombre.split(' ')[0] : `Candidato ${candidate.id}`;
-                acc[name] = candidate.procesos?.acusaciones?.length || 0;
-                return acc;
-            }, {})
+    const handleSelectCandidate = (id) => {
+        if (selectedIds.length < 3) {
+            setSelectedIds([...selectedIds, id]);
         }
+        setIsSearchOpen(false);
+        setSearchTerm('');
+    };
+
+    const handleRemoveCandidate = (id) => {
+        setSelectedIds(prev => prev.filter(currId => currId !== id));
+    };
+
+    // Helper data extraction (reused logic)
+    const getLegalInfo = (candidate) => {
+        let procesadas = 0;
+        let enProceso = 0;
+        let acusacionesArr = [];
+
+        if (candidate.procesos) {
+            procesadas = candidate.procesos.denuncias_procesadas || 0;
+            enProceso = candidate.procesos.denuncias_en_proceso || 0;
+            acusacionesArr = candidate.procesos.acusaciones || [];
+        } else if (candidate.controversias) {
+            procesadas = candidate.controversias.denuncias_procesadas || 0;
+            enProceso = candidate.controversias.denuncias_en_proceso || 0;
+            acusacionesArr = candidate.controversias.acusaciones || [];
+        }
+        return { procesadas, enProceso, countAcusaciones: acusacionesArr.length };
+    };
+
+    const getCargos = (candidate) => {
+        if (candidate.cargos_principales?.length > 0) return candidate.cargos_principales[0];
+        if (candidate.trayectoria_politica?.cargos_publicos?.length > 0) {
+            const c = candidate.trayectoria_politica.cargos_publicos[0];
+            return typeof c === 'string' ? c : `${c.cargo} (${c.periodo})`;
+        }
+        return "Sin información";
+    };
+
+    // Prepare chart data
+    const chartData = [
+        { name: 'Procesadas', ...selectedCandidates.reduce((acc, c) => ({ ...acc, [c.nombre.split(' ')[0]]: getLegalInfo(c).procesadas }), {}) },
+        { name: 'En Proceso', ...selectedCandidates.reduce((acc, c) => ({ ...acc, [c.nombre.split(' ')[0]]: getLegalInfo(c).enProceso }), {}) },
     ];
 
-    const colors = ['#D91023', '#FF4757', '#FF6B81'];
+    const colors = ['#e11d48', '#d97706', '#2563eb']; // Red, Amber, Blueish
 
     return (
-        <section className="py-12 md:py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
+        <section className="py-12 md:py-20 bg-gray-900 text-white min-h-screen">
             <div className="container mx-auto px-4">
-                <motion.div
-                    className="text-center mb-12"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                        Comparación de <span className="text-peru-red">Candidatos</span>
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                        Versus de <span className="text-peru-red">Candidatos</span>
                     </h2>
-                    <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                        Selecciona hasta 3 candidatos para comparar sus métricas y trayectoria
+                    <p className="text-gray-400 max-w-2xl mx-auto">
+                        Selecciona hasta 3 candidatos para comparar su trayectoria legal y política.
                     </p>
-                </motion.div>
-
-                {/* Scalable Candidate Selector */}
-                <div className="max-w-2xl mx-auto mb-16 px-4 relative">
-                    {/* Selected Chips */}
-                    <div className="flex flex-wrap gap-2 mb-4 justify-center">
-                        <AnimatePresence>
-                            {selectedCandidates.map((candidate, index) => (
-                                <motion.div
-                                    key={candidate.id}
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    exit={{ opacity: 0, scale: 0.8 }}
-                                    className="flex items-center gap-2 px-4 py-2 bg-peru-red rounded-full text-sm font-bold shadow-lg"
-                                >
-                                    <div
-                                        className="w-2 h-2 rounded-full bg-white"
-                                    ></div>
-                                    {candidate.nombre.split(' ')[0]}
-                                    <button
-                                        onClick={() => removeCandidate(candidate.id)}
-                                        className="hover:text-red-200 transition-colors ml-1"
-                                    >
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
-                                </motion.div>
-                            ))}
-                        </AnimatePresence>
-                    </div>
-
-                    {/* Search Bar */}
-                    <div className="relative">
-                        <div className="relative group">
-                            <input
-                                type="text"
-                                placeholder={selectedIds.length >= 3 ? "Límite alcanzado (máx 3)" : "Buscar candidato..."}
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                                onFocus={() => setIsDropdownOpen(true)}
-                                disabled={selectedIds.length >= 3}
-                                className={`w-full bg-white/10 border-2 border-white/20 rounded-2xl px-6 py-4 outline-none focus:border-peru-red/50 transition-all text-lg ${selectedIds.length >= 3 ? 'opacity-50 cursor-not-allowed' : 'group-hover:bg-white/15'
-                                    }`}
-                            />
-                            <div className="absolute right-6 top-1/2 -translate-y-1/2 text-gray-400">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        {/* Dropdown */}
-                        <AnimatePresence>
-                            {isDropdownOpen && searchQuery && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: 10 }}
-                                    className="absolute z-50 w-full mt-2 bg-gray-800 border-2 border-white/10 rounded-2xl shadow-2xl overflow-hidden max-h-60 overflow-y-auto"
-                                >
-                                    {filteredCandidates.length > 0 ? (
-                                        filteredCandidates.map(candidate => (
-                                            <button
-                                                key={candidate.id}
-                                                onClick={() => addCandidate(candidate.id)}
-                                                className="w-full text-left px-6 py-4 hover:bg-white/10 transition-colors flex items-center justify-between group"
-                                            >
-                                                <div>
-                                                    <p className="font-bold text-white group-hover:text-peru-red transition-colors">{candidate.nombre}</p>
-                                                    <p className="text-sm text-gray-400">{candidate.partido}</p>
-                                                </div>
-                                                <svg className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity text-peru-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                                                </svg>
-                                            </button>
-                                        ))
-                                    ) : (
-                                        <div className="px-6 py-8 text-center text-gray-500 italic">
-                                            No se encontraron candidatos
-                                        </div>
-                                    )}
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-
-                    {/* Click away to close dropdown */}
-                    {isDropdownOpen && (
-                        <div
-                            className="fixed inset-0 z-40"
-                            onClick={() => setIsDropdownOpen(false)}
-                        ></div>
-                    )}
                 </div>
 
-                {/* Comparison UI */}
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={selectedIds.join(',')}
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.95 }}
-                        transition={{ duration: 0.4 }}
-                    >
-                        {/* Main Comparison Chart */}
-                        <div className="bg-white rounded-2xl p-6 md:p-8 mb-8 shadow-2xl">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                                Análisis Comparativo de Procesos Legales
-                            </h3>
-                            <div className="h-[400px] w-full">
-                                <ResponsiveContainer width="100%" height="100%">
-                                    <BarChart data={comparisonData}>
-                                        <CartesianGrid strokeDasharray="3 3" />
-                                        <XAxis dataKey="metric" stroke="#374151" />
-                                        <YAxis stroke="#374151" />
-                                        <Tooltip
-                                            contentStyle={{ backgroundColor: '#fff', border: '2px solid #D91023', color: '#000' }}
-                                            itemStyle={{ color: '#000' }}
-                                        />
-                                        <Legend />
-                                        {selectedCandidates.map((candidate, index) => {
-                                            const name = candidate.nombre ? candidate.nombre.split(' ')[0] : `Candidato ${candidate.id}`;
-                                            return (
-                                                <Bar
-                                                    key={candidate.id}
-                                                    dataKey={name}
-                                                    fill={colors[index % colors.length]}
-                                                    radius={[8, 8, 0, 0]}
-                                                />
-                                            );
-                                        })}
+                {/* SLOTS SELECTION AREA */}
+                <div className="flex flex-wrap justify-center gap-4 mb-16">
+                    {/* Render existing slots */}
+                    {selectedCandidates.map((candidate) => (
+                        <motion.div
+                            key={candidate.id}
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            className="relative w-32 md:w-40 flex flex-col items-center group"
+                        >
+                            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-gray-700 group-hover:border-peru-red transition-colors shadow-lg bg-gray-800">
+                                <img
+                                    src={candidate.image_url || candidate.img}
+                                    alt={candidate.nombre}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <p className="mt-2 text-sm font-bold text-center leading-tight">{candidate.nombre.split(' ')[0]} {candidate.nombre.split(' ')[1]}</p>
+                            <button
+                                onClick={() => handleRemoveCandidate(candidate.id)}
+                                className="absolute -top-1 -right-1 bg-red-600 rounded-full p-1 shadow-md hover:bg-red-700 transition-colors"
+                            >
+                                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                            </button>
+                        </motion.div>
+                    ))}
+
+                    {/* Empty Slots */}
+                    {Array.from({ length: 3 - selectedCandidates.length }).map((_, idx) => (
+                        <div key={`empty-${idx}`} className="w-32 md:w-40 flex flex-col items-center justify-center">
+                            <button
+                                onClick={handleAddSlot}
+                                className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-dashed border-gray-700 flex items-center justify-center hover:border-gray-500 hover:bg-gray-800 transition-all group"
+                            >
+                                <span className="text-4xl text-gray-700 group-hover:text-gray-500">+</span>
+                            </button>
+                            <p className="mt-2 text-sm text-gray-500 font-medium">Agregar Candidato</p>
+                        </div>
+                    ))}
+                </div>
+
+                {/* SEARCH MODAL */}
+                <AnimatePresence>
+                    {isSearchOpen && (
+                        <motion.div
+                            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+                            onClick={() => setIsSearchOpen(false)}
+                        >
+                            <motion.div
+                                initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
+                                className="bg-gray-800 w-full max-w-lg rounded-2xl border border-gray-700 shadow-2xl overflow-hidden"
+                                onClick={e => e.stopPropagation()}
+                            >
+                                <div className="p-6 border-b border-gray-700">
+                                    <h3 className="text-xl font-bold text-white mb-4">Seleccionar Candidato</h3>
+                                    <input
+                                        autoFocus
+                                        type="text"
+                                        placeholder="Buscar..."
+                                        className="w-full bg-gray-900 border border-gray-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-peru-red"
+                                        value={searchTerm}
+                                        onChange={e => setSearchTerm(e.target.value)}
+                                    />
+                                </div>
+                                <div className="max-h-80 overflow-y-auto">
+                                    {filteredCandidates.map(c => (
+                                        <button
+                                            key={c.id}
+                                            className="w-full text-left px-6 py-4 hover:bg-gray-700 flex items-center gap-4 transition-colors border-b border-gray-700/5 last:border-0"
+                                            onClick={() => handleSelectCandidate(c.id)}
+                                        >
+                                            <div className="w-10 h-10 rounded-full bg-gray-600 overflow-hidden">
+                                                <img src={c.image_url || c.img} className="w-full h-full object-cover" alt="" />
+                                            </div>
+                                            <div>
+                                                <p className="font-bold text-white">{c.nombre}</p>
+                                                <p className="text-xs text-gray-400">{c.partido}</p>
+                                            </div>
+                                        </button>
+                                    ))}
+                                    {searchTerm && filteredCandidates.length === 0 && (
+                                        <div className="p-8 text-center text-gray-500">No se encontraron resultados</div>
+                                    )}
+                                </div>
+                                <div className="p-4 bg-gray-900 border-t border-gray-700 flex justify-end">
+                                    <button onClick={() => setIsSearchOpen(false)} className="text-gray-400 hover:text-white font-medium">Cancelar</button>
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                {/* COMPARISON MATRIX & CHARTS */}
+                {selectedCandidates.length > 0 && (
+                    <div className="grid lg:grid-cols-3 gap-8">
+                        {/* CHART SECTION (Left on large screens) */}
+                        <div className="lg:col-span-1 bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+                            <h3 className="text-xl font-bold mb-6 text-center text-gray-200">Resumen Legal</h3>
+                            <div className="h-64 w-full">
+                                <ResponsiveContainer>
+                                    <BarChart data={chartData}>
+                                        <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                        <XAxis dataKey="name" stroke="#9ca3af" fontSize={12} />
+                                        <YAxis stroke="#9ca3af" fontSize={12} />
+                                        <Tooltip contentStyle={{ backgroundColor: '#1f2937', borderColor: '#374151', color: '#fff' }} cursor={{ fill: '#374151', opacity: 0.2 }} />
+                                        {selectedCandidates.map((c, i) => (
+                                            <Bar key={c.id} dataKey={c.nombre.split(' ')[0]} fill={colors[i % colors.length]} radius={[4, 4, 0, 0]} />
+                                        ))}
                                     </BarChart>
                                 </ResponsiveContainer>
                             </div>
                         </div>
 
-                        {/* Individual Comparison Cards */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {selectedCandidates.map((candidate, index) => {
-                                const name = candidate.nombre ? candidate.nombre.split(' ')[0] : `Candidato ${candidate.id}`;
-                                return (
-                                    <motion.div
-                                        key={candidate.id}
-                                        className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border-2 border-white/10 relative overflow-hidden group"
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: index * 0.1 }}
-                                    >
-                                        <div
-                                            className="absolute top-0 right-0 w-32 h-32 bg-peru-red opacity-10 blur-3xl -mr-16 -mt-16 group-hover:opacity-20 transition-opacity"
-                                        ></div>
-
-                                        <div className="flex items-center gap-3 mb-6 relative z-10">
-                                            <div
-                                                className="w-4 h-4 rounded-full"
-                                                style={{ backgroundColor: colors[index % colors.length] }}
-                                            ></div>
-                                            <h3 className="text-2xl font-bold">{name}</h3>
-                                        </div>
-
-                                        <div className="space-y-4 relative z-10">
-                                            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                                                <p className="text-sm text-gray-400 mb-1">Denuncias Procesadas</p>
-                                                <p className="text-4xl font-black text-peru-red">
-                                                    {candidate.procesos?.denuncias_procesadas || 0}
-                                                </p>
-                                            </div>
-
-                                            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                                                <p className="text-sm text-gray-400 mb-1">En Proceso</p>
-                                                <p className="text-4xl font-black text-peru-red">
-                                                    {candidate.procesos?.denuncias_en_proceso || 0}
-                                                </p>
-                                            </div>
-
-                                            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                                                <p className="text-sm text-gray-400 mb-1">Acusaciones</p>
-                                                <p className="text-4xl font-black text-peru-red">
-                                                    {candidate.procesos?.acusaciones?.length || 0}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                );
-                            })}
-                        </div>
-                    </motion.div>
-                </AnimatePresence>
-
-                {/* Global Summary */}
-                <motion.div
-                    className="mt-16 bg-gradient-to-r from-peru-red/10 to-transparent backdrop-blur-md rounded-2xl p-8 border border-peru-red/20"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                >
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        <div className="text-center">
-                            <p className="text-5xl font-black text-peru-red">
-                                {candidates.reduce((sum, c) => sum + (c.procesos?.denuncias_procesadas || 0), 0)}
-                            </p>
-                            <p className="text-sm text-gray-400 mt-2 uppercase tracking-widest font-bold">Total Denuncias</p>
-                        </div>
-                        <div className="text-center">
-                            <p className="text-5xl font-black text-peru-red">
-                                {candidates.reduce((sum, c) => sum + (c.procesos?.denuncias_en_proceso || 0), 0)}
-                            </p>
-                            <p className="text-sm text-gray-400 mt-2 uppercase tracking-widest font-bold">En Proceso</p>
-                        </div>
-                        <div className="text-center">
-                            <p className="text-5xl font-black text-peru-red">
-                                {candidates.reduce((sum, c) => sum + (c.procesos?.acusaciones?.length || 0), 0)}
-                            </p>
-                            <p className="text-sm text-gray-400 mt-2 uppercase tracking-widest font-bold">Acusaciones</p>
-                        </div>
-                        <div className="text-center">
-                            <p className="text-5xl font-black text-white">
-                                {candidates.length}
-                            </p>
-                            <p className="text-sm text-gray-400 mt-2 uppercase tracking-widest font-bold">Candidatos</p>
+                        {/* MATRIX SECTION */}
+                        <div className="lg:col-span-2 bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden">
+                            {/* Scroll container for mobile */}
+                            <div className="overflow-x-auto">
+                                <table className="w-full min-w-[600px]">
+                                    <thead>
+                                        <tr className="bg-gray-900/50 border-b border-gray-700">
+                                            <th className="p-4 text-left w-1/4 text-gray-400 font-medium text-sm uppercase tracking-wider">Métrica</th>
+                                            {selectedCandidates.map(c => (
+                                                <th key={c.id} className="p-4 text-center w-1/4">
+                                                    <span className="text-white font-bold block">{c.nombre.split(' ')[0]}</span>
+                                                </th>
+                                            ))}
+                                            {/* Fill empty columns if less than 3 */}
+                                            {Array.from({ length: 3 - selectedCandidates.length }).map((_, i) => <th key={i} className="p-4 w-1/4"></th>)}
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-gray-700">
+                                        <tr>
+                                            <td className="p-4 text-gray-300 font-medium">Partido Político</td>
+                                            {selectedCandidates.map(c => (
+                                                <td key={c.id} className="p-4 text-center text-sm text-gray-400">{c.partido}</td>
+                                            ))}
+                                            {Array.from({ length: 3 - selectedCandidates.length }).map((_, i) => <td key={i}></td>)}
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 text-gray-300 font-medium">Cargo Principal</td>
+                                            {selectedCandidates.map(c => (
+                                                <td key={c.id} className="p-4 text-center text-sm text-gray-400">{getCargos(c)}</td>
+                                            ))}
+                                            {Array.from({ length: 3 - selectedCandidates.length }).map((_, i) => <td key={i}></td>)}
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 text-gray-300 font-medium flex items-center gap-2">
+                                                ⚖️ Denuncias Procesadas
+                                            </td>
+                                            {selectedCandidates.map(c => {
+                                                const { procesadas } = getLegalInfo(c);
+                                                return (
+                                                    <td key={c.id} className="p-4 text-center">
+                                                        <span className={`text-xl font-bold ${procesadas > 0 ? 'text-amber-500' : 'text-green-500'}`}>
+                                                            {procesadas}
+                                                        </span>
+                                                    </td>
+                                                )
+                                            })}
+                                            {Array.from({ length: 3 - selectedCandidates.length }).map((_, i) => <td key={i}></td>)}
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 text-gray-300 font-medium flex items-center gap-2">
+                                                ⚠️ En Proceso
+                                            </td>
+                                            {selectedCandidates.map(c => {
+                                                const { enProceso } = getLegalInfo(c);
+                                                return (
+                                                    <td key={c.id} className="p-4 text-center">
+                                                        <span className={`text-xl font-bold ${enProceso > 0 ? 'text-orange-500' : 'text-green-500'}`}>
+                                                            {enProceso}
+                                                        </span>
+                                                    </td>
+                                                )
+                                            })}
+                                            {Array.from({ length: 3 - selectedCandidates.length }).map((_, i) => <td key={i}></td>)}
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 text-gray-300 font-medium flex items-center gap-2">
+                                                📋 Acusaciones
+                                            </td>
+                                            {selectedCandidates.map(c => {
+                                                const { countAcusaciones } = getLegalInfo(c);
+                                                return (
+                                                    <td key={c.id} className="p-4 text-center">
+                                                        <span className={`text-lg font-bold text-gray-200`}>
+                                                            {countAcusaciones}
+                                                        </span>
+                                                    </td>
+                                                )
+                                            })}
+                                            {Array.from({ length: 3 - selectedCandidates.length }).map((_, i) => <td key={i}></td>)}
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </motion.div>
+                )}
             </div>
         </section>
     );

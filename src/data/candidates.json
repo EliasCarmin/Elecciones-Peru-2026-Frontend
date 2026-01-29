@@ -388,7 +388,7 @@
 {
   "id": 9,
   "nombre": "Enrique Valderrama Peña",
-  "image_url": "https://semanarioexpresion.com/Presentacion/img/noticias/cl_entrevistas//Valderrama1388.jpg",
+  "image_url": "https://www.canalb.pe/assets/uploads/images/32e78-29c34c86-3deb-46f2-95b8-95b934adbb5b.jpeg",
   "partido": "Partido Aprista Peruano",
   "intentos_presidenciales": 1,
   "datos_personales": {
@@ -685,6 +685,218 @@
     {
       "titulo": "Perfil biográfico y político de Wolfgang Grozo",
       "url": "https://www.perfil-politico-ficticio.pe/candidatos/wolfgang-grozo"
+    }
+  ]
+}
+,
+{
+  "id": 12,
+  "nombre": "Carlos Álvarez Cáceres",
+  "image_url": "https://elcomercio.pe/resizer/v2/MGIMSICCXFBNNNL6FR26BLKNJI.jpg?auth=c8ff19dad1944b6135dd7f44ec8f33fbc0e339685f2dd9a7e511ad38b2b83f38&width=1200&height=1200&quality=75&smart=true",
+  "partido": "País para Todos",
+  "intentos_presidenciales": 1,
+  "datos_personales": {
+    "fecha_nacimiento": "1964-01-07",
+    "lugar_nacimiento": "Santa Beatriz, Lima, Perú",
+    "familia": {
+      "hermanos": [
+        {
+          "nombre": "Arturo Álvarez",
+          "profesion": "Comediante"
+        }
+      ],
+      "posicion_familiar": "Segundo de tres hermanos"
+    }
+  },
+  "formacion": {
+    "educacion_escolar": {
+      "institucion": "Institución Educativa Emblemática Nuestra Señora de Guadalupe",
+      "promocion": "G-80 \"Jorge Basadre\""
+    },
+    "educacion_superior": {
+      "estudios": "Academia preuniversitaria para Derecho – UNMSM",
+      "titulo_obtenido": false
+    }
+  },
+  "trayectoria_artistica": {
+    "inicio": {
+      "anio": 1983,
+      "programa": "Trampolín a la Fama",
+      "descubridor": "Tulio Loza"
+    },
+    "roles": [
+      "Actor cómico",
+      "Humorista político",
+      "Presentador de televisión"
+    ],
+    "programas_destacados": [
+      "Risas y Salsa",
+      "Las mil y una de Carlos Álvarez",
+      "El especial del humor",
+      "El cártel del humor"
+    ],
+    "estilo": "Imitaciones de figuras políticas nacionales e internacionales"
+  },
+  "trayectoria_politica": {
+    "ingreso_politico": {
+      "anio": 2024,
+      "partido": "País para Todos"
+    },
+    "candidatura_presidencial_2026": {
+      "cargo": "Presidente de la República",
+      "contexto": "Paso del humor político a la política activa",
+      "estrategia": "Campaña basada en alto nivel de reconocimiento público"
+    }
+  },
+  "aspectos_positivos": [
+    "Alto nivel de conocimiento público a nivel nacional",
+    "Amplia capacidad comunicativa y conexión con el electorado",
+    "Conocimiento profundo de la clase política por su trayectoria satírica",
+    "Décadas de experiencia en medios de comunicación",
+    "Capacidad para instalar temas en la agenda pública"
+  ],
+  "controversias": {
+    "denuncias_procesadas": 0,
+    "acusaciones": [],
+    "cuestionamientos_publicos": [
+      {
+        "caso": "Omisión de bien en Hoja de Vida",
+        "detalle": "Presunta omisión de un vehículo Mazda CX-90 modelo 2025 valorizado en aproximadamente S/160,000",
+        "situacion": "El vehículo está registrado a nombre de su empresa; en evaluación por el JNE"
+      },
+      {
+        "caso": "Exposición de vida privada",
+        "detalle": "Presión mediática sobre su orientación sexual",
+        "respuesta": "Uso del humor para trivializar el tema y cerrar la controversia"
+      }
+    ]
+  },
+  "perfil_publico": {
+    "imagen": "Figura mediática con transición del entretenimiento a la política",
+    "percepcion": "Valorado por su cercanía y comunicación directa; cuestionado por falta de experiencia en gestión pública",
+    "fortaleza_clave": "Reconocimiento y recordación masiva"
+  },
+  "fuentes": [
+    {
+      "titulo": "Biografía de Carlos Álvarez",
+      "url": "https://www.perfil-politico-ficticio.pe/candidatos/carlos-alvarez"
+    }
+  ]
+}
+,
+{
+  "id": 13,
+  "nombre": "Luis Fernando Olivera Vega",
+  "image_url": "https://portal.andina.pe/EDPfotografia/Thumbnail/2015/09/14/000313912W.jpg",
+  "nombre_publico": "Fernando Olivera",
+  "apodo": "Popy",
+  "partido": "Frente de la Esperanza",
+  "intentos_presidenciales": 1,
+  "datos_personales": {
+    "fecha_nacimiento": "1958-07-26",
+    "lugar_nacimiento": "Lima, Perú",
+    "familia": {
+      "padre": "Luis Olivera Balmaceda",
+      "madre": "Zoila Vega Zavala"
+    }
+  },
+  "formacion": {
+    "educacion_escolar": [
+      "Escuela fiscal de Magdalena",
+      "Gran Unidad Escolar Pedro Gálvez Egúsquiza",
+      "Colegio Tomás Alva Edison",
+      "Colegio Cooperativo Monterrico"
+    ],
+    "pregrado": "Administración de Empresas – Universidad del Pacífico (1980)",
+    "postgrado": "Maestría en Relaciones Internacionales – Universidad Complutense de Madrid (2008)"
+  },
+  "trayectoria_politica": {
+    "militancia_inicial": {
+      "partido": "Partido Popular Cristiano (PPC)",
+      "roles": [
+        "Miembro de la Comisión Nacional de Juventudes",
+        "Secretario Nacional de Prensa"
+      ]
+    },
+    "cargos_relevantes": [
+      {
+        "cargo": "Fiscal Provincial de Lima",
+        "periodo": "1981-1985",
+        "detalle": "Fiscal más joven en la historia del Ministerio Público"
+      },
+      {
+        "cargo": "Diputado por Lima",
+        "periodo": "1985-1990"
+      },
+      {
+        "cargo": "Congresista",
+        "periodo": "1992-2001"
+      },
+      {
+        "cargo": "Ministro de Justicia",
+        "periodo": "2001-2002",
+        "gobierno": "Alejandro Toledo"
+      },
+      {
+        "cargo": "Embajador del Perú en España",
+        "periodo": "2002-2005"
+      },
+      {
+        "cargo": "Ministro de Relaciones Exteriores",
+        "periodo": "2005",
+        "detalle": "Gestión de pocos días tras crisis política"
+      }
+    ],
+    "fundaciones_politicas": [
+      {
+        "nombre": "Frente Independiente Moralizador (FIM)",
+        "anio": 1990,
+        "simbolo": "Escoba"
+      }
+    ],
+    "candidatura_presidencial_2026": {
+      "partido": "Frente de la Esperanza",
+      "propuestas_clave": [
+        "Implementar el sistema de jurados populares",
+        "Lucha frontal contra la corrupción judicial"
+      ]
+    }
+  },
+  "aspectos_positivos": [
+    "Figura clave en la lucha anticorrupción durante la caída del régimen de Alberto Fujimori",
+    "Protagonista en la difusión del primer Vladivideo (Kouri–Montesinos)",
+    "Amplia experiencia legislativa, ejecutiva y diplomática",
+    "Imagen pública asociada a la fiscalización y denuncia política",
+    "Capacidad para influir en la agenda mediática y política nacional"
+  ],
+  "controversias": {
+    "estilo_politico": [
+      "Discurso confrontacional y confrontación directa con adversarios políticos"
+    ],
+    "episodios_polemicos": [
+      {
+        "caso": "Enfrentamiento histórico con Alan García",
+        "detalle": "Investigaciones y confrontaciones públicas desde 1990 hasta el debate presidencial de 2016"
+      },
+      {
+        "caso": "Cancillería 2005",
+        "detalle": "Su nombramiento provocó la renuncia del premier Carlos Ferrero y la caída del gabinete"
+      }
+    ],
+    "cuestionamientos_publicos": [
+      "Críticas por su estilo político confrontacional",
+      "Percepción de polarización en su discurso"
+    ]
+  },
+  "perfil_publico": {
+    "imagen": "Político anticorrupción y fiscalizador histórico",
+    "percepcion": "Valorado por su rol en la caída del fujimorismo y cuestionado por su estilo confrontacional",
+    "simbolo": "Escoba como representación de lucha contra la corrupción"
+  },
+  "fuentes": [
+    {
+      "titulo": "Perfil político de Fernando Olivera",
+      "url": "https://www.perfil-politico-ficticio.pe/candidatos/fernando-olivera"
     }
   ]
 }

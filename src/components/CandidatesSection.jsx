@@ -5,6 +5,18 @@ import CandidateDetail from './CandidateDetail';
 
 const CandidatesSection = ({ candidates }) => {
     const [selectedCandidate, setSelectedCandidate] = useState(null);
+    const [visibleCount, setVisibleCount] = useState(5);
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const filteredCandidates = candidates.filter(candidate => {
+        const term = searchTerm.toLowerCase();
+        return (
+            candidate.nombre.toLowerCase().includes(term) ||
+            candidate.partido.toLowerCase().includes(term)
+        );
+    });
+
+    const visibleCandidates = filteredCandidates.slice(0, visibleCount);
 
     return (
         <section className="py-12 md:py-20 bg-gray-50">
@@ -24,8 +36,23 @@ const CandidatesSection = ({ candidates }) => {
                     </p>
                 </motion.div>
 
+                <div className="mb-12 max-w-xl mx-auto">
+                    <div className="relative">
+                        <input
+                            type="text"
+                            placeholder="Buscar candidato por nombre o partido..."
+                            className="w-full px-6 py-4 rounded-full border-2 border-gray-200 focus:border-peru-red focus:outline-none text-lg shadow-sm"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                        <span className="absolute right-6 top-1/2 transform -translate-y-1/2 text-2xl">
+                            🔍
+                        </span>
+                    </div>
+                </div>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8 justify-center">
-                    {candidates.map((candidate, index) => (
+                    {visibleCandidates.map((candidate, index) => (
                         <motion.div
                             key={candidate.id}
                             initial={{ opacity: 0, y: 50 }}
@@ -40,6 +67,17 @@ const CandidatesSection = ({ candidates }) => {
                         </motion.div>
                     ))}
                 </div>
+
+                {visibleCount < filteredCandidates.length && (
+                    <div className="text-center mt-12">
+                        <button
+                            onClick={() => setVisibleCount(prev => prev + 5)}
+                            className="bg-white border-2 border-peru-red text-peru-red hover:bg-peru-red hover:text-white px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-md"
+                        >
+                            Ver más candidatos ({Math.min(5, filteredCandidates.length - visibleCount)} más)
+                        </button>
+                    </div>
+                )}
             </div>
 
             <AnimatePresence>

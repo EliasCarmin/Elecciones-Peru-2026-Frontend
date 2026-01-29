@@ -4,6 +4,65 @@ import { useState } from 'react';
 const CandidateCard = ({ candidate, onClick }) => {
     const [imageError, setImageError] = useState(false);
 
+    // Helper function to normalize positions/jobs data
+    const getCargos = () => {
+        if (candidate.cargos_principales && candidate.cargos_principales.length > 0) {
+            return candidate.cargos_principales;
+        }
+
+        // Handle nested structure from different JSON schemas
+        if (candidate.trayectoria_politica?.cargos_publicos) {
+            return candidate.trayectoria_politica.cargos_publicos.map(c =>
+                typeof c === 'string' ? c : `${c.cargo} (${c.periodo})`
+            );
+        }
+
+        if (candidate.trayectoria_publica?.gestion_publica) {
+            return candidate.trayectoria_publica.gestion_publica.map(c =>
+                `${c.cargo} (${c.periodo || ''})`
+            );
+        }
+
+        if (candidate.trayectoria_militar?.cargos_relevantes) {
+            return candidate.trayectoria_militar.cargos_relevantes;
+        }
+
+        if (candidate.trayectoria_politica?.cargos_partidarios) {
+            return candidate.trayectoria_politica.cargos_partidarios.map(c =>
+                `${c.cargo} - ${c.organizacion || c.partido || ''}`
+            );
+        }
+
+        return [];
+    };
+
+    // Helper function to normalize legal processes data
+    const getProcesos = () => {
+        let procesadas = 0;
+        let enProceso = 0;
+
+        // Structure 1: Direct 'procesos' object
+        if (candidate.procesos) {
+            procesadas = candidate.procesos.denuncias_procesadas || 0;
+            enProceso = candidate.procesos.denuncias_en_proceso || 0;
+        }
+        // Structure 2: Inside 'controversias'
+        else if (candidate.controversias) {
+            procesadas = candidate.controversias.denuncias_procesadas || 0;
+            // Some schemas might have 'denuncias_en_proceso' here or not
+            enProceso = candidate.controversias.denuncias_en_proceso || 0;
+        }
+
+        return { procesadas, enProceso };
+    };
+
+    const cargos = getCargos();
+    const procesosInfo = getProcesos();
+    const hasLegalIssues = procesosInfo.procesadas > 0 || procesosInfo.enProceso > 0;
+
+    // Color for legal issues - using Amber/Ochre instead of Red
+    const legalStatusColor = hasLegalIssues ? "text-amber-700 font-bold" : "text-gray-600";
+
     return (
         <motion.div
             className="bg-white rounded-xl shadow-peru overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
@@ -41,30 +100,29 @@ const CandidateCard = ({ candidate, onClick }) => {
                 <p className="text-peru-red font-semibold mb-4">{candidate.partido}</p>
 
                 <div className="space-y-3">
-                    {candidate.cargos_principales && candidate.cargos_principales.length > 0 && (
+                    {cargos.length > 0 && (
                         <div className="flex items-start gap-2">
                             <span className="text-2xl">📋</span>
                             <div className="flex-1">
                                 <p className="text-sm font-semibold text-gray-700">Cargos principales:</p>
                                 <p className="text-sm text-gray-600 line-clamp-2">
-                                    {candidate.cargos_principales[0]}
+                                    {cargos[0]}
                                 </p>
                             </div>
                         </div>
                     )}
 
-                    {candidate.procesos && (
-                        <div className="flex items-start gap-2">
-                            <span className="text-2xl">⚖️</span>
-                            <div className="flex-1">
-                                <p className="text-sm font-semibold text-gray-700">Procesos:</p>
-                                <p className="text-sm text-gray-600">
-                                    {candidate.procesos.denuncias_procesadas || 0} denuncias procesadas
-                                    {candidate.procesos.denuncias_en_proceso > 0 ? `, ${candidate.procesos.denuncias_en_proceso} en proceso` : ''}
-                                </p>
-                            </div>
+                    <div className="flex items-start gap-2">
+                        <span className="text-2xl">⚖️</span>
+                        <div className="flex-1">
+                            <p className="text-sm font-semibold text-gray-700">Procesos:</p>
+                            <p className={`text-sm ${legalStatusColor}`}>
+                                {procesosInfo.procesadas} denuncias procesadas
+                                {procesosInfo.enProceso > 0 ? `, ${procesosInfo.enProceso} en proceso` : ''}
+                                {hasLegalIssues && <span className="ml-1">⚠️</span>}
+                            </p>
                         </div>
-                    )}
+                    </div>
                 </div>
 
                 <button className="mt-6 w-full bg-peru-red text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">

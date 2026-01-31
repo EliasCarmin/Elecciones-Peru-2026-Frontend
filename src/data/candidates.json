@@ -48,7 +48,16 @@
             {
                 "titulo": "Perfil biográfico y trayectoria política de César Acuña",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/cesar-acuna"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Cesar Acuña.pdf"
             }
+        ],
+        "educacion": [
+            "Universidad Autónoma",
+            "Universidad Nacional",
+            "Universidad Hispana"
         ]
     },
     {
@@ -105,7 +114,14 @@
             {
                 "titulo": "Perfil político y trayectoria de Keiko Fujimori",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/keiko-fujimori"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Keiko Fujimori.pdf"
             }
+        ],
+        "educacion": [
+            "Universidad Estatal"
         ]
     },
     {
@@ -133,6 +149,10 @@
             {
                 "titulo": "Perfil biográfico de Alfonso López-Chau",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/alfonso-lopez-chau"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Alfonso López.pdf"
             }
         ]
     },
@@ -172,7 +192,14 @@
             {
                 "titulo": "Perfil político y militar de José Williams Zapata",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/jose-williams"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "José Williams.pdf"
             }
+        ],
+        "educacion": [
+            "Universidad San"
         ]
     },
     {
@@ -207,7 +234,14 @@
             {
                 "titulo": "Perfil político y municipal de Álvaro Paz de la Barra",
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/alvaro-paz-de-la-barra"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Álvaro Paz de la Barra.pdf"
             }
+        ],
+        "educacion": [
+            "Universidad Nacional Mayor"
         ]
     },
     {
@@ -283,796 +317,829 @@
                 "url": "https://www.perfil-politico-ficticio.pe/candidatos/fiorella-molinelli"
             }
         ]
-    }
-    ,
+    },
     {
-  "id": 8,
-  "nombre": "Ricardo Belmont Cassinelli",
-  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ricardo_Belmont_3.jpg",
-  "partido": "Partido Cívico Obras",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1945-08-29",
-    "lugar_nacimiento": "Lima, Perú",
-    "familia": {
-      "padre": "Augusto Belmont Bar",
-      "madre": "Cristina Cassinelli Inurritegui"
-    }
-  },
-  "formacion": {
-    "educacion_escolar": [
-      "Colegio Inmaculado Corazón",
-      "Colegio Santa María Marianistas"
-    ],
-    "pregrado": "Administración – Universidad de Lima"
-  },
-  "perfil_empresarial_y_mediatico": {
-    "empresas": [
-      {
-        "nombre": "RBC Televisión (Red Bicolor de Comunicaciones)",
-        "fundacion": 1966,
-        "rol": "Propietario"
-      }
-    ],
-    "radios": [
-      "RBC La Estación",
-      "Okey Radio",
-      "Viva FM"
-    ],
-    "programas_tv": [
-      "A fondo",
-      "El diario del aire"
-    ]
-  },
-  "trayectoria_politica": {
-    "cargos_publicos": [
-      {
-        "cargo": "Alcalde de Lima Metropolitana",
-        "periodo": "1990-1995",
-        "detalle": "Elegido durante dos periodos consecutivos liderando el Movimiento Obras"
-      },
-      {
-        "cargo": "Congresista de la República",
-        "periodo": "2009-2011",
-        "detalle": "Asumió el cargo tras el fallecimiento de Alberto Andrade"
-      }
-    ],
-    "candidatura_presidencial_2026": {
-      "partido": "Partido Cívico Obras",
-      "plancha_presidencial": {
-        "primer_vicepresidente": "Daniel Barragán",
-        "segunda_vicepresidenta": "Dina Hancco Hancco"
-      },
-      "campania": "Campaña territorial intensa, especialmente en el sur del Perú (Juliaca y otras ciudades)"
-    }
-  },
-  "aspectos_positivos": [
-    "Amplia experiencia en gestión municipal como alcalde de Lima",
-    "Trayectoria empresarial sólida en medios de comunicación",
-    "Alta capacidad de comunicación y presencia mediática",
-    "Conocimiento del aparato estatal desde el Ejecutivo local y el Legislativo",
-    "Capacidad de movilización territorial y construcción de organización política propia"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 0,
-    "acusaciones": [],
-    "cuestionamientos_publicos": [
-      "Vínculos políticos con figuras cercanas al entorno de Pedro Castillo",
-      "Incorporación de operadores políticos del castillismo en su partido",
-      "Uso de medios propios como plataforma política, lo que genera críticas por posible conflicto de intereses"
-    ],
-    "figuras_polemicas_vinculadas": [
-      {
-        "nombre": "Daniel Barragán",
-        "detalle": "Exministro de Defensa del gobierno de Pedro Castillo"
-      },
-      {
-        "nombre": "Henry Shimabukuro",
-        "detalle": "Exasesor cercano a Pedro Castillo, anunciado como candidato al Senado"
-      }
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Político tradicional con fuerte poder mediático",
-    "percepcion": "Valorado por su experiencia municipal y comunicación directa, cuestionado por alianzas políticas controvertidas",
-    "base_politica": "Electorado urbano histórico y sectores del sur del país"
-  },
-  "fuentes": [
+        "id": 8,
+        "nombre": "Ricardo Belmont Cassinelli",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ricardo_Belmont_3.jpg",
+        "partido": "Partido Cívico Obras",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1945-08-29",
+            "lugar_nacimiento": "Lima, Perú",
+            "familia": {
+                "padre": "Augusto Belmont Bar",
+                "madre": "Cristina Cassinelli Inurritegui"
+            }
+        },
+        "formacion": {
+            "educacion_escolar": [
+                "Colegio Inmaculado Corazón",
+                "Colegio Santa María Marianistas"
+            ],
+            "pregrado": "Administración – Universidad de Lima"
+        },
+        "perfil_empresarial_y_mediatico": {
+            "empresas": [
+                {
+                    "nombre": "RBC Televisión (Red Bicolor de Comunicaciones)",
+                    "fundacion": 1966,
+                    "rol": "Propietario"
+                }
+            ],
+            "radios": [
+                "RBC La Estación",
+                "Okey Radio",
+                "Viva FM"
+            ],
+            "programas_tv": [
+                "A fondo",
+                "El diario del aire"
+            ]
+        },
+        "trayectoria_politica": {
+            "cargos_publicos": [
+                {
+                    "cargo": "Alcalde de Lima Metropolitana",
+                    "periodo": "1990-1995",
+                    "detalle": "Elegido durante dos periodos consecutivos liderando el Movimiento Obras"
+                },
+                {
+                    "cargo": "Congresista de la República",
+                    "periodo": "2009-2011",
+                    "detalle": "Asumió el cargo tras el fallecimiento de Alberto Andrade"
+                }
+            ],
+            "candidatura_presidencial_2026": {
+                "partido": "Partido Cívico Obras",
+                "plancha_presidencial": {
+                    "primer_vicepresidente": "Daniel Barragán",
+                    "segunda_vicepresidenta": "Dina Hancco Hancco"
+                },
+                "campania": "Campaña territorial intensa, especialmente en el sur del Perú (Juliaca y otras ciudades)"
+            }
+        },
+        "aspectos_positivos": [
+            "Amplia experiencia en gestión municipal como alcalde de Lima",
+            "Trayectoria empresarial sólida en medios de comunicación",
+            "Alta capacidad de comunicación y presencia mediática",
+            "Conocimiento del aparato estatal desde el Ejecutivo local y el Legislativo",
+            "Capacidad de movilización territorial y construcción de organización política propia"
+        ],
+        "controversias": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [],
+            "cuestionamientos_publicos": [
+                "Vínculos políticos con figuras cercanas al entorno de Pedro Castillo",
+                "Incorporación de operadores políticos del castillismo en su partido",
+                "Uso de medios propios como plataforma política, lo que genera críticas por posible conflicto de intereses"
+            ],
+            "figuras_polemicas_vinculadas": [
+                {
+                    "nombre": "Daniel Barragán",
+                    "detalle": "Exministro de Defensa del gobierno de Pedro Castillo"
+                },
+                {
+                    "nombre": "Henry Shimabukuro",
+                    "detalle": "Exasesor cercano a Pedro Castillo, anunciado como candidato al Senado"
+                }
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Político tradicional con fuerte poder mediático",
+            "percepcion": "Valorado por su experiencia municipal y comunicación directa, cuestionado por alianzas políticas controvertidas",
+            "base_politica": "Electorado urbano histórico y sectores del sur del país"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil político y biografía de Ricardo Belmont",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/ricardo-belmont"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Ricardo Belmont.pdf"
+            }
+        ]
+    },
     {
-      "titulo": "Perfil político y biografía de Ricardo Belmont",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/ricardo-belmont"
-    }
-  ]
-}
-,
-{
-  "id": 9,
-  "nombre": "Enrique Valderrama Peña",
-  "image_url": "https://www.canalb.pe/assets/uploads/images/32e78-29c34c86-3deb-46f2-95b8-95b934adbb5b.jpeg",
-  "partido": "Partido Aprista Peruano",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1986-04-14",
-    "lugar_nacimiento": "Lima, Perú",
-    "profesion": [
-      "Abogado",
-      "Periodista",
-      "Columnista"
-    ]
-  },
-  "formacion": {
-    "pregrado": {
-      "carrera": "Derecho",
-      "universidades": [
-        "Pontificia Universidad Católica del Perú (estudios iniciados)",
-        "Universidad de San Martín de Porres (título profesional)"
-      ]
-    }
-  },
-  "trayectoria_politica": {
-    "militancia": {
-      "partido": "Partido Aprista Peruano",
-      "inicio": 2010
+        "id": 9,
+        "nombre": "Enrique Valderrama Peña",
+        "image_url": "https://www.canalb.pe/assets/uploads/images/32e78-29c34c86-3deb-46f2-95b8-95b934adbb5b.jpeg",
+        "partido": "Partido Aprista Peruano",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1986-04-14",
+            "lugar_nacimiento": "Lima, Perú",
+            "profesion": [
+                "Abogado",
+                "Periodista",
+                "Columnista"
+            ]
+        },
+        "formacion": {
+            "pregrado": {
+                "carrera": "Derecho",
+                "universidades": [
+                    "Pontificia Universidad Católica del Perú (estudios iniciados)",
+                    "Universidad de San Martín de Porres (título profesional)"
+                ]
+            }
+        },
+        "trayectoria_politica": {
+            "militancia": {
+                "partido": "Partido Aprista Peruano",
+                "inicio": 2010
+            },
+            "cargos_partidarios": [
+                {
+                    "cargo": "Secretario General",
+                    "organizacion": "Comando Universitario Aprista (PUCP)",
+                    "periodo": "2011-2012"
+                },
+                {
+                    "cargo": "Miembro de la Comisión Política Nacional",
+                    "partido": "APRA",
+                    "desde": 2021
+                }
+            ],
+            "intentos_previos": [
+                {
+                    "anio": 2010,
+                    "cargo": "Regidor Metropolitano de Lima",
+                    "resultado": "Lista retirada"
+                }
+            ],
+            "candidatura_presidencial_2026": {
+                "postulacion": "Candidato presidencial del APRA",
+                "lanzamiento": "Julio de 2024",
+                "plancha_presidencial": {
+                    "primer_vicepresidente": "Hanae Ruiz",
+                    "segunda_vicepresidencia": "Moisés Tambini Torres"
+                },
+                "discurso": "Renovación del aprismo con defensa del legado histórico y la Constitución de 1979"
+            }
+        },
+        "perfil_profesional": {
+            "medios": [
+                "Diario Expreso"
+            ],
+            "proyectos": [
+                {
+                    "nombre": "Punto de Encuentro",
+                    "tipo": "Portal de análisis político",
+                    "rol": "Fundador"
+                }
+            ]
+        },
+        "aspectos_positivos": [
+            "Representa una figura joven dentro de un partido histórico",
+            "Alta actividad mediática y capacidad comunicativa",
+            "Formación jurídica que respalda su discurso institucional",
+            "Intento de reposicionar al APRA tras perder su inscripción",
+            "Narrativa de renovación generacional dentro del partido"
+        ],
+        "controversias": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [],
+            "cuestionamientos_publicos": [
+                "Propuesta de aplicar el denominado \"Plan Bukele\" con medidas de mano dura",
+                "Críticas por plantear detenciones masivas y megacárceles",
+                "Cuestionamientos por su cercanía a figuras tradicionales del aprismo",
+                "Dudas sobre la real independencia respecto a la vieja guardia del partido"
+            ],
+            "tensiones_politicas": [
+                "Deslindes públicos con figuras como Mauricio Mulder y Javier Velásquez Quesquén",
+                "Críticas al gobierno de Dina Boluarte y acusaciones de alianzas políticas irregulares"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Dirigente juvenil con discurso confrontacional",
+            "percepcion": "Valorado por sectores apristas jóvenes y cuestionado por su postura de mano dura",
+            "posicionamiento": "Renovación partidaria, orden y seguridad"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil político de Enrique Valderrama",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/enrique-valderrama"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Enrique Valderrama Peña.pdf"
+            }
+        ],
+        "educacion": [
+            "Universidad Católica"
+        ]
     },
-    "cargos_partidarios": [
-      {
-        "cargo": "Secretario General",
-        "organizacion": "Comando Universitario Aprista (PUCP)",
-        "periodo": "2011-2012"
-      },
-      {
-        "cargo": "Miembro de la Comisión Política Nacional",
-        "partido": "APRA",
-        "desde": 2021
-      }
-    ],
-    "intentos_previos": [
-      {
-        "anio": 2010,
-        "cargo": "Regidor Metropolitano de Lima",
-        "resultado": "Lista retirada"
-      }
-    ],
-    "candidatura_presidencial_2026": {
-      "postulacion": "Candidato presidencial del APRA",
-      "lanzamiento": "Julio de 2024",
-      "plancha_presidencial": {
-        "primer_vicepresidente": "Hanae Ruiz",
-        "segunda_vicepresidencia": "Moisés Tambini Torres"
-      },
-      "discurso": "Renovación del aprismo con defensa del legado histórico y la Constitución de 1979"
-    }
-  },
-  "perfil_profesional": {
-    "medios": [
-      "Diario Expreso"
-    ],
-    "proyectos": [
-      {
-        "nombre": "Punto de Encuentro",
-        "tipo": "Portal de análisis político",
-        "rol": "Fundador"
-      }
-    ]
-  },
-  "aspectos_positivos": [
-    "Representa una figura joven dentro de un partido histórico",
-    "Alta actividad mediática y capacidad comunicativa",
-    "Formación jurídica que respalda su discurso institucional",
-    "Intento de reposicionar al APRA tras perder su inscripción",
-    "Narrativa de renovación generacional dentro del partido"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 0,
-    "acusaciones": [],
-    "cuestionamientos_publicos": [
-      "Propuesta de aplicar el denominado \"Plan Bukele\" con medidas de mano dura",
-      "Críticas por plantear detenciones masivas y megacárceles",
-      "Cuestionamientos por su cercanía a figuras tradicionales del aprismo",
-      "Dudas sobre la real independencia respecto a la vieja guardia del partido"
-    ],
-    "tensiones_politicas": [
-      "Deslindes públicos con figuras como Mauricio Mulder y Javier Velásquez Quesquén",
-      "Críticas al gobierno de Dina Boluarte y acusaciones de alianzas políticas irregulares"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Dirigente juvenil con discurso confrontacional",
-    "percepcion": "Valorado por sectores apristas jóvenes y cuestionado por su postura de mano dura",
-    "posicionamiento": "Renovación partidaria, orden y seguridad"
-  },
-  "fuentes": [
     {
-      "titulo": "Perfil político de Enrique Valderrama",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/enrique-valderrama"
-    }
-  ]
-}
-,
-{
-  "id": 10,
-  "nombre": "Rafael Belaúnde Llosa",
-  "image_url": "https://www.lampadia.com/wp-content/uploads/2023/10/rafael-belaunde-llosa.jpg",
-  "partido": "Libertad Popular",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1974-12-26",
-    "lugar_nacimiento": "Lima, Perú",
-    "linaje_politico": {
-      "abuelo": "Fernando Belaúnde Terry (Presidente del Perú)",
-      "padre": "Rafael Belaúnde Aubry (Exsenador)",
-      "otros_antecedentes": [
-        "Bisnieto de Rafael Belaúnde Diez Canseco (PCM)",
-        "Bisnieto de Ernesto Montagne Markholz (PCM)",
-        "Descendiente de Pedro Diez Canseco (Presidente del Perú)"
-      ]
-    }
-  },
-  "formacion": {
-    "pregrado": "Ciencias Económicas – Universidad de Lima"
-  },
-  "perfil_profesional": {
-    "actividad_empresarial": [
-      {
-        "sector": "Inmobiliario",
-        "rol": "Gerente general",
-        "detalle": "Conglomerado dedicado al saneamiento y gestión de tierras"
-      }
-    ],
-    "actividad_periodistica": [
-      "Columnista en Perú 21",
-      "Columnista en La República"
-    ]
-  },
-  "trayectoria_publica": {
-    "gestion_publica": [
-      {
-        "cargo": "Ministro de Energía y Minas",
-        "periodo": "2020-07-15 / 2020-08-06",
-        "gobierno": "Martín Vizcarra",
-        "detalle": "Gestión breve por negación del voto de confianza al gabinete Cateriano"
-      }
-    ],
-    "cargos_tecnicos": [
-      {
-        "cargo": "Jefe de Promoción y Coordinación Territorial",
-        "entidad": "Defensoría del Pueblo",
-        "periodo": "2006-2007"
-      },
-      {
-        "cargo": "Gerente de Campo",
-        "entidad": "COFOPRI",
-        "periodo": "2002-2005"
-      }
-    ]
-  },
-  "trayectoria_politica": {
-    "partidos_previos": [
-      "Todos por el Perú",
-      "Adelante",
-      "FIM"
-    ],
-    "antecedentes_relevantes": [
-      "Miembro del equipo técnico de Fuerza Popular en la segunda vuelta de 2021"
-    ],
-    "liderazgo_partidario": {
-      "partido": "Libertad Popular",
-      "rol": "Fundador y presidente",
-      "fundacion": 2022
+        "id": 10,
+        "nombre": "Rafael Belaúnde Llosa",
+        "image_url": "https://www.lampadia.com/wp-content/uploads/2023/10/rafael-belaunde-llosa.jpg",
+        "partido": "Libertad Popular",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1974-12-26",
+            "lugar_nacimiento": "Lima, Perú",
+            "linaje_politico": {
+                "abuelo": "Fernando Belaúnde Terry (Presidente del Perú)",
+                "padre": "Rafael Belaúnde Aubry (Exsenador)",
+                "otros_antecedentes": [
+                    "Bisnieto de Rafael Belaúnde Diez Canseco (PCM)",
+                    "Bisnieto de Ernesto Montagne Markholz (PCM)",
+                    "Descendiente de Pedro Diez Canseco (Presidente del Perú)"
+                ]
+            }
+        },
+        "formacion": {
+            "pregrado": "Ciencias Económicas – Universidad de Lima"
+        },
+        "perfil_profesional": {
+            "actividad_empresarial": [
+                {
+                    "sector": "Inmobiliario",
+                    "rol": "Gerente general",
+                    "detalle": "Conglomerado dedicado al saneamiento y gestión de tierras"
+                }
+            ],
+            "actividad_periodistica": [
+                "Columnista en Perú 21",
+                "Columnista en La República"
+            ]
+        },
+        "trayectoria_publica": {
+            "gestion_publica": [
+                {
+                    "cargo": "Ministro de Energía y Minas",
+                    "periodo": "2020-07-15 / 2020-08-06",
+                    "gobierno": "Martín Vizcarra",
+                    "detalle": "Gestión breve por negación del voto de confianza al gabinete Cateriano"
+                }
+            ],
+            "cargos_tecnicos": [
+                {
+                    "cargo": "Jefe de Promoción y Coordinación Territorial",
+                    "entidad": "Defensoría del Pueblo",
+                    "periodo": "2006-2007"
+                },
+                {
+                    "cargo": "Gerente de Campo",
+                    "entidad": "COFOPRI",
+                    "periodo": "2002-2005"
+                }
+            ]
+        },
+        "trayectoria_politica": {
+            "partidos_previos": [
+                "Todos por el Perú",
+                "Adelante",
+                "FIM"
+            ],
+            "antecedentes_relevantes": [
+                "Miembro del equipo técnico de Fuerza Popular en la segunda vuelta de 2021"
+            ],
+            "liderazgo_partidario": {
+                "partido": "Libertad Popular",
+                "rol": "Fundador y presidente",
+                "fundacion": 2022
+            },
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "propuestas_clave": [
+                    "Desmantelar leyes pro-crimen",
+                    "Crear un grupo especial de inteligencia contra la extorsión (tipo GEIN)",
+                    "Transferir parte de la renta minera directamente a la población (\"cheque minero\")"
+                ]
+            }
+        },
+        "aspectos_positivos": [
+            "Alta formación técnica y experiencia en gestión pública",
+            "Conocimiento del sector minero y de saneamiento de tierras",
+            "Discurso liberal-democrático con énfasis en seguridad y economía",
+            "Reconocimiento inmediato por apellido histórico asociado a la democracia",
+            "Propuesta innovadora de redistribución directa de la renta minera"
+        ],
+        "controversias": {
+            "incidentes_publicos": [
+                {
+                    "caso": "Atentado en Cerro Azul (2025)",
+                    "descripcion": "Denunció ataque armado mientras supervisaba un proyecto inmobiliario",
+                    "estado": "Hecho no esclarecido; surgieron dudas por falta de registros y una selfie posterior"
+                }
+            ],
+            "cuestionamientos_politicos": [
+                "Apoyo a Keiko Fujimori en 2021 pese a críticas previas al fujimorismo",
+                "Acusaciones de posible conflicto de interés por vínculos previos con el sector minero",
+                "Debate público sobre 'puerta giratoria' entre empresa y Estado"
+            ],
+            "respuestas_del_candidato": [
+                "Afirmó haber vendido su empresa vinculada al sector minero antes de asumir el MINEM",
+                "Compromiso de colocar su patrimonio en un fideicomiso ciego si es electo"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Político liberal con respaldo empresarial y apellido histórico",
+            "percepcion": "Valorado por su preparación técnica y cuestionado por controversias recientes",
+            "posicionamiento": "Democracia, seguridad y mercado con regulación"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil político y biografía de Rafael Belaúnde",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/rafael-belaunde"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Rafael Belaúnde.pdf"
+            }
+        ]
     },
-    "candidatura_2026": {
-      "cargo": "Presidente de la República",
-      "propuestas_clave": [
-        "Desmantelar leyes pro-crimen",
-        "Crear un grupo especial de inteligencia contra la extorsión (tipo GEIN)",
-        "Transferir parte de la renta minera directamente a la población (\"cheque minero\")"
-      ]
-    }
-  },
-  "aspectos_positivos": [
-    "Alta formación técnica y experiencia en gestión pública",
-    "Conocimiento del sector minero y de saneamiento de tierras",
-    "Discurso liberal-democrático con énfasis en seguridad y economía",
-    "Reconocimiento inmediato por apellido histórico asociado a la democracia",
-    "Propuesta innovadora de redistribución directa de la renta minera"
-  ],
-  "controversias": {
-    "incidentes_publicos": [
-      {
-        "caso": "Atentado en Cerro Azul (2025)",
-        "descripcion": "Denunció ataque armado mientras supervisaba un proyecto inmobiliario",
-        "estado": "Hecho no esclarecido; surgieron dudas por falta de registros y una selfie posterior"
-      }
-    ],
-    "cuestionamientos_politicos": [
-      "Apoyo a Keiko Fujimori en 2021 pese a críticas previas al fujimorismo",
-      "Acusaciones de posible conflicto de interés por vínculos previos con el sector minero",
-      "Debate público sobre 'puerta giratoria' entre empresa y Estado"
-    ],
-    "respuestas_del_candidato": [
-      "Afirmó haber vendido su empresa vinculada al sector minero antes de asumir el MINEM",
-      "Compromiso de colocar su patrimonio en un fideicomiso ciego si es electo"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Político liberal con respaldo empresarial y apellido histórico",
-    "percepcion": "Valorado por su preparación técnica y cuestionado por controversias recientes",
-    "posicionamiento": "Democracia, seguridad y mercado con regulación"
-  },
-  "fuentes": [
     {
-      "titulo": "Perfil político y biografía de Rafael Belaúnde",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/rafael-belaunde"
-    }
-  ]
-}
-,
-{
-  "id": 11,
-  "nombre": "Wolfgang Grozo",
-  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRYcOqe4168OjbnVRbyfDI8oI1_H9eMnHQQ&s",
-  "partido": "Integridad Democrática",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1967-09-21",
-    "lugar_nacimiento": "Jesús María, Lima, Perú"
-  },
-  "trayectoria_militar": {
-    "fuerza": "Fuerza Aérea del Perú (FAP)",
-    "grado": "Mayor General (r)",
-    "cargos_relevantes": [
-      "Director de Inteligencia de la FAP"
-    ]
-  },
-  "vida_civil": {
-    "actividades": [
-      "Docencia universitaria",
-      "Investigación académica",
-      "Actividad política"
-    ]
-  },
-  "formacion": {
-    "docencia": [
-      {
-        "institucion": "Universidad de Lima",
-        "area": "Cursos vinculados a análisis y políticas públicas"
-      }
-    ],
-    "investigacion": [
-      "Temas socioeconómicos",
-      "Política exterior del Perú",
-      "Seguridad y defensa"
-    ]
-  },
-  "trayectoria_politica": {
-    "liderazgo_partidario": {
-      "partido": "Integridad Democrática",
-      "rol": "Fundador",
-      "fundacion": 2023,
-      "antecedente": "Intento de inscripción no concretado en 2021"
+        "id": 11,
+        "nombre": "Wolfgang Grozo",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRYcOqe4168OjbnVRbyfDI8oI1_H9eMnHQQ&s",
+        "partido": "Integridad Democrática",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1967-09-21",
+            "lugar_nacimiento": "Jesús María, Lima, Perú"
+        },
+        "trayectoria_militar": {
+            "fuerza": "Fuerza Aérea del Perú (FAP)",
+            "grado": "Mayor General (r)",
+            "cargos_relevantes": [
+                "Director de Inteligencia de la FAP"
+            ]
+        },
+        "vida_civil": {
+            "actividades": [
+                "Docencia universitaria",
+                "Investigación académica",
+                "Actividad política"
+            ]
+        },
+        "formacion": {
+            "docencia": [
+                {
+                    "institucion": "Universidad de Lima",
+                    "area": "Cursos vinculados a análisis y políticas públicas"
+                }
+            ],
+            "investigacion": [
+                "Temas socioeconómicos",
+                "Política exterior del Perú",
+                "Seguridad y defensa"
+            ]
+        },
+        "trayectoria_politica": {
+            "liderazgo_partidario": {
+                "partido": "Integridad Democrática",
+                "rol": "Fundador",
+                "fundacion": 2023,
+                "antecedente": "Intento de inscripción no concretado en 2021"
+            },
+            "candidatura_presidencial_2026": {
+                "metodo_seleccion": "Elecciones primarias internas",
+                "resultado": "Candidato presidencial oficial",
+                "plancha": {
+                    "primer_vicepresidente": "Bertha Azabache",
+                    "segundo_vicepresidente": "Wellington Prada"
+                }
+            }
+        },
+        "aspectos_positivos": [
+            "Amplia experiencia en inteligencia y seguridad nacional",
+            "Perfil técnico y disciplinado derivado de su carrera militar",
+            "Vinculación académica y producción investigativa",
+            "Historial sin investigaciones fiscales ni sentencias judiciales",
+            "Construcción de un proyecto político propio desde la sociedad civil"
+        ],
+        "controversias": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [],
+            "cuestionamientos_publicos": [
+                "Limitada experiencia en cargos políticos electivos",
+                "Bajo nivel de conocimiento público a nivel nacional",
+                "Desafío de convertir un partido nuevo en una organización competitiva"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Candidato con perfil técnico-militar y académico",
+            "percepcion": "Valorado por su experiencia en seguridad; cuestionado por su limitada trayectoria política electoral",
+            "posicionamiento": "Seguridad nacional, institucionalidad y orden democrático"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil biográfico y político de Wolfgang Grozo",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/wolfgang-grozo"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Wolfgang Grozo.pdf"
+            }
+        ]
     },
-    "candidatura_presidencial_2026": {
-      "metodo_seleccion": "Elecciones primarias internas",
-      "resultado": "Candidato presidencial oficial",
-      "plancha": {
-        "primer_vicepresidente": "Bertha Azabache",
-        "segundo_vicepresidente": "Wellington Prada"
-      }
-    }
-  },
-  "aspectos_positivos": [
-    "Amplia experiencia en inteligencia y seguridad nacional",
-    "Perfil técnico y disciplinado derivado de su carrera militar",
-    "Vinculación académica y producción investigativa",
-    "Historial sin investigaciones fiscales ni sentencias judiciales",
-    "Construcción de un proyecto político propio desde la sociedad civil"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 0,
-    "acusaciones": [],
-    "cuestionamientos_publicos": [
-      "Limitada experiencia en cargos políticos electivos",
-      "Bajo nivel de conocimiento público a nivel nacional",
-      "Desafío de convertir un partido nuevo en una organización competitiva"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Candidato con perfil técnico-militar y académico",
-    "percepcion": "Valorado por su experiencia en seguridad; cuestionado por su limitada trayectoria política electoral",
-    "posicionamiento": "Seguridad nacional, institucionalidad y orden democrático"
-  },
-  "fuentes": [
     {
-      "titulo": "Perfil biográfico y político de Wolfgang Grozo",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/wolfgang-grozo"
-    }
-  ]
-}
-,
-{
-  "id": 12,
-  "nombre": "Carlos Álvarez Cáceres",
-  "image_url": "https://elcomercio.pe/resizer/v2/MGIMSICCXFBNNNL6FR26BLKNJI.jpg?auth=c8ff19dad1944b6135dd7f44ec8f33fbc0e339685f2dd9a7e511ad38b2b83f38&width=1200&height=1200&quality=75&smart=true",
-  "partido": "País para Todos",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1964-01-07",
-    "lugar_nacimiento": "Santa Beatriz, Lima, Perú",
-    "familia": {
-      "hermanos": [
-        {
-          "nombre": "Arturo Álvarez",
-          "profesion": "Comediante"
-        }
-      ],
-      "posicion_familiar": "Segundo de tres hermanos"
-    }
-  },
-  "formacion": {
-    "educacion_escolar": {
-      "institucion": "Institución Educativa Emblemática Nuestra Señora de Guadalupe",
-      "promocion": "G-80 \"Jorge Basadre\""
+        "id": 12,
+        "nombre": "Carlos Álvarez Cáceres",
+        "image_url": "https://elcomercio.pe/resizer/v2/MGIMSICCXFBNNNL6FR26BLKNJI.jpg?auth=c8ff19dad1944b6135dd7f44ec8f33fbc0e339685f2dd9a7e511ad38b2b83f38&width=1200&height=1200&quality=75&smart=true",
+        "partido": "País para Todos",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1964-01-07",
+            "lugar_nacimiento": "Santa Beatriz, Lima, Perú",
+            "familia": {
+                "hermanos": [
+                    {
+                        "nombre": "Arturo Álvarez",
+                        "profesion": "Comediante"
+                    }
+                ],
+                "posicion_familiar": "Segundo de tres hermanos"
+            }
+        },
+        "formacion": {
+            "educacion_escolar": {
+                "institucion": "Institución Educativa Emblemática Nuestra Señora de Guadalupe",
+                "promocion": "G-80 \"Jorge Basadre\""
+            },
+            "educacion_superior": {
+                "estudios": "Academia preuniversitaria para Derecho – UNMSM",
+                "titulo_obtenido": false
+            }
+        },
+        "trayectoria_artistica": {
+            "inicio": {
+                "anio": 1983,
+                "programa": "Trampolín a la Fama",
+                "descubridor": "Tulio Loza"
+            },
+            "roles": [
+                "Actor cómico",
+                "Humorista político",
+                "Presentador de televisión"
+            ],
+            "programas_destacados": [
+                "Risas y Salsa",
+                "Las mil y una de Carlos Álvarez",
+                "El especial del humor",
+                "El cártel del humor"
+            ],
+            "estilo": "Imitaciones de figuras políticas nacionales e internacionales"
+        },
+        "trayectoria_politica": {
+            "ingreso_politico": {
+                "anio": 2024,
+                "partido": "País para Todos"
+            },
+            "candidatura_presidencial_2026": {
+                "cargo": "Presidente de la República",
+                "contexto": "Paso del humor político a la política activa",
+                "estrategia": "Campaña basada en alto nivel de reconocimiento público"
+            }
+        },
+        "aspectos_positivos": [
+            "Alto nivel de conocimiento público a nivel nacional",
+            "Amplia capacidad comunicativa y conexión con el electorado",
+            "Conocimiento profundo de la clase política por su trayectoria satírica",
+            "Décadas de experiencia en medios de comunicación",
+            "Capacidad para instalar temas en la agenda pública"
+        ],
+        "controversias": {
+            "denuncias_procesadas": 0,
+            "acusaciones": [],
+            "cuestionamientos_publicos": [
+                {
+                    "caso": "Omisión de bien en Hoja de Vida",
+                    "detalle": "Presunta omisión de un vehículo Mazda CX-90 modelo 2025 valorizado en aproximadamente S/160,000",
+                    "situacion": "El vehículo está registrado a nombre de su empresa; en evaluación por el JNE"
+                },
+                {
+                    "caso": "Exposición de vida privada",
+                    "detalle": "Presión mediática sobre su orientación sexual",
+                    "respuesta": "Uso del humor para trivializar el tema y cerrar la controversia"
+                }
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Figura mediática con transición del entretenimiento a la política",
+            "percepcion": "Valorado por su cercanía y comunicación directa; cuestionado por falta de experiencia en gestión pública",
+            "fortaleza_clave": "Reconocimiento y recordación masiva"
+        },
+        "fuentes": [
+            {
+                "titulo": "Biografía de Carlos Álvarez",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/carlos-alvarez"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Carlos Álvarez.pdf"
+            }
+        ],
+        "educacion": [
+            "Universidad Nacional Mayor"
+        ]
     },
-    "educacion_superior": {
-      "estudios": "Academia preuniversitaria para Derecho – UNMSM",
-      "titulo_obtenido": false
-    }
-  },
-  "trayectoria_artistica": {
-    "inicio": {
-      "anio": 1983,
-      "programa": "Trampolín a la Fama",
-      "descubridor": "Tulio Loza"
-    },
-    "roles": [
-      "Actor cómico",
-      "Humorista político",
-      "Presentador de televisión"
-    ],
-    "programas_destacados": [
-      "Risas y Salsa",
-      "Las mil y una de Carlos Álvarez",
-      "El especial del humor",
-      "El cártel del humor"
-    ],
-    "estilo": "Imitaciones de figuras políticas nacionales e internacionales"
-  },
-  "trayectoria_politica": {
-    "ingreso_politico": {
-      "anio": 2024,
-      "partido": "País para Todos"
-    },
-    "candidatura_presidencial_2026": {
-      "cargo": "Presidente de la República",
-      "contexto": "Paso del humor político a la política activa",
-      "estrategia": "Campaña basada en alto nivel de reconocimiento público"
-    }
-  },
-  "aspectos_positivos": [
-    "Alto nivel de conocimiento público a nivel nacional",
-    "Amplia capacidad comunicativa y conexión con el electorado",
-    "Conocimiento profundo de la clase política por su trayectoria satírica",
-    "Décadas de experiencia en medios de comunicación",
-    "Capacidad para instalar temas en la agenda pública"
-  ],
-  "controversias": {
-    "denuncias_procesadas": 0,
-    "acusaciones": [],
-    "cuestionamientos_publicos": [
-      {
-        "caso": "Omisión de bien en Hoja de Vida",
-        "detalle": "Presunta omisión de un vehículo Mazda CX-90 modelo 2025 valorizado en aproximadamente S/160,000",
-        "situacion": "El vehículo está registrado a nombre de su empresa; en evaluación por el JNE"
-      },
-      {
-        "caso": "Exposición de vida privada",
-        "detalle": "Presión mediática sobre su orientación sexual",
-        "respuesta": "Uso del humor para trivializar el tema y cerrar la controversia"
-      }
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Figura mediática con transición del entretenimiento a la política",
-    "percepcion": "Valorado por su cercanía y comunicación directa; cuestionado por falta de experiencia en gestión pública",
-    "fortaleza_clave": "Reconocimiento y recordación masiva"
-  },
-  "fuentes": [
     {
-      "titulo": "Biografía de Carlos Álvarez",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/carlos-alvarez"
-    }
-  ]
-}
-,
-{
-  "id": 13,
-  "nombre": "Luis Fernando Olivera Vega",
-  "image_url": "https://portal.andina.pe/EDPfotografia/Thumbnail/2015/09/14/000313912W.jpg",
-  "nombre_publico": "Fernando Olivera",
-  "apodo": "Popy",
-  "partido": "Frente de la Esperanza",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1958-07-26",
-    "lugar_nacimiento": "Lima, Perú",
-    "familia": {
-      "padre": "Luis Olivera Balmaceda",
-      "madre": "Zoila Vega Zavala"
-    }
-  },
-  "formacion": {
-    "educacion_escolar": [
-      "Escuela fiscal de Magdalena",
-      "Gran Unidad Escolar Pedro Gálvez Egúsquiza",
-      "Colegio Tomás Alva Edison",
-      "Colegio Cooperativo Monterrico"
-    ],
-    "pregrado": "Administración de Empresas – Universidad del Pacífico (1980)",
-    "postgrado": "Maestría en Relaciones Internacionales – Universidad Complutense de Madrid (2008)"
-  },
-  "trayectoria_politica": {
-    "militancia_inicial": {
-      "partido": "Partido Popular Cristiano (PPC)",
-      "roles": [
-        "Miembro de la Comisión Nacional de Juventudes",
-        "Secretario Nacional de Prensa"
-      ]
+        "id": 13,
+        "nombre": "Luis Fernando Olivera Vega",
+        "image_url": "https://portal.andina.pe/EDPfotografia/Thumbnail/2015/09/14/000313912W.jpg",
+        "nombre_publico": "Fernando Olivera",
+        "apodo": "Popy",
+        "partido": "Frente de la Esperanza",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1958-07-26",
+            "lugar_nacimiento": "Lima, Perú",
+            "familia": {
+                "padre": "Luis Olivera Balmaceda",
+                "madre": "Zoila Vega Zavala"
+            }
+        },
+        "formacion": {
+            "educacion_escolar": [
+                "Escuela fiscal de Magdalena",
+                "Gran Unidad Escolar Pedro Gálvez Egúsquiza",
+                "Colegio Tomás Alva Edison",
+                "Colegio Cooperativo Monterrico"
+            ],
+            "pregrado": "Administración de Empresas – Universidad del Pacífico (1980)",
+            "postgrado": "Maestría en Relaciones Internacionales – Universidad Complutense de Madrid (2008)"
+        },
+        "trayectoria_politica": {
+            "militancia_inicial": {
+                "partido": "Partido Popular Cristiano (PPC)",
+                "roles": [
+                    "Miembro de la Comisión Nacional de Juventudes",
+                    "Secretario Nacional de Prensa"
+                ]
+            },
+            "cargos_relevantes": [
+                {
+                    "cargo": "Fiscal Provincial de Lima",
+                    "periodo": "1981-1985",
+                    "detalle": "Fiscal más joven en la historia del Ministerio Público"
+                },
+                {
+                    "cargo": "Diputado por Lima",
+                    "periodo": "1985-1990"
+                },
+                {
+                    "cargo": "Congresista",
+                    "periodo": "1992-2001"
+                },
+                {
+                    "cargo": "Ministro de Justicia",
+                    "periodo": "2001-2002",
+                    "gobierno": "Alejandro Toledo"
+                },
+                {
+                    "cargo": "Embajador del Perú en España",
+                    "periodo": "2002-2005"
+                },
+                {
+                    "cargo": "Ministro de Relaciones Exteriores",
+                    "periodo": "2005",
+                    "detalle": "Gestión de pocos días tras crisis política"
+                }
+            ],
+            "fundaciones_politicas": [
+                {
+                    "nombre": "Frente Independiente Moralizador (FIM)",
+                    "anio": 1990,
+                    "simbolo": "Escoba"
+                }
+            ],
+            "candidatura_presidencial_2026": {
+                "partido": "Frente de la Esperanza",
+                "propuestas_clave": [
+                    "Implementar el sistema de jurados populares",
+                    "Lucha frontal contra la corrupción judicial"
+                ]
+            }
+        },
+        "aspectos_positivos": [
+            "Figura clave en la lucha anticorrupción durante la caída del régimen de Alberto Fujimori",
+            "Protagonista en la difusión del primer Vladivideo (Kouri–Montesinos)",
+            "Amplia experiencia legislativa, ejecutiva y diplomática",
+            "Imagen pública asociada a la fiscalización y denuncia política",
+            "Capacidad para influir en la agenda mediática y política nacional"
+        ],
+        "controversias": {
+            "estilo_politico": [
+                "Discurso confrontacional y confrontación directa con adversarios políticos"
+            ],
+            "episodios_polemicos": [
+                {
+                    "caso": "Enfrentamiento histórico con Alan García",
+                    "detalle": "Investigaciones y confrontaciones públicas desde 1990 hasta el debate presidencial de 2016"
+                },
+                {
+                    "caso": "Cancillería 2005",
+                    "detalle": "Su nombramiento provocó la renuncia del premier Carlos Ferrero y la caída del gabinete"
+                }
+            ],
+            "cuestionamientos_publicos": [
+                "Críticas por su estilo político confrontacional",
+                "Percepción de polarización en su discurso"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Político anticorrupción y fiscalizador histórico",
+            "percepcion": "Valorado por su rol en la caída del fujimorismo y cuestionado por su estilo confrontacional",
+            "simbolo": "Escoba como representación de lucha contra la corrupción"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil político de Fernando Olivera",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/fernando-olivera"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Fernando Olivera.pdf"
+            }
+        ]
     },
-    "cargos_relevantes": [
-      {
-        "cargo": "Fiscal Provincial de Lima",
-        "periodo": "1981-1985",
-        "detalle": "Fiscal más joven en la historia del Ministerio Público"
-      },
-      {
-        "cargo": "Diputado por Lima",
-        "periodo": "1985-1990"
-      },
-      {
-        "cargo": "Congresista",
-        "periodo": "1992-2001"
-      },
-      {
-        "cargo": "Ministro de Justicia",
-        "periodo": "2001-2002",
-        "gobierno": "Alejandro Toledo"
-      },
-      {
-        "cargo": "Embajador del Perú en España",
-        "periodo": "2002-2005"
-      },
-      {
-        "cargo": "Ministro de Relaciones Exteriores",
-        "periodo": "2005",
-        "detalle": "Gestión de pocos días tras crisis política"
-      }
-    ],
-    "fundaciones_politicas": [
-      {
-        "nombre": "Frente Independiente Moralizador (FIM)",
-        "anio": 1990,
-        "simbolo": "Escoba"
-      }
-    ],
-    "candidatura_presidencial_2026": {
-      "partido": "Frente de la Esperanza",
-      "propuestas_clave": [
-        "Implementar el sistema de jurados populares",
-        "Lucha frontal contra la corrupción judicial"
-      ]
-    }
-  },
-  "aspectos_positivos": [
-    "Figura clave en la lucha anticorrupción durante la caída del régimen de Alberto Fujimori",
-    "Protagonista en la difusión del primer Vladivideo (Kouri–Montesinos)",
-    "Amplia experiencia legislativa, ejecutiva y diplomática",
-    "Imagen pública asociada a la fiscalización y denuncia política",
-    "Capacidad para influir en la agenda mediática y política nacional"
-  ],
-  "controversias": {
-    "estilo_politico": [
-      "Discurso confrontacional y confrontación directa con adversarios políticos"
-    ],
-    "episodios_polemicos": [
-      {
-        "caso": "Enfrentamiento histórico con Alan García",
-        "detalle": "Investigaciones y confrontaciones públicas desde 1990 hasta el debate presidencial de 2016"
-      },
-      {
-        "caso": "Cancillería 2005",
-        "detalle": "Su nombramiento provocó la renuncia del premier Carlos Ferrero y la caída del gabinete"
-      }
-    ],
-    "cuestionamientos_publicos": [
-      "Críticas por su estilo político confrontacional",
-      "Percepción de polarización en su discurso"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Político anticorrupción y fiscalizador histórico",
-    "percepcion": "Valorado por su rol en la caída del fujimorismo y cuestionado por su estilo confrontacional",
-    "simbolo": "Escoba como representación de lucha contra la corrupción"
-  },
-  "fuentes": [
     {
-      "titulo": "Perfil político de Fernando Olivera",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/fernando-olivera"
-    }
-  ]
-}
-,
-{
-  "id": 14,
-  "nombre": "Jorge Nieto Montesinos",
-  "partido": "Primero la Gente",
-  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jorge_Nieto_Montesinos.jpg/1037px-Jorge_Nieto_Montesinos.jpg",
-  "intentos_presidenciales": 1,
-  "datos_personales": {
-    "fecha_nacimiento": "1951-10-29",
-    "lugar_nacimiento": "Arequipa, Perú",
-    "familia": {
-      "padre": "Walter Nieto Miranda",
-      "madre": "Carmen Montesinos Hartley",
-      "vinculos_familiares_relevantes": [
-        {
-          "nombre": "Vladimiro Montesinos Torres",
-          "relacion": "Sobrino",
-          "aclaracion": "Trayectorias políticas y éticas distantes"
-        }
-      ]
-    }
-  },
-  "formacion": {
-    "educacion_escolar": "Colegio Nacional de la Independencia Americana de Arequipa",
-    "pregrado": [
-      "Derecho – Pontificia Universidad Católica del Perú (PUCP)",
-      "Sociología – PUCP (Bachiller)"
-    ],
-    "postgrado": [
-      "Maestría en Ciencia Política – FLACSO México",
-      "Doctorado en Ciencias Sociales (Sociología) – El Colegio de México"
-    ]
-  },
-  "trayectoria_publica": {
-    "cargos_ejecutivos": [
-      {
-        "cargo": "Ministro de Cultura",
-        "periodo": "2016",
-        "gobierno": "Pedro Pablo Kuczynski"
-      },
-      {
-        "cargo": "Ministro de Defensa",
-        "periodo": "2016-2018",
-        "gobierno": "Pedro Pablo Kuczynski",
-        "salida": "Renuncia por desacuerdo con el indulto a Alberto Fujimori"
-      }
-    ],
-    "liderazgo_partidario": {
-      "partido": "Primero la Gente",
-      "rol": "Líder y referente político"
-    }
-  },
-  "aspectos_positivos": [
-    "Sólida formación académica internacional en ciencias sociales y política",
-    "Perfil tecnocrático e intelectual poco común en la política peruana",
-    "Renuncia al Ministerio de Defensa como gesto de coherencia política y principios",
-    "Experiencia directa en gestión pública y defensa nacional",
-    "Distancia pública y política respecto a la trayectoria de su familiar Vladimiro Montesinos"
-  ],
-  "controversias": {
-    "investigaciones_fiscales": [
-      {
-        "caso": "Odebrecht",
-        "anio_inicio": 2023,
-        "estado": "Investigación fiscal preliminar",
-        "descripcion": "Vinculación indirecta en el marco del caso Odebrecht"
-      }
-    ],
-    "cuestionamientos_electorales": [
-      {
-        "caso": "Firmas falsas en inscripción partidaria",
-        "detalle": "Observaciones al partido Primero la Gente por validación de firmas presuntamente fraudulentas",
-        "contexto": "Deficiencias estructurales del sistema de verificación (Reniec / JNE)"
-      }
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Intelectual y tecnócrata con énfasis ético",
-    "percepcion": "Valorado por su coherencia y formación, cuestionado por controversias partidarias",
-    "posicionamiento": "Ética pública, institucionalidad democrática y reforma política"
-  },
-  "fuentes": [
+        "id": 14,
+        "nombre": "Jorge Nieto Montesinos",
+        "partido": "Primero la Gente",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jorge_Nieto_Montesinos.jpg/1037px-Jorge_Nieto_Montesinos.jpg",
+        "intentos_presidenciales": 1,
+        "datos_personales": {
+            "fecha_nacimiento": "1951-10-29",
+            "lugar_nacimiento": "Arequipa, Perú",
+            "familia": {
+                "padre": "Walter Nieto Miranda",
+                "madre": "Carmen Montesinos Hartley",
+                "vinculos_familiares_relevantes": [
+                    {
+                        "nombre": "Vladimiro Montesinos Torres",
+                        "relacion": "Sobrino",
+                        "aclaracion": "Trayectorias políticas y éticas distantes"
+                    }
+                ]
+            }
+        },
+        "formacion": {
+            "educacion_escolar": "Colegio Nacional de la Independencia Americana de Arequipa",
+            "pregrado": [
+                "Derecho – Pontificia Universidad Católica del Perú (PUCP)",
+                "Sociología – PUCP (Bachiller)"
+            ],
+            "postgrado": [
+                "Maestría en Ciencia Política – FLACSO México",
+                "Doctorado en Ciencias Sociales (Sociología) – El Colegio de México"
+            ]
+        },
+        "trayectoria_publica": {
+            "cargos_ejecutivos": [
+                {
+                    "cargo": "Ministro de Cultura",
+                    "periodo": "2016",
+                    "gobierno": "Pedro Pablo Kuczynski"
+                },
+                {
+                    "cargo": "Ministro de Defensa",
+                    "periodo": "2016-2018",
+                    "gobierno": "Pedro Pablo Kuczynski",
+                    "salida": "Renuncia por desacuerdo con el indulto a Alberto Fujimori"
+                }
+            ],
+            "liderazgo_partidario": {
+                "partido": "Primero la Gente",
+                "rol": "Líder y referente político"
+            }
+        },
+        "aspectos_positivos": [
+            "Sólida formación académica internacional en ciencias sociales y política",
+            "Perfil tecnocrático e intelectual poco común en la política peruana",
+            "Renuncia al Ministerio de Defensa como gesto de coherencia política y principios",
+            "Experiencia directa en gestión pública y defensa nacional",
+            "Distancia pública y política respecto a la trayectoria de su familiar Vladimiro Montesinos"
+        ],
+        "controversias": {
+            "investigaciones_fiscales": [
+                {
+                    "caso": "Odebrecht",
+                    "anio_inicio": 2023,
+                    "estado": "Investigación fiscal preliminar",
+                    "descripcion": "Vinculación indirecta en el marco del caso Odebrecht"
+                }
+            ],
+            "cuestionamientos_electorales": [
+                {
+                    "caso": "Firmas falsas en inscripción partidaria",
+                    "detalle": "Observaciones al partido Primero la Gente por validación de firmas presuntamente fraudulentas",
+                    "contexto": "Deficiencias estructurales del sistema de verificación (Reniec / JNE)"
+                }
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Intelectual y tecnócrata con énfasis ético",
+            "percepcion": "Valorado por su coherencia y formación, cuestionado por controversias partidarias",
+            "posicionamiento": "Ética pública, institucionalidad democrática y reforma política"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil político y académico de Jorge Nieto Montesinos",
+                "url": "https://www.perfil-politico-ficticio.pe/candidatos/jorge-nieto"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Jorge Nieto Montesinos.pdf"
+            }
+        ],
+        "educacion": [
+            "Universidad Católica"
+        ]
+    },
     {
-      "titulo": "Perfil político y académico de Jorge Nieto Montesinos",
-      "url": "https://www.perfil-politico-ficticio.pe/candidatos/jorge-nieto"
+        "id": 15,
+        "nombre": "Napoleón Becerra",
+        "image_url": "https://peruvotoinformado.com/img/candidatos/foto-napoleon-becerra-garcia.jpg",
+        "partido": "P.T.E. Perú (Partido de los Trabajadores y Emprendedores)",
+        "intentos_presidenciales": 1,
+        "perfil_profesional": {
+            "ambito": "Empresarial y económico",
+            "experiencia": [
+                "Sector privado",
+                "Análisis de políticas públicas orientadas al crecimiento económico"
+            ],
+            "liderazgo_previo": "Dirigente de una agrupación de pequeños empresarios"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "P.T.E. Perú"
+            },
+            "posicionamiento": [
+                "Impulso al emprendimiento",
+                "Desarrollo económico",
+                "Crítica al sistema político tradicional"
+            ],
+            "estilo_campaña": {
+                "tono": "Confrontacional y directo",
+                "caracteristicas": [
+                    "Descalificación pública de encuestas electorales",
+                    "Lenguaje popular",
+                    "Actos mediáticos llamativos"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Resolver el problema de la inseguridad en seis meses",
+                "argumento": "Asegura contar con conocimientos técnicos para lograrlo"
+            },
+            "indultos": {
+                "postura": "Rechazo explícito al indulto presidencial",
+                "frase_representativa": "NO LO VOY A INDULTAR"
+            }
+        },
+        "aspectos_positivos": [
+            "Perfil empresarial y económico diferenciado de la política tradicional",
+            "Enfoque en emprendimiento y crecimiento económico",
+            "Capacidad de conectar con sectores populares mediante lenguaje directo",
+            "Posicionamiento como figura política nueva",
+            "Alta visibilidad mediática"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Alianza Ahora Nación",
+                    "descripcion": "Intento fallido de coalición por problemas de inscripción formal"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [
+                    "Incumplimiento de acuerdos políticos",
+                    "Negativa a integrarse a un frente de izquierda",
+                    "Acciones unilaterales sin convocar a la dirección del partido"
+                ],
+                "consecuencias": [
+                    "Advertencia de acciones legales",
+                    "Impugnación de actos partidarios"
+                ]
+            },
+            "cuestionamientos_publicos": [
+                "Promesas de rápida solución a problemas estructurales",
+                "Críticas por estilo confrontacional",
+                "Desconfianza hacia el sistema de encuestas"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Candidato outsider con discurso empresarial",
+            "percepcion": "Valorado como figura nueva y criticado por conflictos internos y estilo confrontacional",
+            "diferenciacion": "Lenguaje popular y promesas directas frente a la política tradicional"
+        },
+        "fuentes": [
+            {
+                "titulo": "Perfil de Napoleón Becerra - TU CAMBISTA",
+                "url": "https://www.fuente-politica-ficticia.pe/candidatos/napoleon-becerra"
+            },
+            {
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "Napoleón Becerra.pdf"
+            }
+        ]
     }
-  ]
-}
-,
-{
-  "id": 15,
-  "nombre": "Napoleón Becerra",
-  "image_url": "https://peruvotoinformado.com/img/candidatos/foto-napoleon-becerra-garcia.jpg",
-  "partido": "P.T.E. Perú (Partido de los Trabajadores y Emprendedores)",
-  "intentos_presidenciales": 1,
-  "perfil_profesional": {
-    "ambito": "Empresarial y económico",
-    "experiencia": [
-      "Sector privado",
-      "Análisis de políticas públicas orientadas al crecimiento económico"
-    ],
-    "liderazgo_previo": "Dirigente de una agrupación de pequeños empresarios"
-  },
-  "trayectoria_politica": {
-    "candidatura_2026": {
-      "cargo": "Presidente de la República",
-      "partido": "P.T.E. Perú"
-    },
-    "posicionamiento": [
-      "Impulso al emprendimiento",
-      "Desarrollo económico",
-      "Crítica al sistema político tradicional"
-    ],
-    "estilo_campaña": {
-      "tono": "Confrontacional y directo",
-      "caracteristicas": [
-        "Descalificación pública de encuestas electorales",
-        "Lenguaje popular",
-        "Actos mediáticos llamativos"
-      ]
-    }
-  },
-  "propuestas_clave": {
-    "seguridad_ciudadana": {
-      "propuesta": "Resolver el problema de la inseguridad en seis meses",
-      "argumento": "Asegura contar con conocimientos técnicos para lograrlo"
-    },
-    "indultos": {
-      "postura": "Rechazo explícito al indulto presidencial",
-      "frase_representativa": "NO LO VOY A INDULTAR"
-    }
-  },
-  "aspectos_positivos": [
-    "Perfil empresarial y económico diferenciado de la política tradicional",
-    "Enfoque en emprendimiento y crecimiento económico",
-    "Capacidad de conectar con sectores populares mediante lenguaje directo",
-    "Posicionamiento como figura política nueva",
-    "Alta visibilidad mediática"
-  ],
-  "controversias": {
-    "alianzas_politicas": [
-      {
-        "caso": "Alianza Ahora Nación",
-        "descripcion": "Intento fallido de coalición por problemas de inscripción formal"
-      }
-    ],
-    "conflicto_con_patria_roja": {
-      "acusaciones": [
-        "Incumplimiento de acuerdos políticos",
-        "Negativa a integrarse a un frente de izquierda",
-        "Acciones unilaterales sin convocar a la dirección del partido"
-      ],
-      "consecuencias": [
-        "Advertencia de acciones legales",
-        "Impugnación de actos partidarios"
-      ]
-    },
-    "cuestionamientos_publicos": [
-      "Promesas de rápida solución a problemas estructurales",
-      "Críticas por estilo confrontacional",
-      "Desconfianza hacia el sistema de encuestas"
-    ]
-  },
-  "perfil_publico": {
-    "imagen": "Candidato outsider con discurso empresarial",
-    "percepcion": "Valorado como figura nueva y criticado por conflictos internos y estilo confrontacional",
-    "diferenciacion": "Lenguaje popular y promesas directas frente a la política tradicional"
-  },
-  "fuentes": [
-    {
-      "titulo": "Perfil de Napoleón Becerra - TU CAMBISTA",
-      "url": "https://www.fuente-politica-ficticia.pe/candidatos/napoleon-becerra"
-    }
-  ]
-}
 ]

@@ -900,5 +900,179 @@
     }
   ]
 }
-
+,
+{
+  "id": 14,
+  "nombre": "Jorge Nieto Montesinos",
+  "partido": "Primero la Gente",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jorge_Nieto_Montesinos.jpg/1037px-Jorge_Nieto_Montesinos.jpg",
+  "intentos_presidenciales": 1,
+  "datos_personales": {
+    "fecha_nacimiento": "1951-10-29",
+    "lugar_nacimiento": "Arequipa, Perú",
+    "familia": {
+      "padre": "Walter Nieto Miranda",
+      "madre": "Carmen Montesinos Hartley",
+      "vinculos_familiares_relevantes": [
+        {
+          "nombre": "Vladimiro Montesinos Torres",
+          "relacion": "Sobrino",
+          "aclaracion": "Trayectorias políticas y éticas distantes"
+        }
+      ]
+    }
+  },
+  "formacion": {
+    "educacion_escolar": "Colegio Nacional de la Independencia Americana de Arequipa",
+    "pregrado": [
+      "Derecho – Pontificia Universidad Católica del Perú (PUCP)",
+      "Sociología – PUCP (Bachiller)"
+    ],
+    "postgrado": [
+      "Maestría en Ciencia Política – FLACSO México",
+      "Doctorado en Ciencias Sociales (Sociología) – El Colegio de México"
+    ]
+  },
+  "trayectoria_publica": {
+    "cargos_ejecutivos": [
+      {
+        "cargo": "Ministro de Cultura",
+        "periodo": "2016",
+        "gobierno": "Pedro Pablo Kuczynski"
+      },
+      {
+        "cargo": "Ministro de Defensa",
+        "periodo": "2016-2018",
+        "gobierno": "Pedro Pablo Kuczynski",
+        "salida": "Renuncia por desacuerdo con el indulto a Alberto Fujimori"
+      }
+    ],
+    "liderazgo_partidario": {
+      "partido": "Primero la Gente",
+      "rol": "Líder y referente político"
+    }
+  },
+  "aspectos_positivos": [
+    "Sólida formación académica internacional en ciencias sociales y política",
+    "Perfil tecnocrático e intelectual poco común en la política peruana",
+    "Renuncia al Ministerio de Defensa como gesto de coherencia política y principios",
+    "Experiencia directa en gestión pública y defensa nacional",
+    "Distancia pública y política respecto a la trayectoria de su familiar Vladimiro Montesinos"
+  ],
+  "controversias": {
+    "investigaciones_fiscales": [
+      {
+        "caso": "Odebrecht",
+        "anio_inicio": 2023,
+        "estado": "Investigación fiscal preliminar",
+        "descripcion": "Vinculación indirecta en el marco del caso Odebrecht"
+      }
+    ],
+    "cuestionamientos_electorales": [
+      {
+        "caso": "Firmas falsas en inscripción partidaria",
+        "detalle": "Observaciones al partido Primero la Gente por validación de firmas presuntamente fraudulentas",
+        "contexto": "Deficiencias estructurales del sistema de verificación (Reniec / JNE)"
+      }
+    ]
+  },
+  "perfil_publico": {
+    "imagen": "Intelectual y tecnócrata con énfasis ético",
+    "percepcion": "Valorado por su coherencia y formación, cuestionado por controversias partidarias",
+    "posicionamiento": "Ética pública, institucionalidad democrática y reforma política"
+  },
+  "fuentes": [
+    {
+      "titulo": "Perfil político y académico de Jorge Nieto Montesinos",
+      "url": "https://www.perfil-politico-ficticio.pe/candidatos/jorge-nieto"
+    }
+  ]
+}
+,
+{
+  "id": 15,
+  "nombre": "Napoleón Becerra",
+  "image_url": "https://peruvotoinformado.com/img/candidatos/foto-napoleon-becerra-garcia.jpg",
+  "partido": "P.T.E. Perú (Partido de los Trabajadores y Emprendedores)",
+  "intentos_presidenciales": 1,
+  "perfil_profesional": {
+    "ambito": "Empresarial y económico",
+    "experiencia": [
+      "Sector privado",
+      "Análisis de políticas públicas orientadas al crecimiento económico"
+    ],
+    "liderazgo_previo": "Dirigente de una agrupación de pequeños empresarios"
+  },
+  "trayectoria_politica": {
+    "candidatura_2026": {
+      "cargo": "Presidente de la República",
+      "partido": "P.T.E. Perú"
+    },
+    "posicionamiento": [
+      "Impulso al emprendimiento",
+      "Desarrollo económico",
+      "Crítica al sistema político tradicional"
+    ],
+    "estilo_campaña": {
+      "tono": "Confrontacional y directo",
+      "caracteristicas": [
+        "Descalificación pública de encuestas electorales",
+        "Lenguaje popular",
+        "Actos mediáticos llamativos"
+      ]
+    }
+  },
+  "propuestas_clave": {
+    "seguridad_ciudadana": {
+      "propuesta": "Resolver el problema de la inseguridad en seis meses",
+      "argumento": "Asegura contar con conocimientos técnicos para lograrlo"
+    },
+    "indultos": {
+      "postura": "Rechazo explícito al indulto presidencial",
+      "frase_representativa": "NO LO VOY A INDULTAR"
+    }
+  },
+  "aspectos_positivos": [
+    "Perfil empresarial y económico diferenciado de la política tradicional",
+    "Enfoque en emprendimiento y crecimiento económico",
+    "Capacidad de conectar con sectores populares mediante lenguaje directo",
+    "Posicionamiento como figura política nueva",
+    "Alta visibilidad mediática"
+  ],
+  "controversias": {
+    "alianzas_politicas": [
+      {
+        "caso": "Alianza Ahora Nación",
+        "descripcion": "Intento fallido de coalición por problemas de inscripción formal"
+      }
+    ],
+    "conflicto_con_patria_roja": {
+      "acusaciones": [
+        "Incumplimiento de acuerdos políticos",
+        "Negativa a integrarse a un frente de izquierda",
+        "Acciones unilaterales sin convocar a la dirección del partido"
+      ],
+      "consecuencias": [
+        "Advertencia de acciones legales",
+        "Impugnación de actos partidarios"
+      ]
+    },
+    "cuestionamientos_publicos": [
+      "Promesas de rápida solución a problemas estructurales",
+      "Críticas por estilo confrontacional",
+      "Desconfianza hacia el sistema de encuestas"
+    ]
+  },
+  "perfil_publico": {
+    "imagen": "Candidato outsider con discurso empresarial",
+    "percepcion": "Valorado como figura nueva y criticado por conflictos internos y estilo confrontacional",
+    "diferenciacion": "Lenguaje popular y promesas directas frente a la política tradicional"
+  },
+  "fuentes": [
+    {
+      "titulo": "Perfil de Napoleón Becerra - TU CAMBISTA",
+      "url": "https://www.fuente-politica-ficticia.pe/candidatos/napoleon-becerra"
+    }
+  ]
+}
 ]

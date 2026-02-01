@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { analytics } from '../services/analytics';
 import { useState } from 'react';
 
 const CandidateCard = ({ candidate, onClick }) => {
@@ -72,10 +71,6 @@ const CandidateCard = ({ candidate, onClick }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             onClick={() => {
-                analytics.trackEvent('click', 'click_candidate_card', null, candidate.id, {
-                    candidate_name: candidate.nombre,
-                    party: candidate.partido
-                });
                 if (onClick) onClick();
             }}
             whileHover={{ y: -8 }}

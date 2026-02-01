@@ -1,4 +1,4 @@
-const API_URL = 'https://elecciones-per--2026-backend-622135274332.us-central1.run.app';
+const API_URL = 'https://elecciones-per--2026-backend-622135274332.us-central1.run.app/api/v1/analytics';
 
 // Helper to generate SHA-256 hash
 async function sha256(message) {
@@ -41,7 +41,7 @@ export const analytics = {
                 country: null
             };
 
-            const response = await fetch(`${API_URL}/sessions`, {
+            const response = await fetch(`${API_URL}/session`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
@@ -49,7 +49,7 @@ export const analytics = {
 
             if (response.ok) {
                 const data = await response.json();
-                currentSessionId = data.id;
+                currentSessionId = data.session_id;
                 localStorage.setItem('peru2026_session_id', currentSessionId);
                 console.log('Session initialized:', currentSessionId);
             } else {
@@ -78,7 +78,7 @@ export const analytics = {
             };
 
             // Non-blocking fire-and-forget
-            fetch(`${API_URL}/events`, {
+            fetch(`${API_URL}/event`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)

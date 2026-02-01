@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { analytics } from './services/analytics';
 import LoadingScreen from './components/LoadingScreen';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -26,6 +27,11 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3500);
+
+    // Initialize Analytics
+    analytics.initSession().then(() => {
+      analytics.trackEvent('page_view', 'view_home', '/');
+    });
 
     return () => clearTimeout(timer);
   }, []);

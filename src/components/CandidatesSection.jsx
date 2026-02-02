@@ -155,7 +155,15 @@ const CandidatesSection = ({ candidates }) => {
                 {visibleCount < filteredCandidates.length && (
                     <div className="text-center mt-12 px-4 sm:px-0">
                         <button
-                            onClick={() => setVisibleCount(prev => prev + 5)}
+                            onClick={() => {
+                                setVisibleCount(prev => prev + 5);
+                                import('../services/analytics').then(({ analytics }) => {
+                                    analytics.trackEvent('click', 'click_load_more_candidates', null, null, {
+                                        current_visible_count: visibleCount,
+                                        new_visible_count: visibleCount + 5
+                                    });
+                                });
+                            }}
                             className="w-full sm:w-auto bg-white border-2 border-peru-red text-peru-red hover:bg-peru-red hover:text-white px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-md"
                         >
                             Ver más candidatos ({Math.min(5, filteredCandidates.length - visibleCount)} más)

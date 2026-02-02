@@ -1,10 +1,31 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const CandidateDetail = ({ candidate, onClose }) => {
     const [imageError, setImageError] = useState(false);
     const [activeTab, setActiveTab] = useState('perfil');
+
+    if (!candidate) return null;
+
+    // Analytics: Track time on page
+    useEffect(() => {
+        const startTime = Date.now();
+
+        return () => {
+            const timeSpent = Date.now() - startTime;
+            // Only track if spent more than 1 second to avoid accidental clicks
+            if (timeSpent > 1000) {
+                import('../services/analytics').then(({ analytics }) => {
+                    analytics.trackEvent('view', 'view_candidate_detail_time', null, candidate.id, {
+                        candidate_name: candidate.nombre,
+                        duration_ms: timeSpent,
+                        duration_sec: Math.round(timeSpent / 1000)
+                    });
+                });
+            }
+        };
+    }, [candidate.id]); // Reset if candidate changes
 
     if (!candidate) return null;
 
@@ -159,6 +180,42 @@ const CandidateDetail = ({ candidate, onClose }) => {
                                                     ))}
                                                 </ul>
                                             </div>
+
+                                            {/* Sources / Drive Section */}
+                                            {candidate.fuentes && candidate.fuentes.length > 0 && (
+                                                <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mt-6">
+                                                    <h3 className="font-bold text-gray-900 text-lg mb-4">📚 Fuentes y Documentos</h3>
+                                                    <div className="space-y-3">
+                                                        {candidate.fuentes.map((fuente, idx) => (
+                                                            <a
+                                                                key={idx}
+                                                                href={fuente.url}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                onClick={() => {
+                                                                    import('../services/analytics').then(({ analytics }) => {
+                                                                        analytics.trackEvent('click', 'open_source_drive', null, candidate.id, {
+                                                                            candidate_name: candidate.nombre,
+                                                                            source_title: fuente.titulo,
+                                                                            url: fuente.url
+                                                                        });
+                                                                    });
+                                                                }}
+                                                                className="flex items-center gap-3 p-4 rounded-xl border-2 border-dashed border-gray-200 hover:border-peru-red hover:bg-red-50 transition-all group cursor-pointer"
+                                                            >
+                                                                <span className="text-2xl">📄</span>
+                                                                <div className="flex-1">
+                                                                    <p className="font-semibold text-gray-900 group-hover:text-peru-red transition-colors">
+                                                                        {fuente.titulo}
+                                                                    </p>
+                                                                    <p className="text-xs text-gray-500">Clic para abrir documento</p>
+                                                                </div>
+                                                                <span className="text-gray-400 group-hover:text-peru-red">↗</span>
+                                                            </a>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
 
                                         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">

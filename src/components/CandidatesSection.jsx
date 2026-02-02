@@ -25,6 +25,34 @@ const CandidatesSection = ({ candidates }) => {
         };
     }, []);
 
+    // Analytics: Track search term with debounce
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (searchTerm.length > 2) {
+                import('../services/analytics').then(({ analytics }) => {
+                    analytics.trackEvent('search', 'user_search', null, null, { term: searchTerm });
+                });
+            }
+        }, 1500); // 1.5s debounce
+
+        return () => clearTimeout(timer);
+    }, [searchTerm]);
+
+    const handleSelectCandidate = (candidate) => {
+        setSelectedCandidate(candidate);
+
+        // Analytics: Track search result selection
+        import('../services/analytics').then(({ analytics }) => {
+            analytics.trackEvent('click', 'select_search_result', null, candidate.id, {
+                candidate_name: candidate.nombre,
+                term_used: searchTerm
+            });
+        });
+
+        setSearchTerm('');
+        setShowDropdown(false);
+    };
+
     const filteredCandidates = candidates.filter(candidate => {
         const term = searchTerm.toLowerCase();
         return (
@@ -80,11 +108,7 @@ const CandidatesSection = ({ candidates }) => {
                                     {filteredCandidates.slice(0, 10).map(candidate => (
                                         <button
                                             key={candidate.id}
-                                            onClick={() => {
-                                                setSelectedCandidate(candidate);
-                                                setSearchTerm('');
-                                                setShowDropdown(false);
-                                            }}
+                                            onClick={() => handleSelectCandidate(candidate)}
                                             className="w-full text-left px-6 py-3 hover:bg-red-50 transition-colors flex items-center gap-3 border-b border-gray-50 last:border-0"
                                         >
                                             <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">

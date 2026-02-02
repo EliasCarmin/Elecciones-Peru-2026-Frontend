@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const VersusSection = ({ candidates }) => {
-    // Only 3 slots allowed
-    const [selectedIds, setSelectedIds] = useState(candidates.slice(0, 3).map(c => c.id));
+    // Start empty
+    const [selectedIds, setSelectedIds] = useState([]);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -27,7 +27,27 @@ const VersusSection = ({ candidates }) => {
 
     const handleSelectCandidate = (id) => {
         if (selectedIds.length < 3) {
-            setSelectedIds([...selectedIds, id]);
+            const newSelectedIds = [...selectedIds, id];
+            setSelectedIds(newSelectedIds);
+
+            // Analytics: Track candidate added to versus
+            const candidate = candidates.find(c => c.id === id);
+            if (candidate) {
+                // Construct state: [Name1, Name2, null]
+                const versusState = newSelectedIds.map(sid => {
+                    const c = candidates.find(cand => cand.id === sid);
+                    return c ? c.nombre : null;
+                });
+                // Pad with nulls
+                while (versusState.length < 3) versusState.push(null);
+
+                import('../services/analytics').then(({ analytics }) => {
+                    analytics.trackEvent('compare', 'add_to_versus', null, candidate.id, {
+                        candidate_name: candidate.nombre,
+                        versus_state: versusState
+                    });
+                });
+            }
         }
         setIsSearchOpen(false);
         setSearchTerm('');
@@ -85,7 +105,17 @@ const VersusSection = ({ candidates }) => {
                 </div>
 
                 {/* SLOTS SELECTION AREA */}
-                <div className="flex flex-wrap justify-center gap-4 mb-16">
+                <div className="flex flex-wrap justify-center gap-4 mb-16 relative">
+                    {/* Visual Cue for first usage */}
+                    {selectedCandidates.length === 0 && (
+                        <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 md:translate-x-20 md:-top-10 z-10 pointer-events-none animate-bounce">
+                            <div className="bg-white text-gray-900 px-4 py-2 rounded-full font-bold shadow-lg flex items-center gap-2">
+                                <span>👆</span> ¡Comienza agregando un candidato!
+                            </div>
+                            <div className="w-0 h-0 border-l-[10px] border-l-transparent border-t-[10px] border-t-white border-r-[10px] border-r-transparent mx-auto"></div>
+                        </div>
+                    )}
+
                     {/* Render existing slots */}
                     {selectedCandidates.map((candidate) => (
                         <motion.div

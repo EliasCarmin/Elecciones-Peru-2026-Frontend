@@ -19,11 +19,15 @@ const Header = () => {
                             <p className="text-xs md:text-sm text-gray-600">Conoce a los candidatos</p>
                         </div>
                     </div>
-                    <div className="hidden md:flex items-center gap-0">
-                        <div className="w-8 h-9 bg-peru-red"></div>
-                        <div className="w-8 h-9 bg-white"></div>
-                        <div className="w-8 h-9 bg-peru-red"></div>
-                    </div>
+                    <nav className="hidden md:flex items-center gap-6">
+                        <a href="#votar" className="text-gray-600 hover:text-red-600 font-bold transition-colors">Votar</a>
+                        <a href="#resultados" className="text-gray-600 hover:text-red-600 font-bold transition-colors">Resultados</a>
+                        <div className="flex items-center gap-0 ml-4">
+                            <div className="w-8 h-9 bg-peru-red"></div>
+                            <div className="w-8 h-9 bg-white shadow-inner"></div>
+                            <div className="w-8 h-9 bg-peru-red"></div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </motion.header>

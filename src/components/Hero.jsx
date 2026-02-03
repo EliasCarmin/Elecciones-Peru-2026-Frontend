@@ -40,12 +40,21 @@ const Hero = ({ candidatesCount = 11 }) => {
                             href="https://drive.google.com/drive/folders/1xhiZa8KnOqpbEltYsSUZeXifeAogoaKj?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-3 bg-peru-red hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-peru-red/20 transition-all transform hover:scale-105 active:scale-95"
+                            className="flex items-center gap-3 bg-red-100 border-2 border-peru-red text-peru-red hover:bg-red-200 px-8 py-4 rounded-full font-bold shadow-lg transition-all transform hover:scale-105 active:scale-95"
                         >
                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M13 9V3.5L18.5 9M6 2c-1.11 0-2 .89-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6H6z" />
                             </svg>
-                            <span>Más Información (Drive)</span>
+                            <span>Información</span>
+                        </a>
+                        <a
+                            href="#votar"
+                            className="flex items-center gap-3 bg-peru-red hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-peru-red/20 transition-all transform hover:scale-105 active:scale-95 animate-bounce-subtle"
+                        >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                            <span>Votar Ahora</span>
                         </a>
                     </motion.div>
 

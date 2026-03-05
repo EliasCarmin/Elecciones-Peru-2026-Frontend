@@ -4,6 +4,7 @@
         "nombre": "César Acuña Peralta",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/C%C3%A9sar_Acu%C3%B1a_Peralta.jpg",
         "partido": "Alianza para el Progreso",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16eF-GbMl40poboaw9lQuD_-sgpZlvByNVw&s",
         "intentos_presidenciales": 3,
         "cargos_principales": [
             "Congresista de la República (2000-2006)",
@@ -46,12 +47,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil biográfico y trayectoria política de César Acuña",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/cesar-acuna"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Cesar Acuña.pdf"
+                "url": "https://drive.google.com/file/d/1rvYPE5zxOrA9xAuSLugbB3VdQHZA2ghm/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -65,6 +62,7 @@
         "nombre": "Keiko Fujimori Higuchi",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Keiko_Fujimori_2.jpg/960px-Keiko_Fujimori_2.jpg",
         "partido": "Fuerza Popular",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_of_the_Popular_Force_%282024%29.svg",
         "intentos_presidenciales": 4,
         "cargos_principales": [
             "Primera Dama del Perú (1994-2000)",
@@ -112,12 +110,8 @@
         ],
         "fuentes": [
             {
-                "titulo": "Perfil político y trayectoria de Keiko Fujimori",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/keiko-fujimori"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Keiko Fujimori.pdf"
+                "url": "https://drive.google.com/file/d/1NOGkdmxJEIkoEKBCXHs1N4UpTbHb5L3S/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -128,7 +122,8 @@
         "id": 3,
         "nombre": "Alfonso López-Chau Nava",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alfonso_L%C3%B3pez-Chau.jpg/250px-Alfonso_L%C3%B3pez-Chau.jpg",
-        "partido": "Independiente",
+        "partido": "Ahora Nación",
+        "logo_partido": "https://ahoranacion.pe/wp-content/uploads/2024/12/Asset-1.webp",
         "intentos_presidenciales": 1,
         "cargos_principales": [
             "Rector de la Universidad Nacional de Ingeniería (UNI)",
@@ -147,12 +142,8 @@
         ],
         "fuentes": [
             {
-                "titulo": "Perfil biográfico de Alfonso López-Chau",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/alfonso-lopez-chau"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Alfonso López.pdf"
+                "url": "https://drive.google.com/file/d/1U5AA6agTYqYoEEoOydbLYPPKPDmZhzqZ/view?usp=sharing"
             }
         ]
     },
@@ -161,6 +152,7 @@
         "nombre": "José Williams Zapata",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Jos%C3%A9_Williams%2C_octubre_de_2022_1_%28cropped%29.jpg",
         "partido": "Avanza País",
+        "logo_partido": "https://www.avanzapais.org.pe/wp-content/uploads/2022/02/Logo-AP-alpha-1-150x150.png",
         "intentos_presidenciales": 1,
         "cargos_principales": [
             "Congresista de la República (2021-2026)",
@@ -190,12 +182,8 @@
         ],
         "fuentes": [
             {
-                "titulo": "Perfil político y militar de José Williams Zapata",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/jose-williams"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "José Williams.pdf"
+                "url": "https://drive.google.com/file/d/1M2-LbZ8s6kY6boIoLAExzO8VXa8-6uf6/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -207,6 +195,7 @@
         "nombre": "Álvaro Paz de la Barra",
         "image_url": "https://caretas.pe/wp-content/uploads/2025/11/image-316-585x390.png",
         "partido": "Fe en el Perú",
+        "logo_partido": "https://www.feenelperu.pe/wp-content/uploads/2023/02/LOGO-FE-EN-EL-PERU-WEB-min.png",
         "intentos_presidenciales": 1,
         "cargos_principales": [
             "Alcalde de La Molina (2019-2022)",
@@ -232,12 +221,8 @@
         ],
         "fuentes": [
             {
-                "titulo": "Perfil político y municipal de Álvaro Paz de la Barra",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/alvaro-paz-de-la-barra"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Álvaro Paz de la Barra.pdf"
+                "url": "https://drive.google.com/file/d/1tE5Yciawh1GSvLqAVxt75uQqLHzifYrm/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -249,6 +234,7 @@
         "nombre": "Roberto Sánchez Palomino",
         "image_url": "https://www.euroamerica.org/wp-content/uploads/2022/07/Roberto-Sanchez.jpg",
         "partido": "Juntos por el Perú",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVybQSVYEH0J4gkGUj06l3BevG6pTiiOygEg&s",
         "intentos_presidenciales": 1,
         "cargos_principales": [
             "Congresista de la República (2021-2026)",
@@ -274,8 +260,8 @@
         ],
         "fuentes": [
             {
-                "titulo": "Perfil político y trayectoria de Roberto Sánchez",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/roberto-sanchez"
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "https://drive.google.com/file/d/1VvBsxCaz2O9JsbnmyJjfM0OzSG36Sx6Z/view?usp=sharing"
             }
         ]
     },
@@ -283,7 +269,8 @@
         "id": 7,
         "nombre": "Fiorella Molinelli Aristondo",
         "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYSJIIlB-cc9KiqpVKtxe36qdwzEc2XcDCQ&s",
-        "partido": "Fuerza Moderna",
+        "partido": "Fuerza y Libertad",
+        "logo_partido": "https://fuerzaylibertad.com/wp-content/uploads/2025/10/logo-fuerza-y-libertad.png",
         "intentos_presidenciales": 1,
         "cargos_principales": [
             "Presidenta Ejecutiva de EsSalud (2018-2021)",
@@ -313,8 +300,8 @@
         ],
         "fuentes": [
             {
-                "titulo": "Perfil político de Fiorella Molinelli",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/fiorella-molinelli"
+                "titulo": "Documento de Referencia (PDF)",
+                "url": "https://drive.google.com/file/d/1hsi9S-uycaHbctB-4ljsv-sAVaod6arV/view?usp=sharing"
             }
         ]
     },
@@ -323,6 +310,7 @@
         "nombre": "Ricardo Belmont Cassinelli",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ricardo_Belmont_3.jpg",
         "partido": "Partido Cívico Obras",
+        "logo_partido": "https://partidopoliticocivicoobras.com/wp-content/uploads/2021/05/Logo-Oficial-Obras-1.png",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1945-08-29",
@@ -412,12 +400,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil político y biografía de Ricardo Belmont",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/ricardo-belmont"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Ricardo Belmont.pdf"
+                "url": "https://drive.google.com/file/d/1hmJKW0fNEAC_48F3xD2m6ytWaQ09cEUt/view?usp=sharing"
             }
         ]
     },
@@ -426,6 +410,7 @@
         "nombre": "Enrique Valderrama Peña",
         "image_url": "https://www.canalb.pe/assets/uploads/images/32e78-29c34c86-3deb-46f2-95b8-95b934adbb5b.jpeg",
         "partido": "Partido Aprista Peruano",
+        "logo_partido": "https://apraperu.org/main/images/logo/APRA.jpg",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1986-04-14",
@@ -519,12 +504,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil político de Enrique Valderrama",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/enrique-valderrama"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Enrique Valderrama Peña.pdf"
+                "url": "https://drive.google.com/file/d/1wwC7lysGkojx5y-CHLJXWlepYDRf_n3X/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -536,6 +517,7 @@
         "nombre": "Rafael Belaúnde Llosa",
         "image_url": "https://www.lampadia.com/wp-content/uploads/2023/10/rafael-belaunde-llosa.jpg",
         "partido": "Libertad Popular",
+        "logo_partido": "https://lh3.googleusercontent.com/sitesv/APaQ0SSSDw3-oUGuy8XUMve2gA9SCqj8rM0zeiQgeEpu06cd_1mVDAY1bOQ-NZUMBL7pxrdQ6Aez2TrbVfwkMSqnbof96XuhsJQOh9QGWZX9RVf2HXFkpLFRdj7BHBYL9I_tWxNsEwl-WX8eerBOvSR1D_wrpUdDlKSfHFDhLC7bztP0sWVyjS2xL4Dk=w16383",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1974-12-26",
@@ -643,12 +625,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil político y biografía de Rafael Belaúnde",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/rafael-belaunde"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Rafael Belaúnde.pdf"
+                "url": "https://drive.google.com/file/d/1ZZIUPHAmFxRLxo1T-CG1p7GhlP1KuXC2/view?usp=sharing"
             }
         ]
     },
@@ -657,6 +635,7 @@
         "nombre": "Wolfgang Grozo",
         "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRYcOqe4168OjbnVRbyfDI8oI1_H9eMnHQQ&s",
         "partido": "Integridad Democrática",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Logo_de_Integridad_democratica.jpg",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1967-09-21",
@@ -728,12 +707,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil biográfico y político de Wolfgang Grozo",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/wolfgang-grozo"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Wolfgang Grozo.pdf"
+                "url": "https://drive.google.com/file/d/1YLoSvZ7rAPXxs49a0FeAub0zlf4Wqst1/view?usp=sharing"
             }
         ]
     },
@@ -742,6 +717,7 @@
         "nombre": "Carlos Álvarez Cáceres",
         "image_url": "https://elcomercio.pe/resizer/v2/MGIMSICCXFBNNNL6FR26BLKNJI.jpg?auth=c8ff19dad1944b6135dd7f44ec8f33fbc0e339685f2dd9a7e511ad38b2b83f38&width=1200&height=1200&quality=75&smart=true",
         "partido": "País para Todos",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Logo_de_Pais_para_todos.jpg",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1964-01-07",
@@ -826,12 +802,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Biografía de Carlos Álvarez",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/carlos-alvarez"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Carlos Álvarez.pdf"
+                "url": "https://drive.google.com/file/d/1PCAAZ2zFAxklqOTLFwZlZZmzcnl2igEO/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -844,7 +816,8 @@
         "image_url": "https://portal.andina.pe/EDPfotografia/Thumbnail/2015/09/14/000313912W.jpg",
         "nombre_publico": "Fernando Olivera",
         "apodo": "Popy",
-        "partido": "Frente de la Esperanza",
+        "partido": "Frente de la Esperanza 2021",
+        "logo_partido": "http://www.partidofrentedelaesperanza2021.pe/images/logo-1.jpg",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1958-07-26",
@@ -949,19 +922,16 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil político de Fernando Olivera",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/fernando-olivera"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Fernando Olivera.pdf"
+                "url": "https://drive.google.com/file/d/1lJCxuBK6MaAumdROw8S5Tmqy-LoK0n91/view?usp=sharing"
             }
         ]
     },
     {
         "id": 14,
         "nombre": "Jorge Nieto Montesinos",
-        "partido": "Primero la Gente",
+        "partido": "Partido del Buen Gobierno",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9voEcwCwh5dxbY-HqYyBj4fQDC2ivAlo3mw&s",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jorge_Nieto_Montesinos.jpg/1037px-Jorge_Nieto_Montesinos.jpg",
         "intentos_presidenciales": 1,
         "datos_personales": {
@@ -1005,7 +975,8 @@
                 }
             ],
             "liderazgo_partidario": {
-                "partido": "Primero la Gente",
+                "partido": "Partido del Buen Gobierno",
+                "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9voEcwCwh5dxbY-HqYyBj4fQDC2ivAlo3mw&s",
                 "rol": "Líder y referente político"
             }
         },
@@ -1040,12 +1011,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil político y académico de Jorge Nieto Montesinos",
-                "url": "https://www.perfil-politico-ficticio.pe/candidatos/jorge-nieto"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Jorge Nieto Montesinos.pdf"
+                "url": "https://drive.google.com/file/d/1dUYXg5KWhgR_5zT9CQMXWNfBUWCcUUP3/view?usp=sharing"
             }
         ],
         "educacion": [
@@ -1057,6 +1024,7 @@
         "nombre": "Napoleón Becerra",
         "image_url": "https://peruvotoinformado.com/img/candidatos/foto-napoleon-becerra-garcia.jpg",
         "partido": "P.T.E. Perú (Partido de los Trabajadores y Emprendedores)",
+        "logo_partido": "https://pte.pe/wp-content/uploads/elementor/thumbs/logo-q9d0u02hbuwcvf5qzukr60aq142fhxiktnuaewuarc.png",
         "intentos_presidenciales": 1,
         "perfil_profesional": {
             "ambito": "Empresarial y económico",
@@ -1133,12 +1101,8 @@
         },
         "fuentes": [
             {
-                "titulo": "Perfil de Napoleón Becerra - TU CAMBISTA",
-                "url": "https://www.fuente-politica-ficticia.pe/candidatos/napoleon-becerra"
-            },
-            {
                 "titulo": "Documento de Referencia (PDF)",
-                "url": "Napoleón Becerra.pdf"
+                "url": "https://drive.google.com/file/d/1oySoGvde-txsCxNU2SawDWUGAionqxIe/view?usp=sharing"
             }
         ]
     }

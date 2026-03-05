@@ -104,7 +104,16 @@ const CandidateCard = ({ candidate, onClick }) => {
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
                     {candidate.nombre}
                 </h3>
-                <p className="text-peru-red font-semibold mb-4">{candidate.partido}</p>
+                <div className="flex items-center gap-2 mb-4">
+                    {candidate.logo_partido && (
+                        <img
+                            src={candidate.logo_partido}
+                            alt={`Logo ${candidate.partido}`}
+                            className="w-6 h-6 object-contain"
+                        />
+                    )}
+                    <p className="text-peru-red font-semibold text-sm">{candidate.partido}</p>
+                </div>
 
                 <div className="space-y-3">
                     {cargos.length > 0 && (

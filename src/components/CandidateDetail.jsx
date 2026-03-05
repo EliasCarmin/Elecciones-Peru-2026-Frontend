@@ -115,7 +115,18 @@ const CandidateDetail = ({ candidate, onClose }) => {
                             </motion.div>
                             <div className="mb-2 text-white">
                                 <h2 className="text-4xl md:text-5xl font-black mb-2">{candidate.nombre}</h2>
-                                <p className="text-xl md:text-2xl font-light opacity-90">{candidate.partido}</p>
+                                <div className="flex items-center gap-3">
+                                    {candidate.logo_partido && (
+                                        <div className="bg-white/90 p-1.5 rounded-lg h-10 w-10 flex items-center justify-center">
+                                            <img
+                                                src={candidate.logo_partido}
+                                                alt={`Logo ${candidate.partido}`}
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
+                                    )}
+                                    <p className="text-xl md:text-2xl font-light opacity-90">{candidate.partido}</p>
+                                </div>
                             </div>
                         </div>
 

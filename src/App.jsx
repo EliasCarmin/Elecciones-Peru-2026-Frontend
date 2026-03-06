@@ -10,24 +10,19 @@ import VersusSection from './components/VersusSection';
 import Footer from './components/Footer';
 import VotingModule from './components/VotingModule';
 import VotingResults from './components/VotingResults';
+import MatchQuiz from './components/MatchQuiz';
+import CandidateDetail from './components/CandidateDetail';
 import candidatesData from './data/candidates.json';
 import './index.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [refreshResults, setRefreshResults] = useState(0);
+  const [selectedCandidate, setSelectedCandidate] = useState(null);
 
   const handleVoteCompleted = () => {
     setRefreshResults(prev => prev + 1);
   };
-
-
-
-
-
-
-
-
 
   useEffect(() => {
     // Simulate initial loading time
@@ -56,13 +51,26 @@ function App() {
           <Header />
           <main>
             <Hero candidatesCount={candidatesData.length} />
-            <CandidatesSection candidates={candidatesData} />
+            <MatchQuiz candidates={candidatesData} onSelectCandidate={setSelectedCandidate} />
+            <CandidatesSection
+              candidates={candidatesData}
+              onSelectCandidate={setSelectedCandidate}
+            />
             <VotingModule candidates={candidatesData} onVoteCompleted={handleVoteCompleted} />
             <VotingResults candidates={candidatesData} key={refreshResults} />
             <VersusSection candidates={candidatesData} />
-
           </main>
           <Footer />
+
+          {/* Global Candidate Detail Overlay */}
+          <AnimatePresence>
+            {selectedCandidate && (
+              <CandidateDetail
+                candidate={selectedCandidate}
+                onClose={() => setSelectedCandidate(null)}
+              />
+            )}
+          </AnimatePresence>
         </div>
       )}
     </>

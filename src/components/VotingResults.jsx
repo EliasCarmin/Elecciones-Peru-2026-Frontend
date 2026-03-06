@@ -16,7 +16,28 @@ const VotingResults = ({ candidates }) => {
             9: 310,  // Valderrama
             10: 450, // Belaúnde
             11: 120, // Grozo
-            12: 1840 // Álvarez
+            12: 1840, // Álvarez
+            13: 560,  // Olivera
+            14: 710,  // Nieto
+            15: 390,  // Becerra
+            16: 250,  // Candidate 16
+            17: 480,  // Candidate 17
+            18: 320,  // Candidate 18
+            19: 150,  // Candidate 19
+            20: 210,  // Candidate 20
+            21: 180,  // Candidate 21
+            22: 430,  // Candidate 22
+            23: 590,  // Candidate 23
+            24: 120,  // Candidate 24
+            25: 670,  // Jaico
+            26: 1950, // Luna
+            27: 840,  // Pérez Tello
+            28: 310,  // Jaimes Blanco
+            29: 420,  // Ortiz Villano
+            30: 230,  // Candidate 30
+            31: 190,  // Candidate 31
+            32: 540,  // Candidate 32
+            33: 310   // Candidate 33
         };
     }, []);
 

@@ -167,19 +167,7 @@ const CandidateDetail = ({ candidate, onClose }) => {
                                 {activeTab === 'perfil' && (
                                     <div className="grid md:grid-cols-2 gap-8">
                                         <div className="space-y-6">
-                                            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                                                <h3 className="font-bold text-gray-900 text-lg mb-4">Datos Personales</h3>
-                                                <dl className="grid grid-cols-1 gap-4">
-                                                    <div>
-                                                        <dt className="text-sm text-gray-500">Lugar de Nacimiento</dt>
-                                                        <dd className="font-medium text-gray-900">{candidate.origen?.lugar_nacimiento || 'No especificado'}</dd>
-                                                    </div>
-                                                    <div>
-                                                        <dt className="text-sm text-gray-500">Fecha de Nacimiento</dt>
-                                                        <dd className="font-medium text-gray-900">{candidate.origen?.fecha_nacimiento || 'No especificado'}</dd>
-                                                    </div>
-                                                </dl>
-                                            </div>
+
                                             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                                                 <h3 className="font-bold text-gray-900 text-lg mb-4">Experiencia Política</h3>
                                                 <ul className="space-y-3">

@@ -1105,5 +1105,1809 @@
                 "url": "https://drive.google.com/file/d/1oySoGvde-txsCxNU2SawDWUGAionqxIe/view?usp=sharing"
             }
         ]
+    },
+    {
+        "id": "16",
+        "nombre": "Walter Chirinos Purizaga",
+        "image_url": "",
+        "partido": "Partido Regionalista de Integración Nacional (PRIN)",
+        "logo_partido": "",
+        "intentos_presidenciales": "0",
+        "perfil_profesional": {
+            "ambito": "Derecho, contabilidad y consultoría independiente",
+            "experiencia": [
+                "Ejercicio privado de la abogacía",
+                "Consultoría independiente",
+                "Director General de Gobierno del Interior en el Ministerio del Interior (2018)"
+            ],
+            "liderazgo_previo": "Presidente fundador del Partido Regionalista de Integración Nacional (PRIN)"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente del Perú",
+                "partido": "PRIN"
+            },
+            "posicionamiento": [
+                "Discurso descentralista y regionalista",
+                "Crítica al centralismo limeño",
+                "Enfoque de mano dura contra la criminalidad inspirado en el modelo de El Salvador"
+            ],
+            "estilo_campaña": {
+                "tono": "Firme y confrontacional frente a la inseguridad",
+                "caracteristicas": [
+                    "Referencia al modelo de seguridad de Bukele",
+                    "Propuestas de estado de excepción inicial",
+                    "Promoción de reformas institucionales en policía y sistema penitenciario"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Adaptar el modelo de seguridad de El Salvador al Perú, incluyendo estado de excepción en los primeros 100 días, reorganización de la Policía Nacional y cárceles productivas inspiradas en el CECOT.",
+                "argumento": "Restablecer el orden, combatir la criminalidad y generar condiciones de seguridad para atraer inversión."
+            },
+            "indultos": {
+                "postura": "",
+                "frase_representativa": ""
+            }
+        },
+        "aspectos_positivos": [
+            "Experiencia en gestión pública en el Ministerio del Interior",
+            "Promoción de descentralización política y económica",
+            "Propuestas orientadas a seguridad ciudadana y formalización minera"
+        ],
+        "controversias": {
+            "alianzas_politicas": [],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Difusión de información falsa sobre el funcionamiento del Seguro Integral de Salud (SIS)",
+                "Sanción previa de la ONPE por incumplimiento en la presentación de información financiera de campaña (procedimiento posteriormente archivado)"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Candidato regionalista con discurso de mano dura contra la criminalidad",
+            "percepcion": "Figura emergente que busca posicionarse como alternativa de seguridad y descentralización",
+            "diferenciacion": "Promoción de un modelo de seguridad inspirado en El Salvador combinado con discurso regionalista"
+        },
+        "fuentes": [
+            {
+                "titulo": "Hoja de vida de Walter Chirinos",
+                "url": "https://www.facebook.com/ventanillatv/posts/conoce-la-hoja-de-vida-de-walter-gilmer-chirinos-candidato-presidencial-por-el-p/1302379021916120/"
+            },
+            {
+                "titulo": "Propuesta de seguridad inspirada en Bukele",
+                "url": "https://rpp.pe/politica/elecciones/walter-chirinos-propone-modelo-de-seguridad-inspirado-en-bukele-y-el-salvador-para-combatir-la-criminalidad-con-justicia-noticia-1675084"
+            },
+            {
+                "titulo": "Planes de gobierno de Walter Chirinos",
+                "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-walter-chirinos-purizaga-del-partido-politico-prin"
+            },
+            {
+                "titulo": "Propuesta del Banco Minero",
+                "url": "https://elperuano.pe/noticia/288698-elecciones-2026-walter-chirinos-del-prin-propone-creacion-del-banco-minero"
+            },
+            {
+                "titulo": "Reforma educativa propuesta",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-walter-chirinos-del-prin-propone-reformar-curricula-y-educacion-tecnica-1061061.aspx"
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "nombre": "Armando Massé Fernández",
+        "image_url": "",
+        "partido": "Partido Democrático Federal",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Medicina, música y comunicación",
+            "experiencia": [
+                "Médico emergencista en hospitales de Chiclayo y Lambayeque",
+                "Director del Policlínico 'Médico de Guardia'",
+                "Cantautor de música pop y criolla",
+                "Locutor y conductor del programa radial 'Médicos en Acción'"
+            ],
+            "liderazgo_previo": "Presidente ejecutivo y secretario general de APDAYC entre 1999 y 2018"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Partido Democrático Federal"
+            },
+            "posicionamiento": [
+                "Cambio de la Constitución",
+                "Crítica a las decisiones de la Corte Interamericana de Derechos Humanos"
+            ],
+            "estilo_campaña": {
+                "tono": "Controversial y mediático",
+                "caracteristicas": [
+                    "Uso de medios de comunicación",
+                    "Declaraciones polémicas",
+                    "Propuestas disruptivas en seguridad"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Creación de rondas urbanas en Lima inspiradas en las rondas campesinas",
+                "argumento": "Justifica la propuesta señalando que gran parte de la población limeña proviene de provincias"
+            },
+            "indultos": {
+                "postura": "",
+                "frase_representativa": ""
+            }
+        },
+        "aspectos_positivos": [
+            "Experiencia profesional como médico",
+            "Trayectoria cultural como cantautor",
+            "Experiencia de liderazgo en APDAYC"
+        ],
+        "controversias": {
+            "alianzas_politicas": [],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Denuncias por lavado de activos, estafa y administración fraudulenta durante su gestión en APDAYC",
+                "Investigación del Colegio Médico del Perú por recomendar dióxido de cloro contra la COVID-19",
+                "Promoción de ivermectina, azitromicina e hidroxicloroquina sin evidencia científica",
+                "Afirmación falsa sobre que el 80% de Lima está compuesto por personas de provincia"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Médico, cantautor y comunicador con presencia mediática",
+            "percepcion": "Figura polémica con influencia en medios de comunicación",
+            "diferenciacion": "Combina carrera médica, artística y política"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia - Armando Massé",
+                "url": "https://es.wikipedia.org/wiki/Armando_Mass%C3%A9"
+            },
+            {
+                "titulo": "Dr Armando Massé",
+                "url": "https://drarmandomasse.com/"
+            },
+            {
+                "titulo": "Salud con Lupa - Armando Massé",
+                "url": "https://saludconlupa.com/series/desinformantes/armando-masse-fernandez/"
+            },
+            {
+                "titulo": "Mapa Cultural",
+                "url": "https://mapacultural.pa.gov.br/agente/9022633/#info"
+            },
+            {
+                "titulo": "La República - Verificador",
+                "url": "https://larepublica.pe/verificador/2026/02/13/el-80-de-lima-esta-compuesto-por-personas-de-provincia-es-falso-lo-afirmado-por-el-candidato-armando-masse-1011660"
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "nombre": "Charlie Carrasco Salazar",
+        "image_url": "",
+        "partido": "Partido Demócrata Unido Perú",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Jurídico / Académico / Militar (licenciado de las FF.AA.)",
+            "experiencia": [
+                "Doctor en Derecho – UNFV (2012)",
+                "Maestro en Derecho Constitucional – UNFV (2011)",
+                "Maestría en Gestión Pública – USMP (2023)",
+                "Abogado – Universidad Tecnológica de los Andes (2009)",
+                "Docente investigador en UNJFSC, UNH, UAC, UNMSM",
+                "Asesor y certificador en la Municipalidad Metropolitana de Lima (2015)",
+                "Gerente de la Corporación CCS y estudio jurídico propio"
+            ],
+            "liderazgo_previo": "Docente catedrático en diversas universidades del país; asesor municipal"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Partido Demócrata Unido Perú"
+            },
+            "posicionamiento": [
+                "Derecha radical / ultranacionalista",
+                "Constitucionalista autodeclarado",
+                "Antiestablishment, rechaza alianzas con partidos tradicionales"
+            ],
+            "estilo_campaña": {
+                "tono": "Confrontacional y radical",
+                "caracteristicas": [
+                    "Se presenta como 'soldado del pueblo' y 'hombre de fe'",
+                    "Propone 'reingeniería total del Estado'",
+                    "Discurso duro contra extranjeros y corruptos",
+                    "Influencia desde el sur del país (Apurímac)"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Plazo de 48 horas para que extranjeros indocumentados abandonen el país; de no hacerlo, serán declarados 'objetivos militares'. Servicio militar obligatorio para jóvenes que no estudian ni trabajan. Cadena perpetua para corruptos, sicarios y extorsionadores en megacárceles con trabajos forzados.",
+                "argumento": "Necesidad de una limpieza total del Estado y recuperación del orden mediante medidas de fuerza"
+            },
+            "indultos": {
+                "postura": "Promete amnistía para militares que enfrentaron el terrorismo y hoy son perseguidos judicialmente",
+                "frase_representativa": "Los militares que enfrentaron al terrorismo no deben ser perseguidos"
+            }
+        },
+        "aspectos_positivos": [
+            "Perfil académico sólido con doctorado y dos maestrías",
+            "Experiencia docente en múltiples universidades de reconocimiento nacional",
+            "Presencia en el ámbito de investigación jurídica (Concytec)",
+            "Propone educación con enfoque en robótica, industrialización y educación financiera"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Rechazo absoluto a alianzas",
+                    "descripcion": "Declaró que 'hacer alianzas es hacer negociados', aislándose de toda coalición política"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Propuesta de declarar 'objetivos militares' a extranjeros indocumentados genera controversia legal y de derechos humanos",
+                "Plantea eliminar la Contraloría, la Defensoría del Pueblo y la JNJ",
+                "Propone retirar al Perú de la Convención Americana de Derechos Humanos",
+                "Calificó de 'alta traición' la reunión del presidente Jerí con un empresario chino",
+                "Afirma que Dina Boluarte debe terminar su mandato en prisión"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Militar licenciado, constitucionalista y académico del sur del Perú",
+            "percepcion": "Candidato radical de perfil regional con base en el sector jurídico y académico",
+            "diferenciacion": "Combina formación académica con discurso nacionalista y militarista; origen apurimeño le da proyección regional"
+        },
+        "fuentes": [
+            {
+                "titulo": "El Búho – Entrevista Charlie Carrasco",
+                "url": "https://elbuho.pe/2025/06/elecciones-2026-candidato-charlie-carrasco-el-peru-necesita-una-limpieza-total-del-estado-video/"
+            },
+            {
+                "titulo": "El Búho – Candidatos presidenciales desde el sur",
+                "url": "https://elbuho.pe/2025/06/charlie-carrasco-y-vicente-alanoca-candidatos-presidenciales-desde-el-sur-rumbo-a-las-elecciones-2026/"
+            },
+            {
+                "titulo": "Concytec – Perfil de investigador",
+                "url": "https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=28010"
+            },
+            {
+                "titulo": "Ventanilla TV – Hoja de vida",
+                "url": "https://www.facebook.com/ventanillatv/posts/conoce-la-hoja-de-vida-de-charlie-carrasco-candidato-presidencial-por-el-partido/1302371991916823/"
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "nombre": "Herbert Caller Gutiérrez",
+        "image_url": "",
+        "partido": "Partido Patriótico del Perú (PPP)",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Naval / Jurídico / Educativo / Emprendedor",
+            "experiencia": [
+                "Oficial de la Marina de Guerra del Perú (21 años en servicio, retirado)",
+                "Egresó como Alférez de Fragata en 2000 con Espada de Honor (primer puesto de su promoción)",
+                "Bachiller en Ciencias Marítimo Navales – Escuela Naval del Perú",
+                "Bachiller en Ingeniería Naval – UNI",
+                "Abogado – Universidad Alas Peruanas",
+                "Máster en Gestión y Análisis de Políticas Públicas – USMP y Universidad Carlos III de Madrid",
+                "Programa de Gobernabilidad y Gerencia Política – PUCP, GWU, CAF",
+                "Fundador de centro de idiomas y colegio de 'súper aprendizaje' (desde 2015)",
+                "Políglota (habla seis idiomas) y escritor de ocho libros"
+            ],
+            "liderazgo_previo": "Comandante en la Marina de Guerra; fundador y presidente del Partido Patriótico del Perú"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Partido Patriótico del Perú (PPP)"
+            },
+            "posicionamiento": [
+                "Derecha conservadora / ultranacionalista",
+                "Valores: 'Dios, Patria y Familia'",
+                "Outsider preparado, diferenciado de la clase política tradicional"
+            ],
+            "estilo_campaña": {
+                "tono": "Disciplinado, patriótico y moralizante",
+                "caracteristicas": [
+                    "Apela a la disciplina militar como modelo de gestión",
+                    "Candidatos vinculados a pastores evangélicos y exmilitares",
+                    "Busca el voto conservador y religioso",
+                    "Se presenta como víctima de un sistema político incapaz"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Las Fuerzas Armadas asumirían el control del orden interno, subordinando a la PNP. Promete 260,000 efectivos (militares y policías) patrullando las calles las 24 horas. Pena de muerte para criminales condenados por asesinato. Presos trabajarían obligatoriamente para costear su estadía, empezando por expresidentes.",
+                "argumento": "El actual estado de emergencia es ineficaz porque no da el mando real a las Fuerzas Armadas"
+            },
+            "indultos": {
+                "postura": "No contempla indultos; al contrario, propone que expresidentes presos trabajen en el penal de Barbadillo",
+                "frase_representativa": "Los expresidentes en Barbadillo empezarían a trabajar para costear su estadía"
+            }
+        },
+        "aspectos_positivos": [
+            "Sólida formación académica internacional (España, EE.UU., Alemania, Brasil, Grecia)",
+            "Vasta experiencia en las Fuerzas Armadas (21 años)",
+            "Capacidad lingüística destacada (seis idiomas)",
+            "Propuesta de descentralización de ministerios hacia regiones",
+            "Impulso a industrialización y soberanía económica nacional"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Alianza con sectores evangélicos",
+                    "descripcion": "Muchos de sus candidatos al Senado son pastores evangélicos, buscando consolidar un voto conservador y religioso"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Una cuenta vinculada a su partido difundió una encuesta falsa (atribuida a 'Shadday') donde aparecía primero con 13%; PerúCheck verificó que la imagen era manipulada",
+                "Se declara abiertamente contra la unión civil, el matrimonio igualitario y el enfoque de género",
+                "Califica al gobierno actual de 'incapaz y traidor'",
+                "La propuesta de pena de muerte requiere salir del Pacto de San José"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Militar retirado de élite, emprendedor educativo y políglota",
+            "percepcion": "Outsider disciplinado con perfil técnico-militar y valores conservadores",
+            "diferenciacion": "Único candidato con carrera naval de alto nivel y formación en seis idiomas; combina disciplina militar con emprendimiento educativo"
+        },
+        "fuentes": [
+            {
+                "titulo": "Partido Patriótico del Perú – Sitio oficial",
+                "url": "https://partidopatrioticodelperu.pe/"
+            },
+            {
+                "titulo": "Diario Correo – Entrevista Herbert Caller",
+                "url": "https://diariocorreo.pe/politica/herbert-caller-hay-candidatos-que-ya-no-deberian-estar-en-el-escenario-noticia/"
+            },
+            {
+                "titulo": "RPP – Propuesta de traslado de ministerios",
+                "url": "https://rpp.pe/politica/elecciones/herbert-caller-candidato-presidencial-del-ppp-plantea-trasladar-cinco-ministerios-a-regiones-noticia-1671255"
+            },
+            {
+                "titulo": "Prensa Regional – Encuesta falsa Shadday",
+                "url": "https://prensaregional.pe/el-candidato-presidencial-herbert-caller-lidera-las-encuestas-no-es-falsa-la-encuesta-atribuida-a-shadday/"
+            },
+            {
+                "titulo": "Ventanilla TV – Hoja de vida",
+                "url": "https://www.facebook.com/ventanillatv/posts/conoce-la-hoja-de-vida-de-herbert-caller-guti%C3%A9rrez-candidato-presidencial-por-el/1302253098595379/"
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "nombre": "Mesías Guevara Amasifuén",
+        "image_url": "",
+        "partido": "Partido Morado",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Tecnológico / Empresarial / Político",
+            "experiencia": [
+                "Ingeniero Electrónico – Universidad Ricardo Palma (1987)",
+                "Segunda especialidad en formulación y evaluación de proyectos – UNI (1994)",
+                "MBA – UPC (2001)",
+                "Diploma de Estudios Avanzados en Administración – Universidad de Sevilla",
+                "Candidato a Doctor en Administración – Universidad de Sevilla",
+                "Ejecutivo senior en empresas multinacionales de tecnología",
+                "Gobernador Regional de Cajamarca (2019-2022)",
+                "Presidente de la ANGR (2019)",
+                "Congresista de la República por Cajamarca (2011-2016)"
+            ],
+            "liderazgo_previo": "Gobernador Regional de Cajamarca, Presidente de la Asamblea Nacional de Gobiernos Regionales, Secretario General y Presidente de Acción Popular (2014-2018)"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Partido Morado"
+            },
+            "posicionamiento": [
+                "Centro-derecha liberal / demócrata",
+                "Enfoque en transformación digital y 'economía del conocimiento'",
+                "Reformista institucional"
+            ],
+            "estilo_campaña": {
+                "tono": "Técnico, propositivo y reformista",
+                "caracteristicas": [
+                    "Se define como 'demócrata por convicción'",
+                    "Apela a la gestión pública descentralizada",
+                    "Elegido en internas con 60% de los votos del Partido Morado",
+                    "Usa experiencia regional como credencial de gestión"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Solicitar facultades legislativas para derogar 'leyes procrimen', reorganizar la PNP y el INPE, y usar inteligencia artificial para combatir la extorsión. Crear el Ministerio de Infraestructura.",
+                "argumento": "La inseguridad requiere una respuesta institucional técnica con uso de tecnología e IA"
+            },
+            "indultos": {
+                "postura": "No se pronuncia a favor de indultos; su enfoque es reformar las instituciones de justicia",
+                "frase_representativa": "Si el Congreso se convierte en un obstáculo para gobernar, no voy a tener ningún reparo en cerrarlo"
+            }
+        },
+        "aspectos_positivos": [
+            "Única candidatura con experiencia comprobada en gobierno regional (Cajamarca 2019-2022)",
+            "Mejoró el índice de competitividad de Cajamarca durante su gestión",
+            "Impulso a digitalización y creación de marca regional",
+            "Conocimiento técnico en tecnología y transformación digital",
+            "Experiencia legislativa (Congresista 2011-2016, comisiones de Ciencia y Tecnología)"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Ruptura con Acción Popular",
+                    "descripcion": "Renunció en 2023 por discrepancias internas y con la facción 'Los Niños'"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Declaró que cerraría el Congreso si se convierte en obstáculo, aunque luego matizó refiriéndose a la 'muerte cruzada' constitucional",
+                "Afirmó que 'al 85% de peruanos no le importa la política'; dato calificado de falso por PerúCheck (el desinterés real oscila entre 60% y 72%)",
+                "Cuestionó a Carlos Álvarez por el escándalo de fondos de la franja electoral"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Tecnócrata con experiencia regional, reformista institucional",
+            "percepcion": "Candidato con credenciales de gestión pública descentralizada y perfil técnico-empresarial",
+            "diferenciacion": "Es el único candidato con experiencia reciente como gobernador regional y presidente de la ANGR, combinando tecnología con política pública"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Mesías Guevara",
+                "url": "https://es.wikipedia.org/wiki/Mes%C3%ADas_Guevara"
+            },
+            {
+                "titulo": "Infobae – Perfil del candidato del Partido Morado",
+                "url": "https://www.infobae.com/peru/2026/02/12/mesias-guevara-hoja-de-vida-y-perfil-del-candidato-del-partido-morado/"
+            },
+            {
+                "titulo": "El Peruano – Propuesta de facultades legislativas",
+                "url": "https://elperuano.pe/noticia/288041-mesias-guevara-pediremos-facultades-legislativas-para-derogar-las-leyes-procrimen-entrevista"
+            },
+            {
+                "titulo": "Ojo Público – Declaración sobre el Congreso",
+                "url": "https://ojo-publico.com/politica/elecciones-2026/guevara-si-el-congreso-es-un-obstaculo-no-tendre-reparos-cerrarlo"
+            },
+            {
+                "titulo": "La República – Dato falso sobre desinterés político",
+                "url": "https://larepublica.pe/verificador/2026/02/11/es-falso-que-al-85-de-peruanos-no-le-importe-la-politica-como-afirmo-el-candidato-mesias-guevara-165451"
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "nombre": "Rafael López Aliaga",
+        "image_url": "",
+        "partido": "Renovación Popular",
+        "logo_partido": "",
+        "intentos_presidenciales": "2",
+        "perfil_profesional": {
+            "ambito": "Empresarial / Financiero / Político",
+            "experiencia": [
+                "Bachiller en Ingeniería Industrial – Universidad de Piura (1983)",
+                "MBA – Universidad del Pacífico",
+                "Programa de Alta Dirección – Universidad de Piura",
+                "Gerente de Créditos Corporativos en Citibank",
+                "Cofundador de Peruval Corp",
+                "Fundador del Grupo Acres",
+                "Accionista de Ferrocarril Transandino y cadena Belmond (Hotel Monasterio, Cusco)",
+                "Alcalde Metropolitano de Lima (enero 2023 – octubre 2025)",
+                "Regidor de Lima (2007-2010)"
+            ],
+            "liderazgo_previo": "Alcalde Metropolitano de Lima (2023-2025); fundador de Renovación Popular"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Renovación Popular"
+            },
+            "posicionamiento": [
+                "Derecha radical / ultraconservadora",
+                "Miembro numerario del Opus Dei",
+                "Firmante de la Carta de Madrid; vínculos con Vox, Milei y entorno Trump"
+            ],
+            "estilo_campaña": {
+                "tono": "Confrontacional, polarizador y populista punitivo",
+                "caracteristicas": [
+                    "Conocido popularmente como 'Porky'",
+                    "Discurso hostil hacia la izquierda y organismos de derechos humanos",
+                    "Propuestas mediáticas para captar atención",
+                    "Compite directamente con Keiko Fujimori por el voto conservador"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Cadena perpetua para corruptos y violadores; cárcel en la selva vigilada por 'shushupes'; expulsión de extranjeros en 48 horas; jueces sin rostro; retiro de la Corte IDH.",
+                "argumento": "Se necesita mano dura y medidas extremas para recuperar el orden y la seguridad en el país"
+            },
+            "indultos": {
+                "postura": "No contempla indultos; es la postura opuesta",
+                "frase_representativa": "Cadena perpetua para corruptos y violadores"
+            }
+        },
+        "aspectos_positivos": [
+            "Lidera intención de voto con 11.9% según encuesta Datum (Canal N)",
+            "Amplia experiencia empresarial en sectores financiero e inmobiliario",
+            "Experiencia como alcalde de Lima (2023-2025)",
+            "Vínculos internacionales con líderes de derecha global"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Alianzas con extrema derecha internacional",
+                    "descripcion": "Es firmante de la Carta de Madrid y mantiene vínculos con Vox, Javier Milei y el entorno de Donald Trump"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Investigado por lavado de activos (caso Panama Papers) y presunto esquema de corrupción en la Caja Metropolitana; investigación ampliada por 24 meses en octubre 2025",
+                "Deuda coactiva (SUNAT) por más de 28 millones de soles a través de ocho empresas",
+                "Empresa Fetransa ocultó ingresos por S/ 12.8 millones y dejó de pagar S/ 4.5 millones al MTC",
+                "Vendió el 100% de sus propiedades (más de 4.6 millones de dólares) antes de postular",
+                "Defendió gestión de Milagros Jáuregui en refugio que exponía a menores víctimas de violación; se opone al aborto terapéutico",
+                "Condecoró al cardenal Cipriani antes de que se revelara su renuncia por denuncia de abuso sexual en el Vaticano",
+                "Ha arremetido contra periodistas de investigación"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Empresario ultracatólico de extrema derecha, exalcalde de Lima",
+            "percepcion": "Político polarizador que incita divisiones con discurso de mano dura y valores ultraconservadores",
+            "diferenciacion": "Es el principal referente de la derecha radical peruana con vínculos internacionales con líderes como Milei y Vox"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Rafael López Aliaga",
+                "url": "https://es.wikipedia.org/wiki/Rafael_L%C3%B3pez-Aliaga"
+            },
+            {
+                "titulo": "Canal N – Encuesta Datum",
+                "url": "https://canaln.pe/actualidad/datum-rafael-lopez-aliaga-lidera-preferencias-119-n490172"
+            },
+            {
+                "titulo": "Ojo Público – Venta de propiedades",
+                "url": "https://ojo-publico.com/6090/lopez-aliaga-vendio-sus-propiedades-antes-postular-la-presidencia"
+            },
+            {
+                "titulo": "El Foco – Deuda con el Estado",
+                "url": "https://elfoco.pe/2026/02/reportajes/empresa-de-rafael-lopez-aliaga-estafo-al-estado-peruano-con-s-4-5-millones/"
+            },
+            {
+                "titulo": "La República – Guerra por votos de la derecha",
+                "url": "https://larepublica.pe/politica/2026/02/07/keiko-fujimori-y-lopez-aliaga-tendran-una-guerra-encarnizada-por-los-votos-de-la-derecha-afirman-politologos-hnews-482559"
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "nombre": "Francisco Diez Canseco Távara",
+        "image_url": "",
+        "partido": "Perú Acción",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Jurídico / Periodístico / Político",
+            "experiencia": [
+                "Abogado – UNMSM (Estudio Romero 1969-1973)",
+                "Periodista en La Crónica, La Prensa y Correo (columnista político)",
+                "Director y productor del programa '60 Minutos' (1979-1983)",
+                "Conductor de 'Trinchera Libre' en UCI TV (2019-2021)",
+                "Diputado por Lima (1985-1990) – Convergencia Democrática (PPC y Bases Hayistas)",
+                "Presidente del Consejo por la Paz (desde 1991)",
+                "Fundador de Perú Nación (2015), luego Perú Acción"
+            ],
+            "liderazgo_previo": "Diputado (1985-1990); Presidente del Consejo por la Paz; Presidente de Perú Acción"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Perú Acción"
+            },
+            "posicionamiento": [
+                "Centro-derecha / liberal conservador",
+                "Anticomunismo explícito",
+                "Discurso de 'Revolución Pacífica' y lucha contra la corrupción"
+            ],
+            "estilo_campaña": {
+                "tono": "Histórico, moralizante y crítico del sistema",
+                "caracteristicas": [
+                    "Apela a su trayectoria histórica en el Parlamento y pacificación",
+                    "Denuncia fraudes en el JNE",
+                    "Columnista activo y figura mediática",
+                    "Discurso de 'Revolución Pacífica'"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Extender el plazo de detención en flagrancia de 48 horas a 30 días. Limpiar las escuelas de policía de infiltrados criminales. Crear el Consejo Nacional de Moral Pública para combatir la corrupción en PNP, Fiscalía, Poder Judicial e INPE.",
+                "argumento": "La inseguridad es consecuencia de la corrupción institucional que debe erradicarse desde dentro"
+            },
+            "indultos": {
+                "postura": "No contempla indultos; su enfoque es sancionar la corrupción",
+                "frase_representativa": "Crear un Consejo Nacional de Moral Pública para limpiar de corrupción al Estado"
+            }
+        },
+        "aspectos_positivos": [
+            "Dilatada trayectoria política e histórica (Parlamento 1985-1990)",
+            "Rol activo en la pacificación del país (Consejo por la Paz)",
+            "Propuesta de eliminar el sueldo de congresistas y reducir asesores",
+            "Perfil periodístico que le da presencia mediática continuada",
+            "Propone Economía Social de Mercado combatiendo oligopolios"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Militancia en múltiples partidos",
+                    "descripcion": "Pasó por el APRA, el Movimiento de Bases Hayistas, fundó Perú Nación (luego Perú Acción)"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Ha denunciado reiteradamente 'fraude escandaloso' en el JNE bajo la gestión de Jorge Salas Arenas",
+                "Se caracteriza por desprestigiar el informe de la CVR sobre el conflicto armado interno",
+                "Sostiene que en Perú no existe una 'izquierda democrática', sino una 'izquierda extrema, antidemocrática y totalitaria'",
+                "Influencia electoral reciente limitada"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Veterano político, periodista y abogado con perfil histórico",
+            "percepcion": "Figura de la política peruana de los 80-90 con presencia mediática, pero limitada tracción electoral reciente",
+            "diferenciacion": "Combina trayectoria parlamentaria histórica con activismo periodístico y un discurso anticomunista y moralizante"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Francisco Diez-Canseco",
+                "url": "https://es.wikipedia.org/wiki/Francisco_Diez-Canseco_Corbacho"
+            },
+            {
+                "titulo": "TV Perú – Planes de gobierno",
+                "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-francisco-diez-canseco-del-partido-peru-accion"
+            },
+            {
+                "titulo": "Andina – Reducción de ministerios",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-francisco-diez-canseco-estudiara-reducir-a-10-numero-ministerios-1062801.aspx"
+            },
+            {
+                "titulo": "Willax – Entrevista Elige Bien 2026",
+                "url": "https://willax.pe/politica/elige-bien-2026/francisco-diez-canseco-entrevista-corrupcion-peru-accion-willax"
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "nombre": "Vladimir Cerrón Rojas",
+        "image_url": "",
+        "partido": "Perú Libre",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Médico / Docente / Político",
+            "experiencia": [
+                "Médico de profesión",
+                "Docente universitario",
+                "Gobernador Regional de Junín (exgobernador)",
+                "Fundador y líder de Perú Libre",
+                "Secretario General de Perú Libre (remuneración mensual de hasta S/ 12,000 entre 2021-2023)"
+            ],
+            "liderazgo_previo": "Gobernador Regional de Junín; Secretario General y fundador de Perú Libre; arquitecto de la candidatura presidencial de Pedro Castillo (2021)"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Perú Libre"
+            },
+            "posicionamiento": [
+                "Izquierda radical / marxista-leninista",
+                "Prófugo de la justicia con orden de prisión preventiva vigente",
+                "Fundador e ideólogo del 'Socialismo del Siglo XXI' en el Perú"
+            ],
+            "estilo_campaña": {
+                "tono": "Combativo, victimista y clandestino",
+                "caracteristicas": [
+                    "Campaña atípica: no puede hacer campaña presencial por estar prófugo",
+                    "Estrategia legal vía hábeas corpus ante el Tribunal Constitucional",
+                    "Mantiene control del partido desde la clandestinidad",
+                    "Discurso de persecución judicial"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "No ha podido presentar propuestas detalladas debido a su situación de clandestinidad y la imposibilidad de realizar campaña presencial.",
+                "argumento": "Alega persecución judicial sistemática que impide su participación política en igualdad de condiciones"
+            },
+            "indultos": {
+                "postura": "Busca que se revoque su propia prisión preventiva mediante hábeas corpus; no ha emitido propuestas claras sobre indultos",
+                "frase_representativa": "Existe una persecución judicial en mi contra"
+            }
+        },
+        "aspectos_positivos": [
+            "Fundador y líder consolidado de un partido con base militante organizada",
+            "Experiencia comprobada en gestión regional (Gobernador de Junín)",
+            "Capacidad de mantener cohesión partidaria incluso desde la clandestinidad"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Perú Libre y el gobierno de Pedro Castillo",
+                    "descripcion": "Fue el artífice político de la candidatura de Pedro Castillo, aunque su relación con el gobierno se deterioró con el tiempo"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Orden de prisión preventiva vigente en el marco del caso 'Los Dinámicos del Centro'",
+                "Prófugo de la justicia desde hace más de un año, rehusándose a entregarse",
+                "Investigado por lavado de activos y financiamiento ilegal de campañas de Perú Libre entre 2008 y 2021 (investigación ampliada hasta noviembre 2027)",
+                "Cobró sueldo del partido financiado con fondos públicos en efectivo, justificando que sus cuentas estaban bloqueadas",
+                "Su madre, Bertha Rojas (candidata a segunda vicepresidencia), también es investigada y tiene cuentas bancarias bloqueadas",
+                "Ronald Atencio lo calificó como el 'furgón de cola de la derecha'"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Líder de izquierda radical, prófugo de la justicia y fundador de Perú Libre",
+            "percepcion": "Figura polémica y controvertida que divide a la izquierda peruana; candidato que no puede hacer campaña presencial",
+            "diferenciacion": "Único candidato presidencial que realiza su campaña desde la clandestinidad con una orden de prisión preventiva vigente"
+        },
+        "fuentes": [
+            {
+                "titulo": "Diario Correo – Madre pide al TC revocar prisión preventiva",
+                "url": "https://diariocorreo.pe/politica/madre-de-vladimir-cerron-pide-al-tc-revocar-prision-preventiva-para-continuar-campana-electoral-noticia/"
+            },
+            {
+                "titulo": "Caretas – Madre de Cerrón busca revocar prisión",
+                "url": "https://caretas.pe/politica/madre-de-vladimir-cerron-busca-revocar-prision-de-vladimir-cerron-a-puertas-de-las-elecciones/"
+            },
+            {
+                "titulo": "ATV – Declaraciones sobre austeridad",
+                "url": "https://www.atv.pe/noticia/vladimir-cerron-somos-austeros-porque-cualquier-gasto-es-investigado/"
+            },
+            {
+                "titulo": "Exitosa – Investigación de lavado de activos",
+                "url": "https://www.exitosanoticias.pe/politica/vladimir-cerron-madre-su-abogado-piden-tc-revoque-prision-preventiva-participe-elecciones-n168897/amp"
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "nombre": "Mario Vizcarra Cornejo",
+        "image_url": "",
+        "partido": "Perú Primero",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Ingeniería Civil / Empresarial",
+            "experiencia": [
+                "Ingeniero Civil",
+                "Ingeniero Industrial – UNI (1978)",
+                "Magíster en Administración – ESAN (2003)",
+                "Gerente de CYM Vizcarra SAC (empresa familiar)",
+                "Gerente de Agrotécnica Estuquiña S.A.",
+                "Participación en campañas de su hermano Martín Vizcarra (2006 y 2011)",
+                "Miembro de la Comisión Política Nacional de Perú Primero"
+            ],
+            "liderazgo_previo": "Participación en política como miembro del partido Perú Primero (fundado por su hermano); gestión empresarial en sector privado durante décadas"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Perú Primero"
+            },
+            "posicionamiento": [
+                "Centro / centroderecha",
+                "Continuidad con el legado político de Martín Vizcarra",
+                "Víctima autodeclarada de persecución política"
+            ],
+            "estilo_campaña": {
+                "tono": "Moderado, defensivo y victimista",
+                "caracteristicas": [
+                    "Conocido como 'Señor Miyagi'",
+                    "Capitaliza el respaldo de su hermano, pero carga con su 'antivoto'",
+                    "Se presenta como víctima de persecución política y judicial",
+                    "Candidatura inicialmente declarada improcedente por JEE, habilitada en apelación por JNE"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Construcción de 12 a 24 nuevos penales, fortalecimiento de la policía y reforma judicial.",
+                "argumento": "El sistema penitenciario colapsado es uno de los principales factores de la inseguridad"
+            },
+            "indultos": {
+                "postura": "Niega que su candidatura busque indultar a su hermano Martín Vizcarra, aunque admite estar convencido de su inocencia",
+                "frase_representativa": "Mi candidatura no busca indultar a mi hermano, aunque estoy convencido de su inocencia"
+            }
+        },
+        "aspectos_positivos": [
+            "Propuestas de inversión en infraestructura ('Arranca Perú') y apoyo a MYPES",
+            "Defensa de la SUNEDU e inversión en educación pública",
+            "Propuesta de mejora de infraestructura hospitalaria basada en lecciones de la pandemia",
+            "Perfil empresarial con experiencia en sector privado"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Vínculo con Martín Vizcarra",
+                    "descripcion": "Su candidatura está íntimamente ligada a su hermano expresidente, lo que genera tanto respaldo como rechazo"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Fue condenado en 2005 por peculado y falsedad genérica (cobró simultáneamente sueldo como presidente del CTAR Moquegua y honorarios del PNUD por la misma labor)",
+                "Enfrenta investigación fiscal en Tacna por presunta colusión en obras de defensa ribereña (2018); embargo de bienes por 1.6 millones de soles",
+                "Cuestionado por uso de fondos de la franja electoral en medios privados",
+                "Alto rechazo en encuestas (59% de RPE según Ipsos); desapareció del cuadro de intención de voto en encuesta CIT"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Ingeniero empresario, hermano del expresidente Martín Vizcarra",
+            "percepcion": "Candidato que genera más rechazo que apoyo; su imagen está determinada por el vínculo con su hermano",
+            "diferenciacion": "Su principal capital político y su mayor lastre es ser hermano del expresidente Martín Vizcarra"
+        },
+        "fuentes": [
+            {
+                "titulo": "Infobae – Perfil de Mario Vizcarra",
+                "url": "https://www.infobae.com/peru/2026/02/04/quien-es-mario-vizcarra-perfil-formacion-academica-y-trayectoria-del-candidato-presidencial-de-peru-primero-para-el-2026/"
+            },
+            {
+                "titulo": "Wikipedia – Mario Vizcarra",
+                "url": "https://es.wikipedia.org/wiki/Mario_Vizcarra"
+            },
+            {
+                "titulo": "JNE – Nota sobre habilitación de candidatura",
+                "url": "https://portal.jne.gob.pe/portal/Pagina/Nota/19644"
+            },
+            {
+                "titulo": "ATV – Niega buscar indulto para hermano",
+                "url": "https://www.atv.pe/noticia/mario-vizcarra-niega-que-su-candidatura-busque-indultar-a-su-hermano/"
+            },
+            {
+                "titulo": "N60 – Encuesta CIT",
+                "url": "https://n60.pe/encuesta-cit-vizcarra-desaparece-y-el-tercer-lugar-se-define-por-la-minima/"
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "nombre": "Carlos Jaico Carranza",
+        "image_url": "",
+        "partido": "Perú Moderno",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Jurídico / Gestión Pública Internacional",
+            "experiencia": [
+                "Abogado – Universidad de San Martín de Porres",
+                "Master in Laws (LLM) – Universidad de Friburgo (Alemania/Suiza)",
+                "MBA – Swiss Business School",
+                "Secretario General del Despacho Presidencial (gobierno de Pedro Castillo, noviembre 2021 – febrero 2022)",
+                "Precandidato a la primera vicepresidencia en lista de Mesías Guevara – Acción Popular (2016)",
+                "Afiliado a Todos por el Perú (2017-2019)",
+                "Afiliado a Alianza para el Progreso (2019-2022); candidato al Congreso por Peruanos en el Exterior (487 votos)"
+            ],
+            "liderazgo_previo": "Secretario General del Despacho Presidencial del gobierno de Pedro Castillo; candidato presidencial de Perú Moderno"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Perú Moderno"
+            },
+            "posicionamiento": [
+                "Centro / centroderecha",
+                "Anticorrupción y modernización del Estado",
+                "Outsider con formación internacional"
+            ],
+            "estilo_campaña": {
+                "tono": "Técnico y reformista",
+                "caracteristicas": [
+                    "Se presenta bajo la premisa de un país moderno y libre de corrupción",
+                    "Reemplazó al empresario Wilson Aragón en el liderazgo del partido",
+                    "Su perfil académico internacional es su principal credencial",
+                    "Historial de múltiples cambios de partido genera desconfianza"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "No se detallan propuestas específicas de seguridad en los documentos disponibles. Su enfoque principal es la lucha contra la corrupción y la modernización del Estado.",
+                "argumento": "Un Estado moderno y sin corrupción es la base para mejorar la seguridad"
+            },
+            "indultos": {
+                "postura": "No se pronuncia sobre indultos; su enfoque es la anticorrupción",
+                "frase_representativa": "Buscamos un país moderno y libre de corrupción"
+            }
+        },
+        "aspectos_positivos": [
+            "Formación académica internacional de alto nivel (Suiza, Alemania)",
+            "Experiencia directa en el gobierno central como Secretario General del Despacho Presidencial",
+            "Conocimiento de primera mano del funcionamiento interno del Estado",
+            "Denunció públicamente la existencia de un 'gabinete en la sombra' en el gobierno de Castillo"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Múltiples cambios de partido",
+                    "descripcion": "Pasó por Acción Popular, Todos por el Perú, APP y finalmente Perú Moderno, lo que genera imagen de oportunismo"
+                },
+                {
+                    "caso": "Expulsión de APP",
+                    "descripcion": "Fue expulsado de Alianza para el Progreso tras aceptar el cargo en el gobierno de Castillo sin comunicar a la dirigencia del partido"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Reunión secreta con representantes de Repsol en la Embajada de España tras el derrame de petróleo (enero 2022), sin figurar en agenda oficial; criticada hasta por la entonces vicepresidenta Dina Boluarte",
+                "La Fiscalía Anticorrupción abrió investigación y allanó su despacho por presunto uso irregular de vehículo oficial durante días de licencia",
+                "Lista al Senado de Perú Moderno fue declarada improcedente por el JEE"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Abogado con formación europea, ex funcionario del gobierno de Castillo y denunciante del 'gabinete en la sombra'",
+            "percepcion": "Perfil técnico interesante, pero con credibilidad afectada por múltiples cambios de partido y cuestionamientos en su gestión",
+            "diferenciacion": "Es el único candidato que sirvió en el gobierno de Castillo y lo abandonó denunciando sus estructuras de poder paralelas"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Carlos Jaico",
+                "url": "https://es.wikipedia.org/wiki/Carlos_Jaico"
+            },
+            {
+                "titulo": "Infobae – Candidatura de Perú Moderno",
+                "url": "https://www.infobae.com/peru/2026/01/07/carlos-jaico-y-zully-pinchi-fuera-de-carrera-al-senado-jee-declara-improcedente-lista-de-peru-moderno/"
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "nombre": "José Luna Gálvez",
+        "image_url": "",
+        "partido": "Podemos Perú",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Empresarial / Educativo / Político",
+            "experiencia": [
+                "Economista – Universidad de San Martín de Porres",
+                "Doctor en Educación – USMP",
+                "Maestro en Economía (Comercio y Finanzas Internacionales) – USMP",
+                "Master Internacional en Acreditación y Certificación – Universidad del Sacro Cuore (Italia)",
+                "Doctorados Honoris Causa de La Cantuta, Hermilio Valdizán, Privada de Chiclayo y Nacional de Tumbes",
+                "Fundador de academia educativa (base del emporio Telesup)",
+                "Fundador de la Universidad Telesup (1996, convertida en universidad 2004)",
+                "Congresista en cinco períodos: 2000-2001, 2001-2006, 2006-2011, 2011-2016, 2021-2026",
+                "Regidor de Lima (1999-2002)",
+                "Cofundador y Secretario General de Solidaridad Nacional"
+            ],
+            "liderazgo_previo": "Congresista en cinco períodos; Tercer Vicepresidente del Congreso en dos ocasiones; Presidente y fundador de Podemos Perú"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Podemos Perú"
+            },
+            "posicionamiento": [
+                "Centro / populismo popular",
+                "Apela a sectores populares y populares urbanos",
+                "'El Hombre del Sol' – promete cobrar solo un sol de sueldo"
+            ],
+            "estilo_campaña": {
+                "tono": "Populista y filantrópico",
+                "caracteristicas": [
+                    "Conocido como 'Pepe Luna' y 'El Hombre del Sol'",
+                    "Cultiva imagen de filántropo en los sectores populares ('cerros y conos')",
+                    "Dona su sueldo parlamentario",
+                    "Control absoluto de Podemos Perú con representación parlamentaria y gobiernos locales"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Implementar el 'Plan Urresti': inversión de S/ 5,000 millones para comprar días de franco de 50,000 policías y formar 20,000 policías de investigación. 'Limpiar' el 10% corrupto de la Policía, Fiscalía y Contraloría antes de inyectar recursos.",
+                "argumento": "Sin limpiar la corrupción interna primero, cualquier inversión en seguridad será ineficiente"
+            },
+            "indultos": {
+                "postura": "No se pronuncia sobre indultos; su partido anunció firmar la moción para debatir la vacancia del presidente Jerí",
+                "frase_representativa": "Primero limpiar la Policía, Fiscalía y Contraloría, luego invertir en seguridad"
+            }
+        },
+        "aspectos_positivos": [
+            "Amplia experiencia parlamentaria (cinco períodos como congresista)",
+            "Emprendedor que construyó un emporio educativo desde cero",
+            "Propone pagar la 'deuda social' a fonavistas, AFP y ONP",
+            "Partido con representación parlamentaria real y gobiernos locales",
+            "Imagen de filántropo en sectores populares"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Solidaridad Nacional",
+                    "descripcion": "Fue cofundador y mayor aportante; renunció en 2016 tras ruptura con el partido"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Investigado como presunto líder de organización criminal 'Los Gánsteres de la Política' que habría infiltrado el CNM y la ONPE para la inscripción irregular de Podemos Perú; Fiscalía solicitó 36 meses de prisión preventiva (se dictó arresto domiciliario)",
+                "Su partido presentó firmas falsas de futbolistas y políticos para inscribirse",
+                "Investigado por presuntamente recibir aportes ilícitos de Odebrecht y OAS para la campaña de Castañeda (2014) - caso Lava Jato",
+                "Universidad Telesup tuvo licencia denegada por SUNEDU en 2019; incluida en investigación por lavado de activos en 2023",
+                "Suspendido 30 días por el Congreso en 2015 por pagar 'asesores fantasmas' con fondos públicos"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Empresario educativo, congresista veterano y 'El Hombre del Sol'",
+            "percepcion": "Político popular con base sólida en sectores populares, pero con graves cuestionamientos por corrupción y vínculos criminales",
+            "diferenciacion": "Es el político con mayor permanencia parlamentaria entre los candidatos (cinco períodos) y el único con un emporio educativo propio"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – José Luna Gálvez",
+                "url": "https://es.wikipedia.org/wiki/Jos%C3%A9_Luna_G%C3%A1lvez"
+            },
+            {
+                "titulo": "TV Perú – Planes de gobierno",
+                "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-jose-luna-galvez-de-podemos-peru"
+            },
+            {
+                "titulo": "Altavoz – Moción de vacancia de Jerí",
+                "url": "https://altavoz.pe/politica/jose-luna-galvez-dice-que-podemos-peru-firmara-oficio-para-convocar-a-pleno-extraordinario/"
+            },
+            {
+                "titulo": "Podemos Perú – Sitio oficial",
+                "url": "https://podemosperu.org.pe/home/"
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "nombre": "Marisol Pérez Tello",
+        "image_url": "",
+        "partido": "Primero la Gente",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Jurídico / Notarial / Político",
+            "experiencia": [
+                "Abogada – USMP (1995)",
+                "Doctora en Derecho – USMP",
+                "Maestría en Derecho Constitucional – PUCP",
+                "Diplomados en Derechos Humanos (Universidad Complutense de Madrid) y Medio Ambiente (Universidad Politécnica de Madrid)",
+                "Notaria pública desde 1999",
+                "Profesora de Derechos Humanos – USMP y Escuela de Oficiales de la PNP",
+                "Ministra de Justicia (2016-2017) – gobierno de PPK",
+                "Congresista (2011-2016) – Alianza por el Gran Cambio; presidió la Comisión de Justicia y DDHH",
+                "Secretaria General Nacional del PPC (2017-2021)"
+            ],
+            "liderazgo_previo": "Ministra de Justicia (2016-2017); Congresista (2011-2016); Secretaria General del PPC (2017-2021)"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Primero la Gente"
+            },
+            "posicionamiento": [
+                "Centro-derecha / liberal institucionalista",
+                "Perfil de derechos humanos y justicia",
+                "Reformista institucional"
+            ],
+            "estilo_campaña": {
+                "tono": "Técnico, institucionalista y combativo",
+                "caracteristicas": [
+                    "Militó 35 años en el PPC; ruptura en 2022",
+                    "Impulsó 'Lo Justo'; al no lograr inscripción se integró a Primero la Gente",
+                    "Exige la salida del presidente interino José Jerí",
+                    "Perfil vinculado a la defensa de los DDHH"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Derogar 'leyes procrimen' el primer día de gobierno. Implementar unidades de flagrancia en cárceles de capitales de región. Crear una Autoridad Nacional de Transparencia autónoma.",
+                "argumento": "Las leyes que favorecen al crimen organizado deben eliminarse de inmediato para restablecer el orden"
+            },
+            "indultos": {
+                "postura": "No contempla indultos; su enfoque es fortalecer la institucionalidad y la transparencia",
+                "frase_representativa": "Presentaré un proyecto para bloquear la iniciativa de gasto del Congreso en los primeros 100 días"
+            }
+        },
+        "aspectos_positivos": [
+            "Única candidata mujer con experiencia como ministra y congresista",
+            "Amplísima trayectoria en derecho constitucional y derechos humanos",
+            "Propone equilibrio fiscal bloqueando la iniciativa de gasto del Congreso",
+            "Perfil internacional (diplomados en Madrid)",
+            "Apuesta por tecnología e innovación y el puerto de Chancay",
+            "Declaró haberse arrepentido de apoyar a Keiko Fujimori (credibilidad en sectores de centro)"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Escándalo de la franja electoral (Miguel del Castillo)",
+                    "descripcion": "El partido destinó más de S/ 464,000 de fondos públicos al canal Nativa, vinculado al fundador Miguel del Castillo. Pérez Tello denunció que fue una decisión unilateral de Del Castillo y le pidió públicamente que renuncie"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Como ministra, destituyó a la procuradora ad hoc Katherine Ampuero por negarse a aplicar el DU 003-2017 que permitía venta de activos de Odebrecht (proyecto Olmos)",
+                "Ojo Público calificó como falsa su versión sobre haber legislado a favor del aborto terapéutico cuando fue ministra",
+                "Declaró estar arrepentida de haber votado por Keiko Fujimori en segunda vuelta de 2021"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Abogada, notaria, exministra y defensora de los derechos humanos",
+            "percepcion": "Candidata de centro con perfil técnico-jurídico sólido, vinculada a la institucionalidad democrática",
+            "diferenciacion": "Es la única candidata mujer con experiencia ministerial y amplio recorrido en derechos humanos y derecho constitucional"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Marisol Pérez Tello",
+                "url": "https://es.wikipedia.org/wiki/Marisol_P%C3%A9rez_Tello"
+            },
+            {
+                "titulo": "Infobae – Perfil de la candidata",
+                "url": "https://www.infobae.com/peru/2026/02/05/marisol-perez-tello-seguira-como-la-candidata-presidencial-de-primero-la-gente-perfil-y-hoja-de-vida/"
+            },
+            {
+                "titulo": "TV Perú – Planes de gobierno",
+                "url": "https://www.tvperu.gob.pe/noticias/politica/tu-decision-2026-planes-de-gobierno-de-marisol-perez-tello-de-primero-la-gente"
+            },
+            {
+                "titulo": "Perú 21 – Escándalo franja electoral",
+                "url": "https://peru21.pe/investigacion/marisol-perez-tello-miguel-del-castillo-y-carlos-alvarez-en-pleito-por-franja-electoral-elecciones-2026/"
+            },
+            {
+                "titulo": "RPP – Exige salida de Jerí",
+                "url": "https://rpp.pe/politica/elecciones/jose-jeri-marisol-perez-tello-pide-salida-de-presidente-y-apela-a-la-dignidad-en-la-investidura-noticia-1676004"
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "nombre": "Paul Davis Jaimes Blanco",
+        "image_url": "",
+        "partido": "Progresemos",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Jurídico / Gestión Pública",
+            "experiencia": [
+                "Bachiller en Derecho y Ciencia Política – USMP (2004)",
+                "Abogado – USMP (2009)",
+                "Estudios de posgrado en Gobierno y Gestión Pública – USMP",
+                "Secretario General del Ministerio de Desarrollo Agrario y Riego (Minagri) – gobierno de Pedro Castillo",
+                "Asesor en el Congreso de la República (2022-2025) – despacho del congresista Oscar Zea",
+                "Afiliado al Partido Aprista Peruano (2008-2010) y a Avanza País (hasta 2023)",
+                "Fundador de Progresemos (noviembre 2023)"
+            ],
+            "liderazgo_previo": "Secretario General de Minagri (gobierno Castillo); asesor parlamentario; fundador y presidente de Progresemos"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República y Diputado por Lima Metropolitana",
+                "partido": "Progresemos"
+            },
+            "posicionamiento": [
+                "Centroderecha / ecologista / animalista",
+                "Populismo punitivo extremo (pena de muerte, estado de sitio)",
+                "Primer partido ecologista y animalista de Latinoamérica (autodeclarado)"
+            ],
+            "estilo_campaña": {
+                "tono": "Populista punitivo y sensacionalista",
+                "caracteristicas": [
+                    "Combinación contradictoria de ecologismo/humanismo con medidas extremas de seguridad",
+                    "Propuestas de mano dura como herramienta de campaña",
+                    "Ruptura pública con Hernando de Soto (quien renunció al partido)",
+                    "Perfil híbrido que genera inconsistencias en su mensaje"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "'Estado de excepción de sitio' para combatir el crimen organizado. Pena de muerte para violación de menores y sicariato. Cadena perpetua para extorsionadores. Incentivos económicos y ascensos para policías que capturen o abatan delincuentes. Apoyo al uso de armas por civiles en legítima defensa.",
+                "argumento": "Solo medidas extremas pueden frenar la ola de criminalidad"
+            },
+            "indultos": {
+                "postura": "No contempla indultos; propone salir de la Corte IDH para viabilizar la pena de muerte",
+                "frase_representativa": "Pena de muerte para violación de menores y sicariato como primer acto de gobierno"
+            }
+        },
+        "aspectos_positivos": [
+            "Único candidato con plataforma ecologista y de protección animal",
+            "Propone extender el programa PADOMI a todos los afiliados del SIS",
+            "Conocimiento del funcionamiento del Estado desde su paso por Minagri"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Ruptura con Hernando de Soto",
+                    "descripcion": "El partido había anunciado llevar a Hernando de Soto como candidato presidencial, pero De Soto renunció señalando que 'buscaba manejar al 100% el partido'"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Dos denuncias policiales por violencia: una de 2010 interpuesta por su hermana por agresión física y verbal, y otra de 2016 por amenaza con arma de fuego; minimizó las denuncias y negó la primera (generando contradicción con su discurso de 'mano dura')",
+                "Afirmó que la Corte IDH prohíbe al Perú aplicar la cadena perpetua; dato calificado de FALSO por Ojo Público (el Código Penal aplica cadena perpetua para 12 delitos con más de 2,600 sentenciados)",
+                "Inconsistencia entre el discurso ecologista/humanista del partido y las propuestas de pena de muerte y militarización"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Abogado fundador del primer partido ecologista-animalista con propuestas de mano dura extrema",
+            "percepcion": "Candidato con perfil contradictorio: ecologismo/humanismo vs. populismo punitivo extremo",
+            "diferenciacion": "Único candidato que combina una plataforma ecologista y animalista con propuestas de pena de muerte y estado de sitio"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Progresemos",
+                "url": "https://es.wikipedia.org/wiki/Progresemos"
+            },
+            {
+                "titulo": "RPP – Propuestas de seguridad",
+                "url": "https://rpp.pe/politica/elecciones/paul-jaimes-candidato-de-progresemos-propone-salida-de-la-corte-idh-y-medidas-frente-a-la-inseguridad-noticia-1673563"
+            },
+            {
+                "titulo": "La República – Denuncias por violencia",
+                "url": "https://larepublica.pe/politica/2025/12/15/paul-jaimes-candidato-presidencial-de-progresemos-minimiza-denuncias-por-violencia-y-asegura-que-fue-difamado-hnews-1116480"
+            },
+            {
+                "titulo": "Ojo Público – Dato falso sobre Corte IDH",
+                "url": "https://ojo-publico.com/6066/es-falso-que-la-corte-idh-prohibe-la-cadena-perpetua-el-peru"
+            },
+            {
+                "titulo": "Ventanilla TV – Hoja de vida",
+                "url": "https://www.facebook.com/ventanillatv/posts/conoce-la-hoja-de-vida-de-paul-davis-jaimes-blanco-candidato-presidencial-por-el/1301704631983559/"
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "nombre": "Antonio Ortiz Villano",
+        "image_url": "",
+        "partido": "Salvemos al Perú",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Empresarial / Industrial",
+            "experiencia": [
+                "Bachiller en Ingeniería Industrial – UNI (1982)",
+                "Ingeniero Industrial – UNI (1983)",
+                "Magíster en Administración – ESAN (1990)",
+                "Gerente General de EFE S.A. (1993-2022) y Tiendas EFE S.A.",
+                "Altos cargos directivos en Conecta Retail S.A. y Financiera Efectiva S.A.",
+                "Fundador y líder del partido Salvemos al Perú"
+            ],
+            "liderazgo_previo": "Gerente General de EFE S.A. durante casi 30 años; fundador y presidente de Salvemos al Perú"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Salvemos al Perú"
+            },
+            "posicionamiento": [
+                "Centro / progresista",
+                "Democracia de centro (rechaza izquierda, derecha y populismo)",
+                "Outsider empresarial"
+            ],
+            "estilo_campaña": {
+                "tono": "Unitario y empresarial",
+                "caracteristicas": [
+                    "Se define como ajeno a las prácticas políticas tradicionales",
+                    "Candidato elegido por sorteo (lanzamiento de moneda) tras empate técnico en primarias",
+                    "Utiliza metáforas futbolísticas para la unidad nacional",
+                    "Su exrival interno Mariano González renunció al partido tras el sorteo"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Reestructurar la Policía y el INPE. Crear 'espacios industriales' para que delincuentes de menor peligrosidad trabajen y costeen su internamiento (cada reo cuesta al Estado S/ 900 mensuales).",
+                "argumento": "El sistema penitenciario actual es insostenible económicamente y debe generar autofinanciamiento"
+            },
+            "indultos": {
+                "postura": "No se pronuncia sobre indultos; su enfoque es la reforma institucional",
+                "frase_representativa": "Como cuando juega la Selección Peruana, nos ponemos la camiseta, no existe Universitario, Alianza, nada"
+            }
+        },
+        "aspectos_positivos": [
+            "Casi 30 años de experiencia gerencial en empresa privada de gran escala",
+            "Perfil empresarial independiente sin vínculos con partidos tradicionales",
+            "Propone fusión de ministerios para reducir burocracia",
+            "Discurso de unidad nacional sin polarización",
+            "Impulsa crecimiento económico 'con rostro humano'"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Reunión con Antauro Humala",
+                    "descripcion": "Reconoció haber conversado con el líder etnocacerista Antauro Humala durante una reunión social, aunque negó haber pactado alianza política"
+                },
+                {
+                    "caso": "Reunión con vocal del JNE",
+                    "descripcion": "Admitió haber tenido un encuentro de 10 minutos en un hotel con el vocal del JNE Willy Ramírez Chávarry, justificándolo como 'coincidencia'"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Afirmó que en Corea del Sur y en Inglaterra 'todo el mundo sirve a su patria'; declaración calificada de FALSA por PerúCheck (Inglaterra no tiene servicio militar obligatorio desde hace más de 60 años)",
+                "Calidad cuestionada de su plan de gobierno; llegó a decir públicamente: 'Pido disculpas por mi plan de gobierno'",
+                "Candidato elegido por sorteo tras empate técnico en primarias, lo que genera dudas sobre la solidez de su mandato interno",
+                "Su exrival Mariano González renunció al partido tras el sorteo"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Empresario de largo recorrido en el sector retail, outsider político de centro",
+            "percepcion": "Candidato con credenciales empresariales sólidas pero con débil perfil político y plan de gobierno cuestionado",
+            "diferenciacion": "Es el único candidato elegido mediante sorteo público (lanzamiento de moneda supervisado por ONPE y JNE) y el único con casi 30 años como CEO de una gran empresa peruana"
+        },
+        "fuentes": [
+            {
+                "titulo": "Ventanilla TV – Hoja de vida",
+                "url": "https://www.facebook.com/ventanillatv/posts/conoce-la-hoja-de-vida-de-antonio-ortiz-villano-candidato-presidencial-por-el-pa/1302346731919349/"
+            },
+            {
+                "titulo": "RPP – Proclamación tras sorteo",
+                "url": "https://rpp.pe/politica/elecciones/antonio-ortiz-villano-fue-proclamado-candidato-presidencial-del-partido-salvemos-al-peru-tras-lanzamiento-de-moneda-al-aire-noticia-1667812"
+            },
+            {
+                "titulo": "Canal N – Reunión con Antauro Humala",
+                "url": "https://canaln.pe/actualidad/salvemos-al-peru-precandidato-reconoce-que-converso-antauro-n488871"
+            },
+            {
+                "titulo": "El Búho – Dato falso servicio militar",
+                "url": "https://elbuho.pe/2026/01/elecciones-2026-candidato-de-salvemos-al-peru-antonio-ortiz-difundio-informacion-falsa-sobre-el-servicio-militar-obligatorio/"
+            },
+            {
+                "titulo": "Andina – Fórmula presidencial",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-antonio-ortiz-liderara-formula-presidencial-salvemos-al-peru-video-1055545.aspx"
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "nombre": "George Patrick Forsyth Sommer",
+        "image_url": "",
+        "partido": "Somos Perú",
+        "logo_partido": "",
+        "intentos_presidenciales": "2",
+        "perfil_profesional": {
+            "ambito": "Deportivo / Empresarial / Político",
+            "experiencia": [
+                "Bachiller en Administración de Empresas – UPC (2021)",
+                "Inicio de estudios de Ingeniería Industrial – USMP (2005, no concluidos)",
+                "Graduado como reservista del Ejército del Perú (2019)",
+                "Futbolista profesional (arquero): Alianza Lima, Atalanta (Italia), Borussia Dortmund II (Alemania), Selección Peruana",
+                "Fundador de empresas: 300 (seguridad), G&F (moda), VO2 (alto rendimiento)",
+                "Regidor de La Victoria (2011-2014) – PPC",
+                "Alcalde distrital de La Victoria (2019-2020) – Somos Perú",
+                "Candidato presidencial 2021 (8vo lugar, 5.66%)",
+                "Candidato a la Alcaldía de Lima 2022 (3er lugar, 18.93%)"
+            ],
+            "liderazgo_previo": "Alcalde distrital de La Victoria (2019-2020); candidato presidencial en 2021; candidato a la Alcaldía de Lima en 2022"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República",
+                "partido": "Somos Perú"
+            },
+            "posicionamiento": [
+                "Centro-derecha / liberal",
+                "Imagen de 'mano dura' y orden",
+                "Outsider mediático"
+            ],
+            "estilo_campaña": {
+                "tono": "Mediático, deportivo y de orden",
+                "caracteristicas": [
+                    "Altísimo nivel de conocimiento público gracias a su carrera futbolística",
+                    "Imagen de 'mano dura' construida en La Victoria (desalojo del comercio informal en Gamarra)",
+                    "Autobiografía 'Camino a la Victoria'",
+                    "Considera que 'la política peruana desmerece a los deportistas'"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Tomar o intervenir las cárceles con apoyo del Ejército del Perú para contrarrestar la criminalidad. Distribución de medicamentos a costo cero a través de farmacias privadas presentando el DNI.",
+                "argumento": "Las cárceles son el centro de operaciones del crimen organizado y deben recuperarse con el Ejército"
+            },
+            "indultos": {
+                "postura": "No indultaría al presidente interino José Jerí 'aunque lo pida Patricia Li' (líder de Somos Perú)",
+                "frase_representativa": "No lo indultaría aunque lo pida Patricia Li"
+            }
+        },
+        "aspectos_positivos": [
+            "Altísimo nivel de reconocimiento público previo a su carrera política",
+            "Experiencia como alcalde distrital con resultados mediáticos en La Victoria",
+            "Propuesta de incrementar vale FISE de S/ 20 a S/ 50",
+            "Propuesta de S/ 100 adicionales en programa Juntos por cada hijo de 0 a 6 años",
+            "Emprendedor con múltiples empresas propias"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Relación con Patricia Li (Somos Perú)",
+                    "descripcion": "Marcó distancia de la lideresa de su propio partido al afirmar que no indultaría a Jerí 'aunque lo pida Patricia Li'"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Denuncia por violencia doméstica y abuso psicológico interpuesta por su exesposa Vanessa Terkes (2019); denuncia archivada en primera instancia",
+                "JEE lo excluyó temporalmente en 2021 por omitir empresas en declaración jurada (decisión anulada por JNE)",
+                "Propuesta de ampliar vale FISE a S/ 50 implicaría S/ 375 millones adicionales anuales (cuestionada por Instituto Videnza)",
+                "Sus propuestas de modernización fueron evaluadas por IA en entrevista, evidenciando falta de sustento técnico; evitó confrontación directa"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Exfutbolista profesional, empresario y alcalde de La Victoria con imagen de mano dura",
+            "percepcion": "Político con alto reconocimiento público pero propuestas técnicas débiles; capitalizó su fama deportiva para hacer carrera política",
+            "diferenciacion": "Es el único candidato con carrera profesional en el fútbol de primer nivel (incluyendo ligas europeas y selección nacional) y el que mayor reconocimiento previo tenía antes de entrar a la política"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – George Forsyth",
+                "url": "https://es.wikipedia.org/wiki/George_Forsyth"
+            },
+            {
+                "titulo": "Andina – Propuestas FISE y Juntos",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-george-forsyth-propone-incrementar-monto-vale-fise-y-programa-juntos-1064090.aspx"
+            },
+            {
+                "titulo": "Diario Correo – Fact checking propuestas",
+                "url": "https://diariocorreo.pe/politica/factchecking-keiko-fujimori-y-george-forsyth-y-el-costo-fiscal-de-duplicar-bonos-y-subir-vale-glp-noticia/"
+            },
+            {
+                "titulo": "Latina – Declaraciones sobre Jerí",
+                "url": "https://latinanoticias.pe/politica/george-forsyth-sobre-votacion-de-somos-peru-en-eleccion-de-balcazar-ellos-se-haran-responsables-de-sus-actos-video_20260222/"
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "nombre": "Roberto Enrique Chiabra León",
+        "image_url": "",
+        "partido": "Alianza Unidad Nacional (Unidad y Paz + PPC + Peruanos Unidos)",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Militar / Político",
+            "experiencia": [
+                "Bachiller y Licenciado en Ciencias Militares – Escuela Militar de Chorrillos (2012)",
+                "Cursos de Estado Mayor – Escuela Superior de Guerra del Ejército y CAEM",
+                "Taller de Expertos sobre FF.MM. – Instituto Internacional de Derechos Humanos (Costa Rica)",
+                "Programa de Alta Dirección y Gerencia – Universidad de Piura",
+                "Jefe del Comando de Operaciones en la Guerra del Cenepa (1995)",
+                "General de División (2001)",
+                "Comandante General del Ejército del Perú (2002-2003)",
+                "Ministro de Defensa (2003-2005) – gobierno de Toledo",
+                "Congresista (2021-2026) – Alianza para el Progreso",
+                "Fundador del partido Unidad y Paz"
+            ],
+            "liderazgo_previo": "Comandante General del Ejército (2002-2003); Ministro de Defensa (2003-2005); Congresista (2021-2026)"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República y candidato al Senado",
+                "partido": "Alianza Unidad Nacional (Unidad y Paz + PPC + Peruanos Unidos)"
+            },
+            "posicionamiento": [
+                "Centro-derecha / conservador",
+                "Perfil histórico militar: 'héroe del Cenepa'",
+                "Institucionalista con propuestas de seguridad diferenciadas"
+            ],
+            "estilo_campaña": {
+                "tono": "Solemne, histórico y técnico-militar",
+                "caracteristicas": [
+                    "Apela a su figura como héroe del Cenepa",
+                    "Forma coalición con PPC y Peruanos Unidos",
+                    "Se presenta como candidato de 'los indecisos'",
+                    "Renunció a bancada de APP en enero 2025 para ser independiente"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Estrategias regionales diferenciadas (no enfoque único). Recuperar control territorial, controlar fronteras e incomunicar a los presos. Crear una brigada de policía militar. Rechaza la salida del Perú de la Corte IDH por ser 'propuesta populista'.",
+                "argumento": "La seguridad requiere estrategias adaptadas a cada región del país, no una solución única centralizada"
+            },
+            "indultos": {
+                "postura": "No contempla indultos; propone 'muerte civil' para funcionarios condenados por corrupción para evitar su retorno al Estado",
+                "frase_representativa": "'Muerte civil' para funcionarios condenados por corrupción"
+            }
+        },
+        "aspectos_positivos": [
+            "Héroe de la Guerra del Cenepa (1995) con credencial histórica reconocida",
+            "Experiencia como Comandante General del Ejército y Ministro de Defensa",
+            "Propuesta de aprovechar el megapuerto de Chancay para hegemonía en el Pacífico Sur",
+            "Rechaza salida de la Corte IDH (coherencia con el derecho internacional)",
+            "Apoyó el trabajo de la Comisión de la Verdad y Reconciliación como Comandante"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Conflicto con APP y la Mesa Directiva",
+                    "descripcion": "Estuvo a punto de ser impulsado por Renovación Popular para presidir el Congreso, pero acusó a APP y César Acuña de 'vetarlo' a última hora"
+                },
+                {
+                    "caso": "Alineación progresiva con el gobierno de Boluarte",
+                    "descripcion": "Aunque fue opositor al gobierno de Castillo, luego se alió al de Boluarte, lo que generó críticas sobre su coherencia política"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Cuestionamientos por nombramiento en 1999 como director de Información Exterior del SIN, donde presuntamente habría recibido más de S/ 23,000 de fondos del SIN bajo mandato de Montesinos",
+                "Presentó proyecto de ley para destituir jueces y fiscales mermando el rol de la JNJ, criticado por intentar blindar a políticos investigados",
+                "Involucrado en proyecto que permitió 'doble sueldo' a exmilitares y expolicías en el Congreso (caso investigado por la Fiscalía y archivado por Subcomisión)",
+                "Comentarios calificados de racistas o despectivos contra congresistas de provincias",
+                "Ha mostrado simpatía por Juan Velasco Alvarado"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "General retirado, héroe del Cenepa, exministro de Defensa y congresista",
+            "percepcion": "Figura histórica con credenciales militares respetables, pero con votaciones en el Congreso que lo alinean con posturas conservadoras cuestionables",
+            "diferenciacion": "Es el único candidato con experiencia como Comandante General del Ejército y protagonismo en la Guerra del Cenepa (1995)"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Roberto Chiabra",
+                "url": "https://es.wikipedia.org/wiki/Roberto_Chiabra"
+            },
+            {
+                "titulo": "Andina – Propuestas de seguridad",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-roberto-chiabra-propone-estrategias-regionales-seguridad-ciudadana-1064535.aspx"
+            },
+            {
+                "titulo": "Infobae – Perfil del candidato",
+                "url": "https://www.infobae.com/peru/2026/02/08/roberto-chiabra-perfil-y-hoja-de-vida-del-candidato-del-partido-alianza-unidad-nacional-para-las-elecciones-2026/"
+            },
+            {
+                "titulo": "Expreso – Revela que APP frenó su candidatura al Congreso",
+                "url": "https://www.expreso.com.pe/politica/roberto-chiabra-revelo-que-pudo-presidir-el-congreso-de-la-republica-pero-app-freno-su-postulacion-noticia/1266451/"
+            }
+        ]
+    },
+    {
+        "id": "32",
+        "nombre": "Ronald Darwin Atencio Sotomayor",
+        "image_url": "",
+        "partido": "Alianza Venceremos (Voces del Pueblo + Nuevo Perú)",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Jurídico / Político",
+            "experiencia": [
+                "Abogado – Universidad de San Martín de Porres (2006)",
+                "Estudios de posgrado – PUCP",
+                "Abogado defensor del congresista Guillermo Bermejo y del expresidente Pedro Castillo",
+                "Asesor parlamentario en el Congreso de la República (2022-2025)",
+                "Fundador del Centro Jurídico Athena (2010)"
+            ],
+            "liderazgo_previo": "Asesor parlamentario; defensor de Pedro Castillo; fundador de Centro Jurídico Athena; candidato presidencial de la coalición Venceremos"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República y lista a la Cámara de Diputados por Lima",
+                "partido": "Alianza Venceremos (Voces del Pueblo + Nuevo Perú)"
+            },
+            "posicionamiento": [
+                "Izquierda radical / constituyente",
+                "Nueva Constitución como eje central de su propuesta",
+                "Estado fuerte con capacidad de competencia directa frente a privados"
+            ],
+            "estilo_campaña": {
+                "tono": "Combativo e ideológico",
+                "caracteristicas": [
+                    "Critica duramente a Perú Libre (acusa de cogobernar con la derecha) y a Podemos Perú ('pacto mafioso')",
+                    "Pide captura de Vladimir Cerrón",
+                    "Propone fin del 'rol subsidiario del Estado'",
+                    "Apela a bases descontentas con el modelo económico vigente"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Conformar un 'comando de aniquilamiento' de élite de 500 policías liderado por el presidente. Referéndums para evaluar o remover a los comisarios de la Policía.",
+                "argumento": "La seguridad requiere una respuesta de élite directamente supervisada por el ejecutivo y con control ciudadano"
+            },
+            "indultos": {
+                "postura": "Rechaza indultos; ha declarado explícitamente que Vladimir Cerrón debe ser apresado y responder a la justicia",
+                "frase_representativa": "Líderes con mandato de captura, como Vladimir Cerrón, deben ser apresados y responder a la justicia"
+            }
+        },
+        "aspectos_positivos": [
+            "Propone reforma de salud universal con 5,000 equipos de salud comunitaria",
+            "Propone incrementar la presión tributaria para financiar gasto social",
+            "Eliminación de exoneraciones agroexportadoras e industrialización con Estado fuerte",
+            "Distancia clara y explícita de Perú Libre y figuras cuestionadas de la izquierda",
+            "Conocimiento del funcionamiento del Congreso como asesor parlamentario"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Historial con Renacimiento Unido Nacional",
+                    "descripcion": "Estuvo afiliado a Renacimiento Unido Nacional (2020-2021) antes de migrar a Voces del Pueblo"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Reportaje de 'Panorama' reveló que su Centro Jurídico Athena operaba como fachada para venta ilegal de tesis completas (hasta S/ 5,900 cada una); negó participación directa afirmando que renunció en 2022, aunque investigaciones señalan vínculos más recientes",
+                "Afirmó que el Congreso creó un 'Senado todopoderoso que puede vacar a un presidente en media hora'; dato calificado de ENGAÑOSO por AmaLlulla (los reglamentos estipulan tiempos obligatorios que hacen materialmente imposible lo afirmado)",
+                "Defiende una Asamblea Constituyente que sectores calificaban de inconstitucional sin reforma previa"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Abogado de izquierda radical, defensor de Pedro Castillo y promotor de una nueva Constitución",
+            "percepcion": "Candidato de izquierda que busca diferenciarse de Perú Libre con un discurso constituyente y de ruptura con el modelo económico vigente",
+            "diferenciacion": "Es el único candidato de la izquierda que pide explícitamente la captura de Cerrón y la ruptura total con Perú Libre, intentando reconstruir la izquierda desde las bases"
+        },
+        "fuentes": [
+            {
+                "titulo": "Wikipedia – Ronald Atencio",
+                "url": "https://es.wikipedia.org/wiki/Ronald_Atencio"
+            },
+            {
+                "titulo": "LP Derecho – Entrevista",
+                "url": "https://lpderecho.pe/por-que-el-abogado-ronald-atencio-quiere-ser-presidente-de-la-republica/"
+            },
+            {
+                "titulo": "Andina – Propuesta de reforma de salud",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-ronald-atencio-plantea-reforma-integral-del-sistema-salud-1064521.aspx"
+            },
+            {
+                "titulo": "IDL Reporteros – Dato engañoso sobre el Senado",
+                "url": "https://www.idl-reporteros.pe/es-enganoso-el-dato-de-ronald-atencio-acerca-de-que-el-senado-puede-vacar-a-un-presidente-en-media-hora/"
+            }
+        ]
+    },
+    {
+        "id": "33",
+        "nombre": "Rosario Fernández Bazán",
+        "image_url": "",
+        "partido": "Un Camino Diferente",
+        "logo_partido": "",
+        "intentos_presidenciales": "1",
+        "perfil_profesional": {
+            "ambito": "Educativo / Docente",
+            "experiencia": [
+                "Estudios técnicos y no universitarios (sin formación universitaria tradicional)",
+                "Docente en la I.E. Privada Jan Komesky, Trujillo (desde 2005, más de 20 años ininterrumpidos)",
+                "Lideresa y fundadora del partido Un Camino Diferente"
+            ],
+            "liderazgo_previo": "Candidata presidencial y al Senado por Un Camino Diferente; lideresa regional en Trujillo"
+        },
+        "trayectoria_politica": {
+            "candidatura_2026": {
+                "cargo": "Presidente de la República y candidata al Senado",
+                "partido": "Un Camino Diferente"
+            },
+            "posicionamiento": [
+                "Derecha populista / anticentralista",
+                "Base regional (Trujillo, La Libertad)",
+                "Candidatura familiar: lleva a su hermano prófugo como primer vicepresidente"
+            ],
+            "estilo_campaña": {
+                "tono": "Combativo, anticentralista y populista",
+                "caracteristicas": [
+                    "Hermana del exalcalde de Trujillo Arturo Fernández (prófugo de la justicia)",
+                    "Lleva a Arturo Fernández como primer vicepresidente",
+                    "Discurso de ruptura con Lima y el centralismo",
+                    "Critica frontalmente a APP y César Acuña"
+                ]
+            }
+        },
+        "propuestas_clave": {
+            "seguridad_ciudadana": {
+                "propuesta": "Fusionar el Ministerio del Interior y el Ministerio de Defensa para crear el 'Ministerio de Guerra', acompañado de 10 'Escuadrones de la Vida' con 1,000 efectivos cada uno (10,000 efectivos en total).",
+                "argumento": "La crisis de seguridad requiere la unificación de fuerzas del orden y defensa bajo un mando único"
+            },
+            "indultos": {
+                "postura": "Implícitamente busca la rehabilitación de su hermano Arturo Fernández; justifica su clandestinidad afirmando que su sentencia 'no se justifica' y 'no viene con pruebas'",
+                "frase_representativa": "La sentencia de mi hermano no se justifica, no viene con pruebas; no es por corrupción, es por una difamación"
+            }
+        },
+        "aspectos_positivos": [
+            "Propone ampliar vacantes en universidades nacionales",
+            "Impulsa conectividad a Internet en zonas rurales para reducir brechas tecnológicas",
+            "Propone democratización de la justicia mediante elección popular de jueces y fiscales",
+            "Creación de Banco Minero estatal para garantizar recaudación tributaria del sector",
+            "Perfil docente con dos décadas de experiencia en educación"
+        ],
+        "controversias": {
+            "alianzas_politicas": [
+                {
+                    "caso": "Plancha presidencial con hermano prófugo",
+                    "descripcion": "Lleva a su hermano Arturo Fernández (exalcalde de Trujillo, prófugo de la justicia por difamación agravada) como candidato a la primera vicepresidencia"
+                }
+            ],
+            "conflicto_con_patria_roja": {
+                "acusaciones": [],
+                "consecuencias": []
+            },
+            "cuestionamientos_publicos": [
+                "Se negó a firmar el Pacto Ético Electoral 2026 promovido por el JNE, argumentando que 'la ética no se firma, se practica'",
+                "Fue denunciada penalmente por la Corte Superior de Justicia de La Libertad como organizadora de protesta que degeneró en insultos a jueces, agresiones físicas a policías y ciudadanos, y lanzamiento de huevos contra infraestructura estatal",
+                "Defiende la clandestinidad de su hermano condenado, estrategia comparada con la de Mario Vizcarra y su hermano Martín",
+                "Candidata sin formación universitaria para la presidencia de la República",
+                "Acusa a APP y César Acuña de ser 'raíz de la extorsión en Trujillo'"
+            ]
+        },
+        "perfil_publico": {
+            "imagen": "Docente trujillana, hermana del exalcalde Arturo Fernández y lideresa anticentralista",
+            "percepcion": "Candidata de perfil regional con propuestas disruptivas, pero muy cuestionada por su vínculo con su hermano prófugo y sus actos de violencia en manifestaciones",
+            "diferenciacion": "Es la única candidata presidencial sin formación universitaria y la única que lleva a un hermano condenado y prófugo de la justicia como candidato a la vicepresidencia"
+        },
+        "fuentes": [
+            {
+                "titulo": "Ventanilla TV – Hoja de vida",
+                "url": "https://www.facebook.com/ventanillatv/photos/conoce-la-hoja-de-vida-de-rosario-fern%C3%A1ndez-candidato-presidencial-por-el-partid/1304643981689624/"
+            },
+            {
+                "titulo": "Infobae – Negativa al Pacto Ético y denuncia penal",
+                "url": "https://www.infobae.com/peru/2025/12/19/rosario-fernandez-candidata-que-se-nego-a-firmar-pacto-etico-electoral-fue-denunciada-por-agredir-a-la-pnp-y-tirar-huevos-a-sede-judicial/"
+            },
+            {
+                "titulo": "Diario Correo – Arturo Fernández como vicepresidente",
+                "url": "https://diariocorreo.pe/edicion/la-libertad/la-libertad-arturo-fernandez-postularia-a-la-vicepresidencia-noticia/"
+            },
+            {
+                "titulo": "Andina – Propuestas de Internet rural",
+                "url": "https://andina.pe/agencia/noticia-elecciones-2026-rosario-fernandez-plantea-expansion-del-internet-zonas-rurales-1061241.aspx"
+            },
+            {
+                "titulo": "El Comercio – Defiende a su hermano prófugo",
+                "url": "https://elcomercio.pe/elecciones/candidata-presidencial-de-un-camino-diferente-defiende-a-su-hermano-arturo-fernandez-preso-por-difamacion-rosario-fernandez-ultimas-noticia/"
+            }
+        ]
     }
 ]

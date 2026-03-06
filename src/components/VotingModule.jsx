@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 const VotingModule = ({ candidates, onVoteCompleted }) => {
     const [selectedCandidate, setSelectedCandidate] = useState(null);
     const [hasVoted, setHasVoted] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         const vote = localStorage.getItem('peru_2026_vote');
@@ -18,6 +19,11 @@ const VotingModule = ({ candidates, onVoteCompleted }) => {
         setHasVoted(true);
         if (onVoteCompleted) onVoteCompleted(candidateId);
     };
+
+    const filteredCandidates = candidates.filter(candidate =>
+        candidate.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        candidate.partido.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     if (hasVoted) {
         return (
@@ -55,16 +61,33 @@ const VotingModule = ({ candidates, onVoteCompleted }) => {
                 <div className="text-center mb-16">
                     <span className="text-red-600 font-bold tracking-widest uppercase text-sm">Simulacro Electoral</span>
                     <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-4">Emite tu Voto</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+                    <p className="text-gray-600 max-w-2xl mx-auto text-lg mb-10">
                         Selecciona al candidato de tu preferencia en este simulacro virtual. Tu participación nos ayuda a proyectar el sentimiento ciudadano.
                     </p>
+
+                    {/* Search Filter */}
+                    <div className="max-w-md mx-auto relative mb-12">
+                        <input
+                            type="text"
+                            placeholder="Busca a tu candidato..."
+                            className="w-full px-6 py-4 rounded-2xl border-2 border-gray-200 focus:border-red-500 focus:outline-none transition-all shadow-sm pr-12"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                        <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl">
+                            🔍
+                        </span>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {candidates.map((candidate) => (
+                    {filteredCandidates.map((candidate) => (
                         <motion.div
                             key={candidate.id}
                             whileHover={{ y: -5 }}
+                            layout
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             className={`relative overflow-hidden rounded-2xl bg-white shadow-md border-2 transition-all cursor-pointer ${selectedCandidate === candidate.id ? 'border-red-600 ring-2 ring-red-100' : 'border-transparent hover:border-red-200'
                                 }`}
                             onClick={() => setSelectedCandidate(candidate.id)}
@@ -74,6 +97,7 @@ const VotingModule = ({ candidates, onVoteCompleted }) => {
                                     src={candidate.image_url}
                                     alt={candidate.nombre}
                                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                    loading="lazy"
                                 />
                                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                                     <h3 className="text-white font-bold text-lg leading-tight">{candidate.nombre}</h3>
@@ -87,13 +111,14 @@ const VotingModule = ({ candidates, onVoteCompleted }) => {
                                         handleVote(candidate.id);
                                     }}
                                     className={`w-full py-2.5 rounded-xl font-bold transition-all ${selectedCandidate === candidate.id
-                                            ? 'bg-red-600 text-white shadow-md shadow-red-200'
-                                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                        ? 'bg-red-600 text-white shadow-md shadow-red-200'
+                                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                         }`}
                                 >
                                     Votar por {candidate.nombre.split(' ')[0]}
                                 </button>
                             </div>
+                            <br></br><br></br><br></br>
                             {selectedCandidate === candidate.id && (
                                 <div className="absolute top-3 right-3 bg-red-600 text-white p-1.5 rounded-full shadow-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -104,6 +129,11 @@ const VotingModule = ({ candidates, onVoteCompleted }) => {
                         </motion.div>
                     ))}
                 </div>
+                {filteredCandidates.length === 0 && (
+                    <div className="text-center py-20 bg-white rounded-3xl border-2 border-dashed border-gray-100 mt-10">
+                        <p className="text-gray-400 text-lg">No se encontró ningún candidato con ese nombre o partido.</p>
+                    </div>
+                )}
             </div>
         </section>
     );

@@ -1,11 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CandidateCard from './CandidateCard';
-import CandidateDetail from './CandidateDetail';
 
-const CandidatesSection = ({ candidates }) => {
-    const [selectedCandidate, setSelectedCandidate] = useState(null);
-    const [visibleCount, setVisibleCount] = useState(5);
+const CandidatesSection = ({ candidates, onSelectCandidate }) => {
+    const [visibleCount, setVisibleCount] = useState(10);
     const [searchTerm, setSearchTerm] = useState('');
 
     const [showDropdown, setShowDropdown] = useState(false);
@@ -39,7 +37,7 @@ const CandidatesSection = ({ candidates }) => {
     }, [searchTerm]);
 
     const handleSelectCandidate = (candidate) => {
-        setSelectedCandidate(candidate);
+        onSelectCandidate(candidate);
 
         // Analytics: Track search result selection
         import('../services/analytics').then(({ analytics }) => {
@@ -146,7 +144,7 @@ const CandidatesSection = ({ candidates }) => {
                         >
                             <CandidateCard
                                 candidate={candidate}
-                                onClick={() => setSelectedCandidate(candidate)}
+                                onClick={() => onSelectCandidate(candidate)}
                             />
                         </motion.div>
                     ))}
@@ -172,14 +170,6 @@ const CandidatesSection = ({ candidates }) => {
                 )}
             </div>
 
-            <AnimatePresence>
-                {selectedCandidate && (
-                    <CandidateDetail
-                        candidate={selectedCandidate}
-                        onClose={() => setSelectedCandidate(null)}
-                    />
-                )}
-            </AnimatePresence>
         </section>
     );
 };

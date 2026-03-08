@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { analytics } from '../services/analytics';
-import VotingModule from '../components/VotingModule';
+import VotingBallot from '../components/VotingBallot';
 import candidatesData from '../data/candidates.json';
 
 const VotingPage = ({ onVoteCompleted }) => {
@@ -17,11 +17,14 @@ const VotingPage = ({ onVoteCompleted }) => {
             className="pt-10"
         >
             <div className="container mx-auto px-4 py-12">
-                <h2 className="text-4xl font-bold text-center mb-8">Emite tu Voto</h2>
-                <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                    Tu participación es fundamental. Selecciona al candidato que mejor represente tus intereses para el Perú.
-                </p>
-                <VotingModule candidates={candidatesData} onVoteCompleted={onVoteCompleted} />
+                <div className="text-center mb-8">
+                    <span className="text-peru-red font-bold tracking-widest uppercase text-sm">Simulacro Electoral</span>
+                    <h2 className="text-4xl font-black text-gray-900 mt-2 mb-3">Emite tu Voto</h2>
+                    <p className="text-gray-500 max-w-xl mx-auto text-base">
+                        Selecciona al candidato de tu preferencia. En dispositivos móviles puedes deslizar la cédula horizontalmente.
+                    </p>
+                </div>
+                <VotingBallot candidates={candidatesData} onVoteCompleted={onVoteCompleted} />
             </div>
         </motion.div>
     );

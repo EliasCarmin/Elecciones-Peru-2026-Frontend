@@ -105,7 +105,7 @@ const MatchQuiz = ({ candidates, onSelectCandidate }) => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9 }}
-                            className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-red-100 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden"
+                            className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-red-100 flex flex-col-reverse md:flex-row items-center gap-8 relative overflow-hidden"
                         >
                             {/* Llama Image */}
                             <div className="w-48 md:w-64 flex-shrink-0 relative z-10">

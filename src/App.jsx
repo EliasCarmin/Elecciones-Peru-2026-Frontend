@@ -6,6 +6,8 @@ import LoadingScreen from './components/LoadingScreen';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CandidateDetail from './components/CandidateDetail';
+import NewsModal from './components/NewsModal';
+import FloatingNewsButton from './components/FloatingNewsButton';
 import HomePage from './pages/HomePage';
 import VotingPage from './pages/VotingPage';
 import ResultsPage from './pages/ResultsPage';
@@ -14,6 +16,7 @@ import './index.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [showNewsModal, setShowNewsModal] = useState(false);
   const [refreshResults, setRefreshResults] = useState(0);
   const [selectedCandidate, setSelectedCandidate] = useState(null);
 
@@ -22,9 +25,15 @@ function App() {
   };
 
   useEffect(() => {
+    // Check if news modal has been seen this session
+    const hasSeenNews = sessionStorage.getItem('peru2026_news_seen');
+
     // Simulate initial loading time
     const timer = setTimeout(() => {
       setLoading(false);
+      if (!hasSeenNews) {
+        setShowNewsModal(true);
+      }
     }, 3500);
 
     // Initialize Analytics session
@@ -52,6 +61,18 @@ function App() {
             </Routes>
           </main>
           <Footer />
+
+          {/* Floating News Access */}
+          <FloatingNewsButton onClick={() => setShowNewsModal(true)} />
+
+          {/* News Modal Overlay */}
+          <NewsModal
+            isOpen={showNewsModal}
+            onClose={() => {
+              setShowNewsModal(false);
+              sessionStorage.setItem('peru2026_news_seen', 'true');
+            }}
+          />
 
           {/* Global Candidate Detail Overlay */}
           <AnimatePresence>

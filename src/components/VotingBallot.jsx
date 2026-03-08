@@ -72,46 +72,46 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
     return (
         <div className="py-4">
             {/* BALLOT */}
-            <div className="overflow-x-auto rounded-2xl shadow-2xl border border-gray-300">
-                <div className="min-w-[950px] bg-white font-sans">
+            <div className="overflow-x-auto rounded-[2rem] shadow-2xl border border-gray-200">
+                <div className="min-w-[1000px] bg-white font-sans">
 
                     {/* BALLOT HEADER */}
-                    <div className="border-b-4 border-gray-900 flex items-center justify-between px-6 py-3 bg-white">
+                    <div className="border-b-4 border-gray-900 flex items-center justify-between px-10 py-6 bg-white">
                         <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Escudo_de_armas_del_Per%C3%BA.svg/200px-Escudo_de_armas_del_Per%C3%BA.svg.png"
+                            src="/escudo.png"
                             alt="Escudo Perú"
-                            className="h-16 w-auto"
+                            className="h-20 w-auto object-contain"
                         />
                         <div className="text-center">
-                            <h1 className="text-2xl font-black tracking-widest text-gray-900 uppercase">Cédula de Sufragio</h1>
-                            <p className="text-xs font-bold tracking-widest text-gray-600 uppercase">Elecciones Generales 2026 — Simulacro</p>
+                            <h1 className="text-3xl font-black tracking-[0.2em] text-gray-900 uppercase leading-none">Cédula de Sufragio</h1>
+                            <p className="text-sm font-bold tracking-widest text-gray-500 uppercase mt-2">Elecciones Generales 2026 — Simulacro</p>
                         </div>
-                        <div className="h-14 w-14 rounded-full border-2 border-gray-300 bg-gray-100 flex items-center justify-center text-2xl">
+                        <div className="h-16 w-16 rounded-full border-4 border-gray-50 bg-gray-50 flex items-center justify-center text-3xl shadow-inner">
                             🦙
                         </div>
                     </div>
 
                     {/* ANNEXE LABEL */}
-                    <div className="bg-gray-900 text-white text-center text-[10px] font-bold tracking-widest py-1.5 uppercase">
+                    <div className="bg-gray-900 text-white text-center text-[11px] font-black tracking-[0.3em] py-3 uppercase">
                         PRESIDENTE Y VICEPRESIDENTE — MARQUE CON UNA CRUZ (+) O UN ASPA (×)
                     </div>
 
                     {/* COLUMN HEADERS */}
-                    <div className="grid grid-cols-[1fr_100px_130px_130px] border-b-2 border-gray-900 text-center text-[10px] font-black uppercase tracking-wide">
-                        <div className="py-2 px-4 border-r border-gray-400 bg-gray-50 flex items-center text-gray-800">
+                    <div className="grid grid-cols-[300px_120px_1fr_1fr] border-b-2 border-gray-900 text-center text-[10px] font-black uppercase tracking-wider">
+                        <div className="py-4 px-6 border-r border-gray-400 bg-gray-50 flex items-center text-gray-800">
                             CANDIDATO / PARTIDO
                         </div>
-                        <div className="bg-red-50 border-r border-gray-400 flex flex-col items-center">
-                            <div className="py-1 px-2 border-b border-red-100 w-full">PRESIDENTE</div>
-                            <div className="py-1 text-[8px] font-normal text-gray-400">VOTO</div>
+                        <div className="bg-red-50 border-r border-gray-400 flex flex-col items-center justify-center">
+                            <div className="py-1 px-2 border-b border-red-100 w-full mb-1">PRESIDENTE</div>
+                            <div className="text-[8px] font-bold text-red-400">VOTO</div>
                         </div>
-                        <div className="bg-amber-50 border-r border-gray-400 flex flex-col items-center">
-                            <div className="py-1 px-2 border-b border-amber-100 w-full">SENADORES</div>
-                            <div className="py-1 text-[8px] font-normal text-gray-400">VOTO PREFERENCIAL</div>
+                        <div className="bg-amber-50 border-r border-gray-400 flex flex-col items-center justify-center">
+                            <div className="py-1 px-2 border-b border-amber-100 w-full mb-1 text-amber-900">SENADORES</div>
+                            <div className="text-[8px] font-bold text-amber-500 uppercase">Voto Preferencial</div>
                         </div>
-                        <div className="bg-blue-50 flex flex-col items-center">
-                            <div className="py-1 px-2 border-b border-blue-100 w-full">CONGRESO</div>
-                            <div className="py-1 text-[8px] font-normal text-gray-400">VOTO PREFERENCIAL</div>
+                        <div className="bg-blue-50 flex flex-col items-center justify-center">
+                            <div className="py-1 px-2 border-b border-blue-100 w-full mb-1 text-blue-900">CONGRESO</div>
+                            <div className="text-[8px] font-bold text-blue-500 uppercase">Voto Preferencial</div>
                         </div>
                     </div>
 
@@ -123,43 +123,45 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                         return (
                             <div
                                 key={candidate.id}
-                                className={`grid grid-cols-[1fr_100px_130px_130px] border-b border-gray-300 transition-colors text-sm
-                                    ${isSelected ? 'bg-red-50' : index % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}
-                                    ${!hasVoted ? 'cursor-pointer hover:bg-red-50/60' : 'cursor-default'}
+                                className={`grid grid-cols-[300px_120px_1fr_1fr] border-b border-gray-200 transition-all duration-300
+                                    ${isSelected ? 'bg-red-50/50 scale-[1.01] z-10 relative shadow-sm' : index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}
+                                    ${!hasVoted ? 'cursor-pointer hover:bg-red-50/20' : 'cursor-default'}
                                 `}
                                 onClick={() => handleSelect(candidate.id)}
                             >
                                 {/* Candidate Info */}
-                                <div className="py-2 px-3 border-r border-gray-300 flex items-center gap-3">
+                                <div className="py-6 px-6 border-r border-gray-200 flex items-center gap-4">
                                     <div className="relative flex-shrink-0">
                                         <img
                                             src={candidate.image_url}
                                             alt={candidate.nombre}
-                                            className="w-12 h-14 object-cover object-top border border-gray-200 rounded"
-                                            onError={(e) => { e.target.src = 'https://via.placeholder.com/48x56?text=?'; }}
+                                            className="w-14 h-18 object-cover object-top border-2 border-white rounded-lg shadow-sm"
+                                            onError={(e) => { e.target.src = 'https://via.placeholder.com/56x72?text=?'; }}
                                         />
                                     </div>
-                                    <div className="flex flex-col min-w-0">
-                                        <span className="font-black text-gray-400 text-[9px] uppercase tracking-wider truncate">{candidate.partido}</span>
-                                        <span className="font-bold text-gray-900 text-sm leading-tight">{candidate.nombre}</span>
+                                    <div className="flex flex-col min-w-0 flex-1">
+                                        <span className="font-black text-gray-400 text-[10px] uppercase tracking-widest truncate mb-1">{candidate.partido}</span>
+                                        <span className="font-black text-gray-900 text-lg leading-tight tracking-tight">{candidate.nombre}</span>
                                     </div>
                                     {candidate.logo_partido && (
-                                        <img
-                                            src={candidate.logo_partido}
-                                            alt={`Logo ${candidate.partido}`}
-                                            className="ml-auto w-10 h-10 object-contain flex-shrink-0"
-                                            onError={(e) => { e.target.style.display = 'none'; }}
-                                        />
+                                        <div className="ml-2 flex-shrink-0 bg-white p-1 rounded-lg border border-gray-100">
+                                            <img
+                                                src={candidate.logo_partido}
+                                                alt={`Logo ${candidate.partido}`}
+                                                className="w-10 h-10 object-contain"
+                                                onError={(e) => { e.target.parentElement.style.display = 'none'; }}
+                                            />
+                                        </div>
                                     )}
                                 </div>
 
                                 {/* Presidential Vote Cell */}
-                                <div className="border-r border-gray-300 flex items-center justify-center bg-inherit">
+                                <div className="border-r border-gray-200 flex items-center justify-center bg-inherit">
                                     <div
-                                        className={`w-12 h-12 border-2 rounded flex items-center justify-center text-2xl font-black transition-all
+                                        className={`w-16 h-16 border-4 rounded-2xl flex items-center justify-center text-4xl font-black transition-all duration-300
                                             ${isSelected
-                                                ? 'border-red-600 bg-red-600 text-white shadow-inner'
-                                                : 'border-gray-400 bg-white text-transparent'
+                                                ? 'border-red-600 bg-red-600 text-white shadow-lg shadow-red-200 scale-100'
+                                                : 'border-gray-200 bg-white text-transparent hover:border-red-200'
                                             }`}
                                     >
                                         {isSelected ? '✕' : ''}
@@ -167,13 +169,15 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                 </div>
 
                                 {/* Senator Preference Cell */}
-                                <div className="border-r border-gray-300 flex items-center justify-center gap-1.5 py-2">
+                                <div className="border-r border-gray-200 flex items-center justify-center gap-2 px-4 py-6 bg-amber-50/10">
                                     {[0, 1].map(idx => (
                                         <input
                                             key={idx}
                                             type="text"
+                                            inputMode="numeric"
                                             maxLength={2}
-                                            className="w-8 h-10 border border-gray-400 bg-white rounded text-center font-bold text-lg focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-200 uppercase"
+                                            placeholder="0"
+                                            className="w-12 h-14 border-2 border-gray-300 bg-white rounded-xl text-center font-black text-2xl focus:border-amber-500 focus:outline-none focus:ring-4 focus:ring-amber-500/10 transition-all placeholder:text-gray-100"
                                             value={candPrefs.sen[idx]}
                                             onChange={(e) => handlePreferenceChange(candidate.id, 'sen', idx, e.target.value)}
                                             onClick={(e) => e.stopPropagation()}
@@ -183,13 +187,15 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                 </div>
 
                                 {/* Congress Preference Cell */}
-                                <div className="flex items-center justify-center gap-1.5 py-2">
+                                <div className="flex items-center justify-center gap-2 px-4 py-6 bg-blue-50/10">
                                     {[0, 1].map(idx => (
                                         <input
                                             key={idx}
                                             type="text"
+                                            inputMode="numeric"
                                             maxLength={2}
-                                            className="w-8 h-10 border border-gray-400 bg-white rounded text-center font-bold text-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-200 uppercase"
+                                            placeholder="0"
+                                            className="w-12 h-14 border-2 border-gray-300 bg-white rounded-xl text-center font-black text-2xl focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-500/10 transition-all placeholder:text-gray-100"
                                             value={candPrefs.con[idx]}
                                             onChange={(e) => handlePreferenceChange(candidate.id, 'con', idx, e.target.value)}
                                             onClick={(e) => e.stopPropagation()}
@@ -204,18 +210,31 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
             </div>
 
             {/* ACTION BAR */}
-            <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p className="text-sm text-gray-500 italic">
-                    {selectedId
-                        ? `Seleccionaste a: ${candidates.find(c => c.id === selectedId)?.nombre}`
-                        : 'Haz clic en la fila del candidato para marcar el voto presidencial.'}
-                </p>
+            <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-6 bg-gray-50 p-8 rounded-[2rem] border border-gray-100">
+                <div className="flex items-center gap-4">
+                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-sm transition-all
+                        ${selectedId ? 'bg-peru-red text-white scale-110' : 'bg-gray-200 text-gray-400'}`}>
+                        {selectedId ? '✓' : '!'}
+                    </div>
+                    <div>
+                        <p className="text-gray-900 font-black text-xl">
+                            {selectedId
+                                ? candidates.find(c => c.id === selectedId)?.nombre
+                                : 'Selecciona a tu candidato'}
+                        </p>
+                        <p className="text-gray-500 text-sm font-medium">
+                            {selectedId
+                                ? 'Puedes escribir tus números de preferencia en los cuadros.'
+                                : 'Haz clic en la fila del candidato para marcar el voto presidencial.'}
+                        </p>
+                    </div>
+                </div>
                 <button
                     onClick={() => selectedId && setShowConfirm(true)}
                     disabled={!selectedId}
-                    className={`px-10 py-3.5 rounded-full font-black text-lg transition-all shadow-lg
+                    className={`min-w-[240px] px-10 py-5 rounded-2xl font-black text-xl transition-all shadow-xl tracking-tight
                         ${selectedId
-                            ? 'bg-peru-red text-white hover:bg-red-700 shadow-red-200 hover:scale-105 active:scale-95'
+                            ? 'bg-peru-red text-white hover:bg-red-700 shadow-red-500/20 hover:scale-[1.02] active:scale-95'
                             : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                         }`}
                 >

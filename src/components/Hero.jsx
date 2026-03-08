@@ -3,6 +3,15 @@ import { motion } from 'framer-motion';
 const Hero = ({ candidatesCount = 11 }) => {
     return (
         <section className="relative py-12 md:py-20 lg:py-28 overflow-hidden bg-white">
+            {/* Mobile/Tablet Background Map Watermark */}
+            <div className="absolute top-1/2 right-0 -translate-y-1/2 w-full max-w-md lg:hidden pointer-events-none opacity-10">
+                <img
+                    src="/mapa.png"
+                    alt=""
+                    className="w-full h-auto object-contain translate-x-1/4 rotate-12"
+                />
+            </div>
+
             <div className="container mx-auto px-4 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 max-w-6xl mx-auto">
                     <motion.div
@@ -77,7 +86,7 @@ const Hero = ({ candidatesCount = 11 }) => {
                     </motion.div>
 
                     <motion.div
-                        className="w-full max-w-md lg:max-w-lg flex justify-center lg:justify-start"
+                        className="hidden lg:flex w-full max-w-md lg:max-w-lg justify-center lg:justify-start"
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.4 }}

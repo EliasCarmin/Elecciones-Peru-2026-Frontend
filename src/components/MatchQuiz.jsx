@@ -102,22 +102,39 @@ const MatchQuiz = ({ candidates, onSelectCandidate }) => {
                     {currentStep === 0 && (
                         <motion.div
                             key="start"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9 }}
-                            className="text-center bg-white p-12 rounded-3xl shadow-2xl border border-red-100"
+                            className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-red-100 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden"
                         >
-                            <span className="text-peru-red font-black text-6xl mb-6 block">⚡</span>
-                            <h2 className="text-4xl font-black text-gray-900 mb-4">Match Electoral 2026</h2>
-                            <p className="text-lg text-gray-600 mb-10">
-                                ¿No sabes por quién votar? Responde 4 preguntas rápidas y descubre qué candidatos se alinean mejor con tus prioridades y visión de país.
-                            </p>
-                            <button
-                                onClick={() => setCurrentStep(1)}
-                                className="bg-peru-red text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-red-700 transition-all shadow-xl shadow-red-200 transform hover:scale-105"
-                            >
-                                Empezar Test
-                            </button>
+                            {/* Llama Image */}
+                            <div className="w-48 md:w-64 flex-shrink-0 relative z-10">
+                                <motion.img
+                                    src="/llama_señalando.png"
+                                    alt="Llama señalando"
+                                    className="w-full h-auto drop-shadow-2xl"
+                                    initial={{ x: -20, opacity: 0 }}
+                                    animate={{ x: 0, opacity: 1 }}
+                                    transition={{ delay: 0.2 }}
+                                />
+                            </div>
+
+                            <div className="text-center md:text-left relative z-10">
+                                <span className="text-peru-red font-black text-5xl mb-4 block">⚡</span>
+                                <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">¿Aún no te decides?</h2>
+                                <p className="text-lg text-gray-600 mb-8">
+                                    Responde 4 preguntas rápidas y descubre qué candidatos se alinean mejor con tus prioridades y visión de país para este 2026.
+                                </p>
+                                <button
+                                    onClick={() => setCurrentStep(1)}
+                                    className="bg-peru-red text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-red-700 transition-all shadow-xl shadow-red-200 transform hover:scale-105 active:scale-95"
+                                >
+                                    ¡Hacer el Match!
+                                </button>
+                            </div>
+
+                            {/* Decorative background element */}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full -mr-16 -mt-16 z-0"></div>
                         </motion.div>
                     )}
 
@@ -130,16 +147,16 @@ const MatchQuiz = ({ candidates, onSelectCandidate }) => {
                             className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-red-50 relative"
                         >
                             <div className="absolute top-0 left-0 h-2 bg-red-100 w-full rounded-t-3xl overflow-hidden">
-                                <motion.div 
+                                <motion.div
                                     className="h-full bg-peru-red"
                                     initial={{ width: 0 }}
                                     animate={{ width: `${(currentStep / questions.length) * 100}%` }}
                                 />
                             </div>
-                            
+
                             <p className="text-peru-red font-bold mb-2">Pregunta {currentStep} de {questions.length}</p>
                             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">{questions[currentStep - 1].text}</h3>
-                            
+
                             <div className="grid grid-cols-1 gap-4">
                                 {questions[currentStep - 1].options.map((opt, idx) => (
                                     <button
@@ -163,7 +180,7 @@ const MatchQuiz = ({ candidates, onSelectCandidate }) => {
                         >
                             <h2 className="text-3xl font-black text-gray-900 mb-2">Tus Mejores Coincidencias</h2>
                             <p className="text-gray-600 mb-10">Basado en tus respuestas, estos candidatos podrían interesarte:</p>
-                            
+
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                                 {matches.map(({ candidate, score }, idx) => (
                                     <motion.div

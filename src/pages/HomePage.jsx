@@ -14,11 +14,11 @@ const HomePage = ({ onSelectCandidate }) => {
     return (
         <>
             <Hero candidatesCount={candidatesData.length} />
-            <MatchQuiz candidates={candidatesData} onSelectCandidate={onSelectCandidate} />
             <CandidatesSection
                 candidates={candidatesData}
                 onSelectCandidate={onSelectCandidate}
             />
+            <MatchQuiz candidates={candidatesData} onSelectCandidate={onSelectCandidate} />
             <VersusSection candidates={candidatesData} />
         </>
     );

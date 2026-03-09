@@ -930,9 +930,9 @@
     {
         "id": 14,
         "nombre": "Jorge Nieto Montesinos",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCmR2oR_663Ij-DtdCyZz7EKlElW6tI-wFjVVeW5Y62DrDDW3fitUGF7WkifOseKZTc7TKtZP2KjUttJbroi3eZFhzqLKl4o5TUKdUkk&s=10",
         "partido": "Partido del Buen Gobierno",
         "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9voEcwCwh5dxbY-HqYyBj4fQDC2ivAlo3mw&s",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jorge_Nieto_Montesinos.jpg/1037px-Jorge_Nieto_Montesinos.jpg",
         "intentos_presidenciales": 1,
         "datos_personales": {
             "fecha_nacimiento": "1951-10-29",
@@ -1109,9 +1109,9 @@
     {
         "id": "16",
         "nombre": "Walter Chirinos Purizaga",
-        "image_url": "",
+        "image_url": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/02/06/001250297W.webp",
         "partido": "Partido Regionalista de Integración Nacional (PRIN)",
-        "logo_partido": "",
+        "logo_partido": "https://prin.org.pe/files/kit/Partido%20Pol%C3%ADtico%20PRIN%20-%20S%C3%ADmbolo.png",
         "intentos_presidenciales": "0",
         "perfil_profesional": {
             "ambito": "Derecho, contabilidad y consultoría independiente",
@@ -1198,9 +1198,9 @@
     {
         "id": "17",
         "nombre": "Armando Massé Fernández",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFGrXOKPL6hQKYHPPfhuz-90WtjJFA-jLoGy0mw0VrRTYOeng3ffiIUmWyN1Ib2Ok_i8AegbxHVZq6nVm0TcQ358k8CF8ZofxQmeVQcNr-A&s=10",
         "partido": "Partido Democrático Federal",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Dd6Xg--q6BBzn_soQUUlaBRSzEewKrflOA&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Medicina, música y comunicación",
@@ -1289,9 +1289,9 @@
     {
         "id": "18",
         "nombre": "Charlie Carrasco Salazar",
-        "image_url": "",
+        "image_url": "https://pbs.twimg.com/media/HCq3W4lWsAA7HVu.jpg",
         "partido": "Partido Demócrata Unido Perú",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdIx61FswkPieqsu8m6k02M4BttypxaYj5A&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Jurídico / Académico / Militar (licenciado de las FF.AA.)",
@@ -1388,9 +1388,9 @@
     {
         "id": "19",
         "nombre": "Herbert Caller Gutiérrez",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSP2L-FQj2m7RrKpKUn7Edu7X4UDXmSSxXIQ&s",
         "partido": "Partido Patriótico del Perú (PPP)",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_vyqNKf4t0tROqAkX8AaLbOIQ-uuvRTQbQ&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Naval / Jurídico / Educativo / Emprendedor",
@@ -1493,9 +1493,9 @@
     {
         "id": "20",
         "nombre": "Mesías Guevara Amasifuén",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy6TqIgc8bFvM43ugJytFhXtWCX012ck-72w&s",
         "partido": "Partido Morado",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3BCInJNckBCNzT8CEL1Rt7xHP6YIu9jf4Q&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Tecnológico / Empresarial / Político",
@@ -1597,9 +1597,9 @@
     {
         "id": "21",
         "nombre": "Rafael López Aliaga",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwWmTjVfBW5mLIrgdc1wLVfP87eDF8LiqOQ&s",
         "partido": "Renovación Popular",
-        "logo_partido": "",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Renovaci%C3%B3n_Popular_logo.svg/960px-Renovaci%C3%B3n_Popular_logo.svg.png",
         "intentos_presidenciales": "2",
         "perfil_profesional": {
             "ambito": "Empresarial / Financiero / Político",
@@ -1704,9 +1704,9 @@
     {
         "id": "22",
         "nombre": "Francisco Diez Canseco Távara",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdFMQEEEcxMvQq_FAwwCoFHetAjEXKp4Zpg&s",
         "partido": "Perú Acción",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTAl2JQCV5BWBxSyj8rkd1grBRNYhXEODY9g&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Jurídico / Periodístico / Político",
@@ -1803,9 +1803,9 @@
     {
         "id": "23",
         "nombre": "Vladimir Cerrón Rojas",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrcFmzzV27iVY-rPmsCd1JmIVfYMsDpH72w&s",
         "partido": "Perú Libre",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaM8nJEq-VwF9_m19cuupZZaU5UPbTIgq_Q&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Médico / Docente / Político",
@@ -1900,9 +1900,9 @@
     {
         "id": "24",
         "nombre": "Mario Vizcarra Cornejo",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufTNotYlufyTk5r4qU1hPCVBpBXY5FnpcMA&s",
         "partido": "Perú Primero",
-        "logo_partido": "",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Logo_de_Per%C3%BA_Primero.jpg",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Ingeniería Civil / Empresarial",
@@ -2002,9 +2002,9 @@
     {
         "id": "25",
         "nombre": "Carlos Jaico Carranza",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1MEQ90nskmzOif0cYJq9fHcKwXSpmONtjng&s",
         "partido": "Perú Moderno",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22hFV-ABvoK0CvYGYv1Q3jO9X7Ye7s0zXKQ&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Jurídico / Gestión Pública Internacional",
@@ -2095,9 +2095,9 @@
     {
         "id": "26",
         "nombre": "José Luna Gálvez",
-        "image_url": "",
+        "image_url": "https://caretas.pe/wp-content/uploads/2023/09/000097301M.jpg",
         "partido": "Podemos Perú",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkScS-mpbCkThv7MEvR9hLaLfkZ45m8ZKxqQ&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Empresarial / Educativo / Político",
@@ -2198,9 +2198,9 @@
     {
         "id": "27",
         "nombre": "Marisol Pérez Tello",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpaSfVv0i_h2gWs4H00f6HPMlO7EG29lBcxQ&s",
         "partido": "Primero la Gente",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzJAOHYh-lvIy49u-JM5g2ssGBcwfJkb-zA&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Jurídico / Notarial / Político",
@@ -2303,9 +2303,9 @@
     {
         "id": "28",
         "nombre": "Paul Davis Jaimes Blanco",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK3dgmC8AMaVZp4XpSQW5nMdqAViXNFO1Iqg&s",
         "partido": "Progresemos",
-        "logo_partido": "",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Logo_de_Progresemos.jpg",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Jurídico / Gestión Pública",
@@ -2403,9 +2403,9 @@
     {
         "id": "29",
         "nombre": "Antonio Ortiz Villano",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AtagRfdBMWr6RVVAbppnlsmXrJ6Y1vAAfA&s",
         "partido": "Salvemos al Perú",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2DbCp7rYYoxQ2tmLBJFQraRy8YytP2mwAg&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Empresarial / Industrial",
@@ -2509,9 +2509,9 @@
     {
         "id": "30",
         "nombre": "George Patrick Forsyth Sommer",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzjBYZ7s_WOzYYehsTUxz17gQsYysWk8n0g&s",
         "partido": "Somos Perú",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQglHpxMdEqdLFU0-RErGELw3JfRVuOSRqrIQ&s",
         "intentos_presidenciales": "2",
         "perfil_profesional": {
             "ambito": "Deportivo / Empresarial / Político",
@@ -2610,9 +2610,9 @@
     {
         "id": "31",
         "nombre": "Roberto Enrique Chiabra León",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAqrtvWf7MTE0RFSG-xtS_walUyhX4BuD1uQ&s",
         "partido": "Alianza Unidad Nacional (Unidad y Paz + PPC + Peruanos Unidos)",
-        "logo_partido": "",
+        "logo_partido": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Unidad_Nacional_2025.jpg",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Militar / Político",
@@ -2717,9 +2717,9 @@
     {
         "id": "32",
         "nombre": "Ronald Darwin Atencio Sotomayor",
-        "image_url": "",
+        "image_url": "https://i1.sndcdn.com/artworks-CdIxJmajBl9XPIVd-taEIzA-t500x500.png",
         "partido": "Alianza Venceremos (Voces del Pueblo + Nuevo Perú)",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFv2YN38zjivqxhTNMw_q2B7PWi-FQXEfsg&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Jurídico / Político",
@@ -2813,9 +2813,9 @@
     {
         "id": "33",
         "nombre": "Rosario Fernández Bazán",
-        "image_url": "",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-xf9nEtCd8wFaQSjci6BJRGY2rgocgF7Gw&s",
         "partido": "Un Camino Diferente",
-        "logo_partido": "",
+        "logo_partido": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHHm09rLKisE-DeJsvi0JBTQWDxjDrntZhA&s",
         "intentos_presidenciales": "1",
         "perfil_profesional": {
             "ambito": "Educativo / Docente",

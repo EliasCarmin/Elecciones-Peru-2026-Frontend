@@ -284,8 +284,8 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                                 )}
                                             </div>
 
-                                        {/* Preference numbers (1-30) - TWO BOXES */}
-                                        <div className="flex flex-col gap-1">
+                                        {/* Preference numbers (1-30) - TWO BOXES HORIZONTAL */}
+                                        <div className="flex gap-1">
                                             {[0, 1].map(idx => (
                                                 <input
                                                     key={idx}
@@ -293,7 +293,7 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                                     inputMode="numeric"
                                                     maxLength={2}
                                                     placeholder="N.º"
-                                                    className={`w-9 h-7 border-2 border-gray-300 bg-white rounded text-center font-black text-[10px] transition-all focus:outline-none focus:ring-2 ${block.ring} placeholder:text-gray-200`}
+                                                    className={`w-10 h-10 border-2 border-gray-300 bg-white rounded-lg text-center font-black text-sm transition-all focus:outline-none focus:ring-2 ${block.ring} placeholder:text-gray-200`}
                                                     value={preferences[block.key]?.[candidate.id]?.[idx] ?? ''}
                                                     onChange={(e) => handlePrefChange(block.key, candidate.id, idx, e.target.value)}
                                                     onClick={(e) => e.stopPropagation()}

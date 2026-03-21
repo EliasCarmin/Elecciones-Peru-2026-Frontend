@@ -59,26 +59,40 @@ const BLOCKS = [
     },
 ];
 
+const STEPS = [
+    { n: '1', icon: '🎨', title: 'Cinco colores, cinco votos', desc: 'La cédula tiene 5 bloques de colores. Puedes elegir un partido diferente en cada bloque.' },
+    { n: '2', icon: '✕',  title: 'Marcar haciendo clic',       desc: 'Haz clic sobre la foto del candidato o el logo del partido para marcar con una ✕ roja.' },
+    { n: '3', icon: '🔢', title: 'Voto preferencial (1-30)',   desc: 'En Senadores y Diputados, escribe el número de tu candidato favorito en los cuadros blancos.' },
+    { n: '4', icon: '✅', title: 'Confirma tu cédula',         desc: 'Cuando termines, revisa el resumen y presiona el botón "Confirmar Voto".' },
+];
+
 // ─── Main Component ───────────────────────────────────────────────────────────
 const VotingBallot = ({ candidates, onVoteCompleted }) => {
-    // selections: { blockKey: candidateId | null }
     const [selections, setSelections] = useState({
         presidente: null, senNacional: null, senUniverso: null, diputados: null, parlamento: null,
     });
-    // preferences: { blockKey: { candidateId: [string, string] } }
     const [preferences, setPreferences] = useState({});
     const [hasVoted, setHasVoted] = useState(false);
     const [showConfirm, setShowConfirm] = useState(false);
+    const [showInstructions, setShowInstructions] = useState(false);
 
     useEffect(() => {
         const saved = localStorage.getItem('peru_2026_ballot');
+        const instructionsSeen = localStorage.getItem('peru_2026_instructions_seen');
         if (saved) {
             const parsed = JSON.parse(saved);
             setSelections(parsed.selections || {});
             setPreferences(parsed.preferences || {});
             setHasVoted(true);
+        } else if (!instructionsSeen) {
+            setShowInstructions(true);
         }
     }, []);
+
+    const closeInstructions = () => {
+        setShowInstructions(false);
+        localStorage.setItem('peru_2026_instructions_seen', 'true');
+    };
 
     const handleSelect = (blockKey, candidateId) => {
         if (hasVoted) return;
@@ -91,7 +105,6 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
     const handlePrefChange = (blockKey, candidateId, idx, value) => {
         if (hasVoted) return;
         const clean = value.replace(/[^0-9]/g, '');
-        // Clamp 1-30
         const num = parseInt(clean, 10);
         const clamped = !clean ? '' : num > 30 ? '30' : num < 1 ? '1' : String(num);
         setPreferences(prev => {
@@ -99,10 +112,7 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
             const candPrefs = blockPrefs[candidateId] || ['', ''];
             const newCandPrefs = [...candPrefs];
             newCandPrefs[idx] = value === '' ? '' : clamped;
-            return {
-                ...prev,
-                [blockKey]: { ...blockPrefs, [candidateId]: newCandPrefs },
-            };
+            return { ...prev, [blockKey]: { ...blockPrefs, [candidateId]: newCandPrefs } };
         });
     };
 
@@ -112,7 +122,6 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
         if (!hasAnySelection || hasVoted) return;
         const payload = { selections, preferences };
         localStorage.setItem('peru_2026_ballot', JSON.stringify(payload));
-        // Legacy compat
         if (selections.presidente) localStorage.setItem('peru_2026_vote', selections.presidente);
         setHasVoted(true);
         setShowConfirm(false);
@@ -122,7 +131,7 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
         });
     };
 
-    // ── Voted state ──────────────────────────────────────────────────────────
+    // ── Voted state ───────────────────────────────────────────────────────────
     if (hasVoted) {
         const presidenCand = candidates.find(c => c.id === selections.presidente);
         return (
@@ -155,7 +164,7 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
         );
     }
 
-    // ── Ballot ───────────────────────────────────────────────────────────────
+    // ── Ballot ────────────────────────────────────────────────────────────────
     return (
         <div className="py-4">
             <div className="overflow-x-auto rounded-3xl shadow-2xl border-2 border-gray-300">
@@ -167,6 +176,13 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                         <div className="text-center">
                             <h1 className="text-3xl font-black tracking-[0.25em] text-gray-900 uppercase">Cédula de Sufragio</h1>
                             <p className="text-[11px] font-bold tracking-[0.2em] text-gray-500 uppercase mt-1">Elecciones Generales 2026 — Simulacro</p>
+                            <button
+                                onClick={() => setShowInstructions(true)}
+                                className="mt-3 px-4 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-600 text-[10px] font-black uppercase tracking-widest rounded-full transition-all flex items-center gap-2 mx-auto"
+                            >
+                                <span className="w-4 h-4 rounded-full bg-peru-red text-white flex items-center justify-center text-[8px]">?</span>
+                                Guía de Votación
+                            </button>
                         </div>
                         <div className="h-16 w-16 rounded-full bg-gray-100 border-2 border-gray-200 flex items-center justify-center text-3xl">
                             🦙
@@ -188,103 +204,85 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                     </div>
 
                     {/* ── CANDIDATE ROWS ── */}
-                    {candidates.map((candidate, index) => {
-                        return (
-                            <div
-                                key={candidate.id}
-                                className={`grid grid-cols-[200px_1fr_1fr_1fr_1fr_1fr] border-b border-gray-300 transition-all duration-150
-                                    ${index % 2 === 0 ? 'bg-white/60' : 'bg-[#f5f0e4]/50'}
-                                `}
-                            >
-                                {/* ── Candidate info ── */}
-                                <div className="py-3 px-3 border-r-2 border-gray-700 flex flex-col justify-center gap-0.5">
-                                    <p className="text-[9px] font-black uppercase tracking-widest text-gray-400 truncate leading-tight">{candidate.partido}</p>
-                                    <p className="text-[12px] font-black text-gray-900 leading-tight">{candidate.nombre}</p>
-                                </div>
+                    {candidates.map((candidate, index) => (
+                        <div
+                            key={candidate.id}
+                            className={`grid grid-cols-[200px_1fr_1fr_1fr_1fr_1fr] border-b border-gray-300 transition-all duration-150
+                                ${index % 2 === 0 ? 'bg-white/60' : 'bg-[#f5f0e4]/50'}`}
+                        >
+                            {/* Candidate info */}
+                            <div className="py-3 px-3 border-r-2 border-gray-700 flex flex-col justify-center gap-0.5">
+                                <p className="text-[9px] font-black uppercase tracking-widest text-gray-400 truncate leading-tight">{candidate.partido}</p>
+                                <p className="text-[12px] font-black text-gray-900 leading-tight">{candidate.nombre}</p>
+                            </div>
 
-                                {/* ── BLOCK CELLS ── */}
-                                {BLOCKS.map(block => {
-                                    const isSelected = selections[block.key] === candidate.id;
-                                    const prefValue  = preferences[block.key]?.[candidate.id] ?? '';
+                            {/* Block cells */}
+                            {BLOCKS.map(block => {
+                                const isSelected = selections[block.key] === candidate.id;
 
-                                    if (block.isPresidente) {
-                                        // ── PRESIDENTIAL: photo + logo, click marks with X overlay ──
-                                        return (
-                                            <div
-                                                key={block.key}
-                                                className={`${block.rowBg} border-r border-gray-300 flex items-center justify-center gap-2 px-3 py-3 ${!hasVoted ? 'cursor-pointer' : 'cursor-default'}`}
-                                                onClick={() => handleSelect(block.key, candidate.id)}
-                                            >
-                                                {/* Candidate photo with X overlay */}
-                                                <div className="relative flex-shrink-0 group">
-                                                    <img
-                                                        src={candidate.image_url}
-                                                        alt={candidate.nombre}
-                                                        className={`w-12 h-14 object-cover object-top rounded-lg border-2 transition-all duration-300 ${isSelected ? 'border-red-500 opacity-60' : 'border-gray-200 hover:border-red-300'}`}
-                                                        onError={(e) => { e.target.src = 'https://via.placeholder.com/48x56?text=?'; }}
-                                                    />
-                                                    {isSelected && (
-                                                        <div className="absolute inset-0 flex items-center justify-center">
-                                                            <span className="text-4xl font-black text-red-600 drop-shadow-lg leading-none">✕</span>
-                                                        </div>
-                                                    )}
-                                                </div>
-
-                                                {/* Party logo with X overlay */}
-                                                {candidate.logo_partido && (
-                                                    <div className="relative flex-shrink-0">
-                                                        <div className={`w-12 h-12 bg-white rounded-lg border-2 p-0.5 flex items-center justify-center transition-all duration-300 ${isSelected ? 'border-red-500 opacity-60' : 'border-gray-200 hover:border-red-300'}`}>
-                                                            <img
-                                                                src={candidate.logo_partido}
-                                                                alt=""
-                                                                className="w-full h-full object-contain"
-                                                                onError={(e) => { e.target.parentElement.style.display = 'none'; }}
-                                                            />
-                                                        </div>
-                                                        {isSelected && (
-                                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                                <span className="text-3xl font-black text-red-600 drop-shadow-lg leading-none">✕</span>
-                                                            </div>
-                                                        )}
-                                                    </div>
-                                                )}
-                                            </div>
-                                        );
-                                    }
-
-                                    // ── NON-PRESIDENTIAL: logo (clickable ✕) + number input ──
+                                if (block.isPresidente) {
                                     return (
                                         <div
                                             key={block.key}
-                                            className={`${block.rowBg} border-r border-gray-300 last:border-r-0 flex items-center justify-center gap-2 px-3 py-3`}
+                                            className={`${block.rowBg} border-r border-gray-300 flex items-center justify-center gap-2 px-3 py-3 ${!hasVoted ? 'cursor-pointer' : 'cursor-default'}`}
+                                            onClick={() => handleSelect(block.key, candidate.id)}
                                         >
-                                            {/* Party logo — click to mark/unmark */}
-                                            <div
-                                                className={`relative flex-shrink-0 ${!hasVoted ? 'cursor-pointer' : 'cursor-default'}`}
-                                                onClick={() => handleSelect(block.key, candidate.id)}
-                                            >
-                                                <div className={`w-12 h-12 bg-white rounded-lg border-2 p-0.5 flex items-center justify-center transition-all duration-300
-                                                    ${isSelected ? 'border-red-500 opacity-60' : `${block.border} hover:border-red-300`}`}
-                                                >
-                                                    {candidate.logo_partido ? (
-                                                        <img
-                                                            src={candidate.logo_partido}
-                                                            alt=""
-                                                            className="w-full h-full object-contain"
-                                                            onError={(e) => { e.target.parentElement.style.display = 'none'; }}
-                                                        />
-                                                    ) : (
-                                                        <div className="w-full h-full bg-gray-100 rounded" />
-                                                    )}
-                                                </div>
+                                            {/* Candidate photo */}
+                                            <div className="relative flex-shrink-0">
+                                                <img
+                                                    src={candidate.image_url}
+                                                    alt={candidate.nombre}
+                                                    className={`w-12 h-14 object-cover object-top rounded-lg border-2 transition-all duration-300 ${isSelected ? 'border-red-500 opacity-60' : 'border-gray-200 hover:border-red-300'}`}
+                                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/48x56?text=?'; }}
+                                                />
                                                 {isSelected && (
-                                                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                                        <span className="text-3xl font-black text-red-600 drop-shadow-lg leading-none">✕</span>
+                                                    <div className="absolute inset-0 flex items-center justify-center">
+                                                        <span className="text-4xl font-black text-red-600 drop-shadow-lg leading-none">✕</span>
                                                     </div>
                                                 )}
                                             </div>
+                                            {/* Party logo */}
+                                            {candidate.logo_partido && (
+                                                <div className="relative flex-shrink-0">
+                                                    <div className={`w-12 h-12 bg-white rounded-lg border-2 p-0.5 flex items-center justify-center transition-all duration-300 ${isSelected ? 'border-red-500 opacity-60' : 'border-gray-200 hover:border-red-300'}`}>
+                                                        <img src={candidate.logo_partido} alt="" className="w-full h-full object-contain" onError={(e) => { e.target.parentElement.style.display = 'none'; }} />
+                                                    </div>
+                                                    {isSelected && (
+                                                        <div className="absolute inset-0 flex items-center justify-center">
+                                                            <span className="text-3xl font-black text-red-600 drop-shadow-lg leading-none">✕</span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                }
 
-                                        {/* Preference numbers (1-30) - TWO BOXES HORIZONTAL */}
+                                // Non-presidential blocks
+                                const prefArr = preferences[block.key]?.[candidate.id] || ['', ''];
+                                return (
+                                    <div
+                                        key={block.key}
+                                        className={`${block.rowBg} border-r border-gray-300 last:border-r-0 flex items-center justify-center gap-2 px-3 py-3`}
+                                    >
+                                        {/* Logo clickable */}
+                                        <div
+                                            className={`relative flex-shrink-0 ${!hasVoted ? 'cursor-pointer' : 'cursor-default'}`}
+                                            onClick={() => handleSelect(block.key, candidate.id)}
+                                        >
+                                            <div className={`w-12 h-12 bg-white rounded-lg border-2 p-0.5 flex items-center justify-center transition-all duration-300 ${isSelected ? 'border-red-500 opacity-60' : `${block.border} hover:border-red-300`}`}>
+                                                {candidate.logo_partido
+                                                    ? <img src={candidate.logo_partido} alt="" className="w-full h-full object-contain" onError={(e) => { e.target.parentElement.style.display = 'none'; }} />
+                                                    : <div className="w-full h-full bg-gray-100 rounded" />
+                                                }
+                                            </div>
+                                            {isSelected && (
+                                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                                    <span className="text-3xl font-black text-red-600 drop-shadow-lg leading-none">✕</span>
+                                                </div>
+                                            )}
+                                        </div>
+                                        {/* Two preference inputs horizontal */}
                                         <div className="flex gap-1">
                                             {[0, 1].map(idx => (
                                                 <input
@@ -294,19 +292,18 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                                     maxLength={2}
                                                     placeholder="N.º"
                                                     className={`w-10 h-10 border-2 border-gray-300 bg-white rounded-lg text-center font-black text-sm transition-all focus:outline-none focus:ring-2 ${block.ring} placeholder:text-gray-200`}
-                                                    value={preferences[block.key]?.[candidate.id]?.[idx] ?? ''}
+                                                    value={prefArr[idx]}
                                                     onChange={(e) => handlePrefChange(block.key, candidate.id, idx, e.target.value)}
                                                     onClick={(e) => e.stopPropagation()}
                                                     disabled={hasVoted}
                                                 />
                                             ))}
                                         </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        );
-                    })}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    ))}
                 </div>
             </div>
 
@@ -387,7 +384,7 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                                 <p className={`text-[9px] font-black uppercase tracking-widest ${block.accentCls}`}>{block.label}</p>
                                                 <p className="text-sm font-black text-gray-800 truncate">{c ? c.nombre : <span className="text-gray-400 font-medium italic">Sin selección</span>}</p>
                                             </div>
-                                            {c && <img src={c.logo_partido} alt="" className="w-8 h-8 object-contain flex-shrink-0" onError={e => e.target.style.display='none'} />}
+                                            {c && <img src={c.logo_partido} alt="" className="w-8 h-8 object-contain flex-shrink-0" onError={e => { e.target.style.display = 'none'; }} />}
                                         </div>
                                     );
                                 })}
@@ -400,6 +397,108 @@ const VotingBallot = ({ candidates, onVoteCompleted }) => {
                                 <button onClick={handleConfirmVote} className="flex-1 py-3 rounded-full bg-peru-red text-white font-black hover:bg-red-700 transition-all shadow-lg shadow-red-200">
                                     ¡Emitir Cédula!
                                 </button>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+            {/* ── INSTRUCTIONS MODAL ── */}
+            <AnimatePresence>
+                {showInstructions && (
+                    <motion.div
+                        className="fixed inset-0 bg-black/75 z-[60] flex items-center justify-center p-4 backdrop-blur-md"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={closeInstructions}
+                    >
+                        <motion.div
+                            className="bg-white rounded-3xl w-full max-w-5xl shadow-2xl overflow-hidden flex flex-col md:flex-row"
+                            style={{ maxHeight: '90vh' }}
+                            initial={{ scale: 0.92, opacity: 0, y: 30 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            exit={{ scale: 0.92, opacity: 0, y: 30 }}
+                            transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+                            onClick={e => e.stopPropagation()}
+                        >
+                            {/* ── LEFT: Steps ── */}
+                            <div className="flex flex-col p-8 md:p-10 md:w-[55%] overflow-y-auto">
+                                {/* Header */}
+                                <div className="flex items-start justify-between mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-3 mb-2">
+                                            <span className="text-3xl">🗳️</span>
+                                            <span className="text-xs font-black uppercase tracking-[0.2em] text-peru-red">Guía de Votación</span>
+                                        </div>
+                                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight">Manual de<br/>Votación Rápida</h2>
+                                        <p className="text-gray-400 text-sm mt-2 font-medium">Simulacro — Elecciones Perú 2026</p>
+                                    </div>
+                                    <button
+                                        onClick={closeInstructions}
+                                        className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 transition-all flex-shrink-0 mt-1"
+                                    >
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div className="h-px bg-gray-100 mb-6" />
+
+                                {/* Steps */}
+                                <div className="space-y-4 flex-1">
+                                    {STEPS.map(step => (
+                                        <div key={step.n} className="flex gap-4 items-start bg-gray-50 hover:bg-gray-100/80 rounded-2xl px-5 py-4 transition-colors">
+                                            <div className="w-9 h-9 rounded-xl bg-gray-900 text-white flex items-center justify-center font-black text-base flex-shrink-0 shadow-md">
+                                                {step.n}
+                                            </div>
+                                            <div>
+                                                <p className="font-black text-gray-900 text-base leading-snug mb-0.5">{step.icon} {step.title}</p>
+                                                <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                {/* CTA */}
+                                <button
+                                    onClick={closeInstructions}
+                                    className="mt-8 w-full py-4 bg-peru-red text-white font-black rounded-2xl shadow-lg shadow-red-200 hover:bg-red-700 hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-wide"
+                                >
+                                    ¡Entendido, a votar! 🗳️
+                                </button>
+                            </div>
+
+                            {/* ── RIGHT: PDF ── */}
+                            <div className="hidden md:flex flex-col md:w-[45%] bg-gray-50 border-l border-gray-100">
+                                {/* Bar */}
+                                <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between bg-white">
+                                    <div>
+                                        <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.18em]">Documento Oficial</p>
+                                        <p className="text-sm font-black text-gray-800 mt-0.5">Guía ONPE / JNE</p>
+                                    </div>
+                                    <a
+                                        href="https://drive.google.com/file/d/1UhB6KaO63YLOdoiFbbZcH3llg44Jqpif/view?usp=sharing"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-1.5 text-peru-red text-xs font-black uppercase hover:underline"
+                                    >
+                                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                        Abrir
+                                    </a>
+                                </div>
+                                {/* iframe fills remaining space */}
+                                <div className="relative flex-1 min-h-0">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1UhB6KaO63YLOdoiFbbZcH3llg44Jqpif/preview"
+                                        className="w-full h-full border-0"
+                                        allow="autoplay"
+                                        title="Guía Oficial de Votación ONPE"
+                                    />
+                                </div>
                             </div>
                         </motion.div>
                     </motion.div>

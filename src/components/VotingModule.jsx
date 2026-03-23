@@ -43,12 +43,6 @@ const VotingModule = ({ candidates, onVoteCompleted }) => {
                         <p className="text-lg text-gray-600 mb-8">
                             Tu voto ha sido registrado correctamente. Recuerda que solo se permite un voto por dispositivo para mantener la integridad del simulacro.
                         </p>
-                        <a
-                            href="#resultados"
-                            className="inline-block bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition shadow-lg"
-                        >
-                            Ver Resultados Actuales
-                        </a>
                     </motion.div>
                 </div>
             </div>

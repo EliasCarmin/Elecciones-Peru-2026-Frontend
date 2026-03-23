@@ -23,7 +23,6 @@ const Header = () => {
                     <nav className="hidden md:flex items-center gap-6">
                         <Link to="/" className="text-gray-600 hover:text-red-600 font-bold transition-colors">Inicio</Link>
                         <Link to="/votar" className="text-gray-600 hover:text-red-600 font-bold transition-colors">Votar</Link>
-                        <Link to="/resultados" className="text-gray-600 hover:text-red-600 font-bold transition-colors">Resultados</Link>
                         <div className="flex items-center gap-0 ml-4">
                             <div className="w-8 h-9 bg-peru-red"></div>
                             <div className="w-8 h-9 bg-white shadow-inner"></div>
